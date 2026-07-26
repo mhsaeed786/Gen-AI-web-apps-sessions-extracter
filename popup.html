@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Session Extractor</title>
+  <link rel="stylesheet" href="popup-styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <span class="logo-icon">🤖</span>
+        <h1>AI Session Extractor</h1>
+      </div>
+      <span class="version">v1.0</span>
+    </header>
+
+    <!-- Platform Detection -->
+    <div id="platform-status" class="platform-status">
+      <span class="status-dot"></span>
+      <span id="platform-name">Detecting platform...</span>
+    </div>
+
+    <!-- Open AI Tabs -->
+    <div id="tabs-section" class="tabs-section hidden">
+      <div class="tabs-header">🌐 Open AI Tabs:</div>
+      <div id="tabs-list" class="tabs-list"></div>
+    </div>
+
+    <!-- Main Actions -->
+    <div class="actions">
+      <button id="btn-extract" class="btn btn-primary" title="Extract the current conversation in active tab">
+        <span class="btn-icon">📋</span>
+        Extract This Chat
+      </button>
+
+      <button id="btn-extract-all" class="btn btn-all" title="Extract ALL chats from the active tab's history">
+        <span class="btn-icon">📚</span>
+        All Chats (This Tab)
+      </button>
+
+      <button id="btn-extract-multi" class="btn btn-multi" title="Extract from ALL open AI tabs (Gemini, ChatGPT, Claude, etc.)">
+        <span class="btn-icon">🌐</span>
+        Extract ALL Open Tabs
+      </button>
+
+      <button id="btn-capture" class="btn btn-secondary" title="Capture words as they stream in real-time">
+        <span class="btn-icon">🔴</span>
+        <span id="capture-label">Start Live Capture</span>
+      </button>
+    </div>
+
+    <!-- Batch Progress -->
+    <div id="batch-progress" class="batch-progress hidden">
+      <div class="batch-header">
+        <span class="batch-title">📚 Extracting...</span>
+        <button id="btn-cancel-batch" class="btn btn-small btn-danger">✕ Cancel</button>
+      </div>
+      <div class="progress-bar-container">
+        <div id="progress-bar" class="progress-bar" style="width: 0%"></div>
+      </div>
+      <div class="batch-stats">
+        <span id="batch-current">Preparing...</span>
+        <span id="batch-count">0 / 0</span>
+      </div>
+      <div id="batch-log" class="batch-log"></div>
+    </div>
+
+    <!-- Capture Status -->
+    <div id="capture-status" class="capture-status hidden">
+      <div class="capture-indicator">
+        <span class="pulse-dot"></span>
+        <span>Capturing... <strong id="word-count">0</strong> words</span>
+      </div>
+      <button id="btn-stop-capture" class="btn btn-small btn-danger">Stop</button>
+    </div>
+
+    <!-- Results -->
+    <div id="results" class="results hidden">
+      <div class="results-header">
+        <h2 id="results-title">Extracted Session</h2>
+        <span id="msg-count" class="badge">0 messages</span>
+      </div>
+      <div id="preview" class="preview"></div>
+      <div class="export-section">
+        <h3>Export As:</h3>
+        <div class="export-buttons">
+          <button id="export-txt" class="btn btn-export">📄 TXT</button>
+          <button id="export-md" class="btn btn-export">📝 MD</button>
+          <button id="export-json" class="btn btn-export">🔧 JSON</button>
+          <button id="export-csv" class="btn btn-export">📊 CSV</button>
+          <button id="copy-clipboard" class="btn btn-export">📋 Copy</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Messages -->
+    <div id="message-box" class="message-box hidden"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span>Gemini · ChatGPT · Claude · DeepSeek · Copilot · Grok</span>
+      <span class="coming-soon">Kimi · Meta AI · MiniMax · Manus · Zai + generic fallback</span>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

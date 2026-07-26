@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+  "name": "AI Session Extractor",
+  "version": "1.0.0",
+  "description": "Extract full conversations from Gemini, ChatGPT, Claude, DeepSeek, Copilot, Grok, Kimi, Meta AI, MiniMax, Manus, Zai & more",
+  "permissions": ["activeTab", "tabs", "storage", "downloads", "scripting", "contextMenus"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://gemini.google.com/*",
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*",
+        "https://claude.ai/*",
+        "https://chat.deepseek.com/*",
+        "https://copilot.microsoft.com/*",
+        "https://grok.com/*",
+        "https://x.com/i/grok*",
+        "https://kimi.moonshot.cn/*",
+        "https://www.meta.ai/*",
+        "https://meta.ai/*",
+        "https://hailuoai.com/*",
+        "https://www.hailuoai.com/*",
+        "https://minimax.io/*",
+        "https://www.minimax.io/*",
+        "https://manus.im/*",
+        "https://manus.app/*",
+        "https://z.ai/*",
+        "https://www.z.ai/*"
+      ],
+      "js": ["content.js"],
+      "css": ["content-styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

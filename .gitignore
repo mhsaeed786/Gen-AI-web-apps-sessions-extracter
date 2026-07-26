@@ -1,0 +1,7 @@
+node_modules/
+.chrome-copy/
+.pw-profile/
+.playwright-profile/
+dom-analysis/
+*.log
+package-lock.json
