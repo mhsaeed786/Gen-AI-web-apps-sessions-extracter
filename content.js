@@ -1,11 +1,17 @@
 // ============================================================
-// AI Session Extractor - Multi-Platform Content Script v4
-// Supports: Gemini, ChatGPT, Claude, DeepSeek, Copilot, Grok,
-//           Kimi, Meta AI, MiniMax, Manus, Zai + generic fallback
+// AI Session Extractor - Multi-Platform Content Script v4.1
+// FIX: message channel closed errors during SPA navigation
 // ============================================================
 
 (function () {
   "use strict";
+
+  // Prevent double-injection
+  if (window.__AI_EXTRACTOR_LOADED__) {
+    console.log("[AI Session Extractor] Already loaded, skipping re-injection");
+    return;
+  }
+  window.__AI_EXTRACTOR_LOADED__ = true;
 
   // ============================================================
   // PLATFORM DETECTION
@@ -395,11 +401,9 @@
   function extractFromContainer(container, messages) {
     const children = Array.from(container.children);
     for (const child of children) {
-      // Skip non-message elements
       const cls = (child.className || "").toString().toLowerCase();
       if (/zero-state|banner|disclaimer|sidebar|nav|header|footer|input|composer/i.test(cls)) continue;
 
-      // Try to find user message
       const userEl = findFirst(child, config.userMsg);
       if (userEl) {
         const text = extractFullText(userEl);
@@ -408,7 +412,6 @@
         }
       }
 
-      // Try to find model message
       const modelEl = findFirst(child, config.modelMsg);
       if (modelEl) {
         const text = extractFullText(modelEl);
@@ -417,7 +420,6 @@
         }
       }
 
-      // If neither found but child has substantial text, try to classify
       if (!userEl && !modelEl) {
         const text = (child.innerText || "").trim();
         if (text.length > 20) {
@@ -505,7 +507,6 @@
   function extractFullText(element) {
     if (!element) return "";
     const clone = element.cloneNode(true);
-    // Remove UI chrome
     clone.querySelectorAll("button, [class*='button'], [class*='action'], [class*='toolbar'], [class*='copy'], [class*='tts'], [class*='feedback'], [class*='rating'], [class*='share'], svg, [class*='icon']").forEach((el) => el.remove());
     return processNodeToString(clone);
   }
@@ -566,26 +567,22 @@
     const chats = [];
     const seen = new Set();
 
-    // ---- STEP 1: Expand sidebar if collapsed ----
+    // Expand sidebar if collapsed
     await expandSidebar();
 
-    // ---- STEP 2: Find sidebar scroll container ----
+    // Find sidebar scroll container
     let sidebarScroll = null;
     for (const sel of config.sidebar) {
       sidebarScroll = document.querySelector(sel);
       if (sidebarScroll) break;
     }
-
-    // If still no sidebar, try broader search
     if (!sidebarScroll) {
       sidebarScroll = document.querySelector('[class*="drawer"]') ||
                       document.querySelector('[class*="panel"]') ||
-                      document.querySelector('[class*="Drawer"]') ||
-                      document.querySelector('[class*="Panel"]') ||
                       document.querySelector('[role="navigation"]');
     }
 
-    // ---- STEP 3: Scroll sidebar to load ALL items (lazy loading) ----
+    // Scroll sidebar to load all items
     if (sidebarScroll) {
       let prevCount = 0, stableRounds = 0;
       for (let i = 0; i < 80; i++) {
@@ -598,10 +595,10 @@
       }
     }
 
-    // ---- STEP 4: Also collect from full document ----
+    // Also collect from full document
     collectLinks(document, chats, seen);
 
-    // ---- STEP 5: If Gemini and still few results, try expanding "Show more" ----
+    // If Gemini and still few results, try expanding "Show more"
     if (PLATFORM === "gemini" && chats.length < 5) {
       const expandBtns = document.querySelectorAll('[class*="expand"], [class*="show-more"], [class*="see-all"], button[aria-expanded="false"]');
       for (const btn of expandBtns) {
@@ -611,7 +608,6 @@
           await sleep(1000);
         }
       }
-      // Re-collect after expanding
       collectLinks(document, chats, seen);
       if (sidebarScroll) {
         for (let i = 0; i < 30; i++) {
@@ -623,67 +619,6 @@
     }
 
     return { total: chats.length, chats, platform: PLATFORM };
-  }
-
-  // ---- Expand/collapse sidebar helper ----
-  async function expandSidebar() {
-    // Check if sidebar is already visible
-    for (const sel of config.sidebar) {
-      const el = document.querySelector(sel);
-      if (el && el.offsetHeight > 100 && el.querySelectorAll("a").length > 2) {
-        return; // Sidebar already open with content
-      }
-    }
-
-    // Try to find and click the sidebar toggle button
-    const toggleSelectors = [
-      // Gemini specific
-      'button[aria-label*="menu" i]',
-      'button[aria-label*="Menu" i]',
-      'button[aria-label*="sidebar" i]',
-      'button[aria-label*="navigation" i]',
-      'button[aria-label*="Open" i]',
-      '[class*="menu-button"]',
-      '[class*="hamburger"]',
-      '[class*="sidebar-toggle"]',
-      '[class*="nav-toggle"]',
-      '[data-test-id*="menu"]',
-      '[data-test-id*="sidebar"]',
-      // Generic
-      'button[aria-expanded="false"]',
-      '[class*="toggle"]',
-      '[class*="Toggle"]',
-      // Icon-based buttons (usually top-left)
-      'header button:first-child',
-      'nav ~ button',
-      'button:has(svg)',
-    ];
-
-    for (const sel of toggleSelectors) {
-      try {
-        const btns = document.querySelectorAll(sel);
-        for (const btn of btns) {
-          // Only click buttons that look like menu toggles (top area, small)
-          const rect = btn.getBoundingClientRect();
-          if (rect.top < 100 && rect.left < 200 && rect.width < 80 && rect.height < 80) {
-            btn.click();
-            await sleep(1000);
-
-            // Check if sidebar appeared
-            for (const s of config.sidebar) {
-              const el = document.querySelector(s);
-              if (el && el.offsetHeight > 100) return; // Success!
-            }
-          }
-        }
-      } catch (e) {}
-    }
-
-    // Last resort: try keyboard shortcut (some apps use Ctrl+B or similar)
-    try {
-      document.dispatchEvent(new KeyboardEvent("keydown", { key: "b", ctrlKey: true, bubbles: true }));
-      await sleep(800);
-    } catch (e) {}
   }
 
   function collectLinks(root, chats, seen) {
@@ -705,25 +640,62 @@
   }
 
   // ============================================================
-  // NAVIGATION + WAIT
+  // EXPAND SIDEBAR
   // ============================================================
 
-  async function navigateToChat(url) {
-    // Try clicking sidebar link first (SPA)
-    const links = document.querySelectorAll(config.chatLinks);
-    for (const link of links) {
-      const href = link.getAttribute("href") || link.href || "";
-      if (href === url || link.href === url || url.endsWith(href)) {
-        link.click();
-        await sleep(1500);
-        return { navigated: true, method: "click" };
+  async function expandSidebar() {
+    // Check if sidebar is already visible
+    for (const sel of config.sidebar) {
+      const el = document.querySelector(sel);
+      if (el && el.offsetHeight > 100 && el.querySelectorAll("a").length > 2) {
+        return;
       }
     }
-    // Fallback: direct navigation
-    window.location.href = url;
-    await sleep(2000);
-    return { navigated: true, method: "url" };
+
+    const toggleSelectors = [
+      'button[aria-label*="menu" i]',
+      'button[aria-label*="Menu" i]',
+      'button[aria-label*="sidebar" i]',
+      'button[aria-label*="navigation" i]',
+      'button[aria-label*="Open" i]',
+      '[class*="menu-button"]',
+      '[class*="hamburger"]',
+      '[class*="sidebar-toggle"]',
+      '[class*="nav-toggle"]',
+      '[data-test-id*="menu"]',
+      '[data-test-id*="sidebar"]',
+      'button[aria-expanded="false"]',
+      '[class*="toggle"]',
+      'header button:first-child',
+      'button:has(svg)',
+    ];
+
+    for (const sel of toggleSelectors) {
+      try {
+        const btns = document.querySelectorAll(sel);
+        for (const btn of btns) {
+          const rect = btn.getBoundingClientRect();
+          if (rect.top < 100 && rect.left < 200 && rect.width < 80 && rect.height < 80) {
+            btn.click();
+            await sleep(1000);
+            for (const s of config.sidebar) {
+              const el = document.querySelector(s);
+              if (el && el.offsetHeight > 100) return;
+            }
+          }
+        }
+      } catch (e) {}
+    }
+
+    try {
+      document.dispatchEvent(new KeyboardEvent("keydown", { key: "b", ctrlKey: true, bubbles: true }));
+      await sleep(800);
+    } catch (e) {}
   }
+
+  // ============================================================
+  // WAIT FOR CONTENT (sync-safe: no navigation happens here)
+  // ============================================================
 
   async function waitForContent(maxWait = 10000) {
     const start = Date.now();
@@ -747,7 +719,6 @@
   // ============================================================
 
   function getDomOrder(el) {
-    // Fast approximation using compareDocumentPosition
     if (!getDomOrder._cache) getDomOrder._cache = new WeakMap();
     if (getDomOrder._cache.has(el)) return getDomOrder._cache.get(el);
     const all = document.querySelectorAll("*");
@@ -805,23 +776,97 @@
   }
 
   // ============================================================
-  // MESSAGE LISTENER
+  // MESSAGE LISTENER — FIXED: no more channel-closed errors
+  // ============================================================
+  //
+  // KEY FIX: For actions that trigger navigation (navigateToChat),
+  // we respond SYNCHRONOUSLY and do the work after.
+  // For async actions, we wrap in try/catch/finally to ALWAYS call sendResponse.
   // ============================================================
 
   chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    switch (request.action) {
-      case "extract": sendResponse(extractConversation()); break;
-      case "collectAllChats": collectAllChats().then(r => sendResponse(r)); return true;
-      case "navigateToChat": navigateToChat(request.url).then(r => sendResponse(r)); return true;
-      case "waitForContent": waitForContent(request.maxWait || 10000).then(r => sendResponse(r)); return true;
-      case "startCapture": sendResponse(startWordCapture()); break;
-      case "stopCapture": sendResponse(stopWordCapture()); break;
-      case "getCaptureStatus": sendResponse({ isCapturing, wordCount: capturedWords.length }); break;
-      case "ping": sendResponse({ platform: PLATFORM, platformName: config.name, ready: true, url: window.location.href }); break;
-      default: sendResponse({ error: "Unknown action" });
+    const action = request.action;
+
+    // ---- SYNC actions (respond immediately, no navigation) ----
+    if (action === "extract") {
+      try { sendResponse(extractConversation()); }
+      catch (e) { sendResponse({ error: e.message }); }
+      return false; // sync, no need to keep channel open
     }
-    return true;
+
+    if (action === "startCapture") {
+      try { sendResponse(startWordCapture()); }
+      catch (e) { sendResponse({ error: e.message }); }
+      return false;
+    }
+
+    if (action === "stopCapture") {
+      try { sendResponse(stopWordCapture()); }
+      catch (e) { sendResponse({ error: e.message }); }
+      return false;
+    }
+
+    if (action === "getCaptureStatus") {
+      sendResponse({ isCapturing, wordCount: capturedWords.length });
+      return false;
+    }
+
+    if (action === "ping") {
+      sendResponse({ platform: PLATFORM, platformName: config.name, ready: true, url: window.location.href });
+      return false;
+    }
+
+    // ---- ASYNC actions (keep channel open, always respond) ----
+    if (action === "collectAllChats") {
+      collectAllChats()
+        .then(r => { try { sendResponse(r); } catch(e) {} })
+        .catch(e => { try { sendResponse({ error: e.message, total: 0, chats: [] }); } catch(e2) {} });
+      return true;
+    }
+
+    if (action === "waitForContent") {
+      waitForContent(request.maxWait || 10000)
+        .then(r => { try { sendResponse(r); } catch(e) {} })
+        .catch(e => { try { sendResponse({ ready: false, error: e.message }); } catch(e2) {} });
+      return true;
+    }
+
+    // ---- NAVIGATION: respond BEFORE navigating to avoid channel death ----
+    if (action === "navigateToChat") {
+      // Respond immediately — the navigation will kill this context
+      sendResponse({ navigating: true });
+
+      // Do the navigation AFTER responding (fire and forget)
+      setTimeout(() => {
+        try {
+          const targetUrl = request.url;
+          // Try clicking sidebar link first (SPA navigation)
+          const links = document.querySelectorAll(config.chatLinks);
+          let clicked = false;
+          for (const link of links) {
+            const href = link.getAttribute("href") || link.href || "";
+            if (href === targetUrl || link.href === targetUrl || targetUrl.endsWith(href)) {
+              link.click();
+              clicked = true;
+              break;
+            }
+          }
+          // Fallback: direct URL change
+          if (!clicked) {
+            window.location.href = targetUrl;
+          }
+        } catch (e) {
+          // Context might already be dead, that's fine
+        }
+      }, 50);
+
+      return false; // We already responded synchronously
+    }
+
+    // Unknown action
+    sendResponse({ error: "Unknown action: " + action });
+    return false;
   });
 
-  console.log(`[AI Session Extractor] ${config.name} content script v4 loaded (${PLATFORM})`);
+  console.log(`[AI Session Extractor] ${config.name} content script v4.1 loaded (${PLATFORM})`);
 })();

@@ -1,7 +1,6 @@
 // ============================================================
-// AI Session Extractor - Background Service Worker v4
-// Multi-tab, multi-platform batch engine
-// Runs independently of popup — survives popup close
+// AI Session Extractor - Background Service Worker v4.1
+// FIX: handles "message channel closed" errors during navigation
 // ============================================================
 
 const AI_URL_PATTERNS = [
@@ -15,7 +14,7 @@ const AI_URL_PATTERNS = [
 let batchState = {
   running: false,
   cancelled: false,
-  phase: "idle", // idle | collecting | extracting | done
+  phase: "idle",
   totalTabs: 0,
   currentTab: 0,
   currentPlatform: "",
@@ -37,26 +36,7 @@ chrome.runtime.onInstalled.addListener(() => {
         id: "extract-conversation",
         title: "Extract AI Conversation",
         contexts: ["page"],
-        documentUrlPatterns: [
-          "https://gemini.google.com/*",
-          "https://chatgpt.com/*",
-          "https://chat.openai.com/*",
-          "https://claude.ai/*",
-          "https://chat.deepseek.com/*",
-          "https://copilot.microsoft.com/*",
-          "https://grok.com/*",
-          "https://kimi.moonshot.cn/*",
-          "https://meta.ai/*",
-          "https://www.meta.ai/*",
-          "https://hailuoai.com/*",
-          "https://www.hailuoai.com/*",
-          "https://minimax.io/*",
-          "https://www.minimax.io/*",
-          "https://manus.im/*",
-          "https://manus.app/*",
-          "https://z.ai/*",
-          "https://www.z.ai/*"
-        ],
+        documentUrlPatterns: AI_URL_PATTERNS.map(p => `https://${p}/*`),
       });
     });
   } catch (e) { console.log("[BG] Context menu setup skipped:", e.message); }
@@ -84,13 +64,11 @@ chrome.contextMenus.onClicked.addListener(async (info, tab) => {
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   switch (request.action) {
 
-    // ---- Discover all open AI tabs ----
     case "discoverTabs": {
       discoverAITabs().then(tabs => sendResponse(tabs));
       return true;
     }
 
-    // ---- Start batch on specific tab ----
     case "startBatch": {
       if (batchState.running) { sendResponse({ error: "Batch already running" }); return true; }
       startBatchExtraction([request.tabId]);
@@ -98,7 +76,6 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
       break;
     }
 
-    // ---- Start batch across ALL open AI tabs ----
     case "startMultiBatch": {
       if (batchState.running) { sendResponse({ error: "Batch already running" }); return true; }
       (async () => {
@@ -151,7 +128,6 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
       break;
     }
 
-    // ---- History ----
     case "saveSession": {
       (async () => {
         const { history = [] } = await chrome.storage.local.get("history");
@@ -190,7 +166,6 @@ async function discoverAITabs() {
     const url = tab.url || "";
     for (const pattern of AI_URL_PATTERNS) {
       if (url.includes(pattern)) {
-        // Try to ping the content script to get platform name
         let platformName = pattern.split(".")[0];
         try {
           await ensureContentScript(tab.id);
@@ -226,26 +201,24 @@ async function startBatchExtraction(tabIds) {
       batchState.currentTab = t + 1;
       batchState.phase = "collecting";
 
-      // Get tab info
       let tabInfo;
       try { tabInfo = await chrome.tabs.get(tabId); } catch (e) { addLog(`⚠️ Tab ${tabId} closed, skipping.`); continue; }
 
       await ensureContentScript(tabId);
-      await sleep(300);
+      await sleep(500);
 
-      // Ping to get platform
       let ping;
       try { ping = await sendToTab(tabId, { action: "ping" }); } catch (e) { addLog(`⚠️ Can't reach tab: ${tabInfo.url}`); continue; }
       const platformName = ping?.platformName || "Unknown";
       batchState.currentPlatform = platformName;
       addLog(`\n🌐 [Tab ${t + 1}/${tabIds.length}] ${platformName} — ${tabInfo.url}`);
 
-      // Collect all chats from this tab's sidebar
+      // Collect all chats from sidebar
       let chatList;
-      try { chatList = await sendToTab(tabId, { action: "collectAllChats" }); } catch (e) { addLog(`  ❌ Failed to collect chats: ${e.message}`); batchState.failedCount++; continue; }
+      try { chatList = await sendToTab(tabId, { action: "collectAllChats" }); }
+      catch (e) { addLog(`  ❌ Failed to collect chats: ${e.message}`); batchState.failedCount++; continue; }
 
       if (!chatList || !chatList.chats || chatList.chats.length === 0) {
-        // No sidebar chats — just extract the current conversation
         addLog(`  ℹ️ No sidebar history found. Extracting current conversation...`);
         batchState.phase = "extracting";
         batchState.totalChats++;
@@ -263,7 +236,7 @@ async function startBatchExtraction(tabIds) {
         continue;
       }
 
-      // Extract each chat in this tab
+      // Extract each chat
       const total = chatList.chats.length;
       addLog(`  📋 Found ${total} conversations. Extracting...`);
       batchState.phase = "extracting";
@@ -279,21 +252,68 @@ async function startBatchExtraction(tabIds) {
         addLog(`  📂 [${i + 1}/${total}] ${shortTitle}`);
 
         try {
-          await sendToTab(tabId, { action: "navigateToChat", url: chat.url });
-          await sleep(2000);
+          // ---- NAVIGATE (fire-and-forget via executeScript) ----
+          // We use executeScript instead of sendMessage to avoid channel-closed errors
+          await chrome.scripting.executeScript({
+            target: { tabId },
+            func: (url, chatLinksSelector) => {
+              // Try clicking sidebar link
+              const links = document.querySelectorAll(chatLinksSelector);
+              for (const link of links) {
+                const href = link.getAttribute("href") || link.href || "";
+                if (href === url || link.href === url || url.endsWith(href)) {
+                  link.click();
+                  return;
+                }
+              }
+              // Fallback: direct navigation
+              window.location.href = url;
+            },
+            args: [chat.url, getChatLinksSelector(platformName)],
+          });
+
+          // Wait for SPA navigation to complete
+          await sleep(3000);
+
+          // Re-inject content script (old one is dead after navigation)
           await ensureContentScript(tabId);
-          await sleep(500);
+          await sleep(800);
 
-          const waitResult = await sendToTab(tabId, { action: "waitForContent", maxWait: 10000 });
-          if (!waitResult || !waitResult.ready) { addLog(`    ⚠️ Skipped (didn't load)`); batchState.failedCount++; continue; }
+          // Wait for conversation content to render
+          let waitResult;
+          try {
+            waitResult = await sendToTab(tabId, { action: "waitForContent", maxWait: 12000 });
+          } catch (e) {
+            // Content script might still be initializing, retry
+            await sleep(2000);
+            await ensureContentScript(tabId);
+            await sleep(500);
+            try {
+              waitResult = await sendToTab(tabId, { action: "waitForContent", maxWait: 10000 });
+            } catch (e2) {
+              addLog(`    ⚠️ Skipped (content script unreachable)`);
+              batchState.failedCount++;
+              continue;
+            }
+          }
 
+          if (!waitResult || !waitResult.ready) {
+            addLog(`    ⚠️ Skipped (content didn't load in time)`);
+            batchState.failedCount++;
+            continue;
+          }
+
+          // Extract the conversation
           const conv = await sendToTab(tabId, { action: "extract" });
           if (conv && conv.messages && conv.messages.length > 0) {
             conv.chatId = chat.id;
             conv.sidebarTitle = chat.title;
             batchState.conversations.push(conv);
             addLog(`    ✅ ${conv.messages.length} messages`);
-          } else { addLog(`    ⚠️ No messages`); batchState.failedCount++; }
+          } else {
+            addLog(`    ⚠️ No messages found`);
+            batchState.failedCount++;
+          }
         } catch (e) {
           addLog(`    ❌ ${e.message}`);
           batchState.failedCount++;
@@ -303,7 +323,6 @@ async function startBatchExtraction(tabIds) {
       }
     }
 
-    // Done
     const totalMsgs = batchState.conversations.reduce((s, c) => s + c.messageCount, 0);
     addLog(`\n🎉 Complete! ${batchState.conversations.length} chats, ${totalMsgs} messages total. ${batchState.failedCount > 0 ? batchState.failedCount + " failed." : ""}`);
   } catch (e) {
@@ -320,6 +339,23 @@ async function startBatchExtraction(tabIds) {
 // HELPERS
 // ============================================================
 
+function getChatLinksSelector(platformName) {
+  const map = {
+    "Gemini": '[data-test-id="conversation"] a, a[href*="/app/"]',
+    "ChatGPT": 'nav a[href*="/c/"], a[href*="/c/"]',
+    "Claude": 'a[href*="/chat/"]',
+    "DeepSeek": 'a[href*="/chat/"]',
+    "Copilot": 'a[href*="/search/"]',
+    "Grok": 'a[href*="/chat/"]',
+    "Kimi": 'a[href*="/chat/"]',
+    "Meta AI": 'a[href*="/chat/"]',
+    "MiniMax": 'a[href*="/chat/"]',
+    "Manus": 'a[href*="/task/"], a[href*="/chat/"]',
+    "Zai": 'a[href*="/chat/"]',
+  };
+  return map[platformName] || 'a[href*="/chat/"], a[href*="/c/"]';
+}
+
 function addLog(msg) {
   batchState.log.push({ time: Date.now(), msg });
   if (batchState.log.length > 300) batchState.log = batchState.log.slice(-300);
@@ -327,21 +363,48 @@ function addLog(msg) {
 
 async function ensureContentScript(tabId) {
   try {
-    await chrome.scripting.executeScript({ target: { tabId }, files: ["content.js"] });
-    await sleep(200);
-  } catch (e) {}
+    // Use world: "MAIN" check first, or just re-inject
+    // The content script has a guard (window.__AI_EXTRACTOR_LOADED__)
+    // but after navigation that flag is gone, so re-injection works
+    await chrome.scripting.executeScript({
+      target: { tabId },
+      files: ["content.js"],
+    });
+    await sleep(300);
+  } catch (e) {
+    // Tab might not be ready yet
+    console.log("[BG] ensureContentScript failed:", e.message);
+  }
 }
 
-async function sendToTab(tabId, msg, retries = 2) {
+async function sendToTab(tabId, msg, retries = 3) {
   for (let i = 0; i <= retries; i++) {
-    try { return await chrome.tabs.sendMessage(tabId, msg); }
-    catch (e) {
-      if (i < retries) { await sleep(1000); await ensureContentScript(tabId); await sleep(500); }
-      else throw e;
+    try {
+      const resp = await chrome.tabs.sendMessage(tabId, msg);
+      return resp;
+    } catch (e) {
+      const errMsg = e.message || "";
+      // "message channel closed" = context was destroyed during navigation
+      // This is expected, just retry after re-injecting
+      if (errMsg.includes("message channel closed") || errMsg.includes("Could not establish connection") || errMsg.includes("Receiving end does not exist")) {
+        if (i < retries) {
+          await sleep(1500);
+          await ensureContentScript(tabId);
+          await sleep(800);
+          continue;
+        }
+      }
+      if (i < retries) {
+        await sleep(1000);
+        await ensureContentScript(tabId);
+        await sleep(500);
+      } else {
+        throw e;
+      }
     }
   }
 }
 
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 
-console.log("[AI Session Extractor] Background v4 loaded (multi-tab, multi-platform engine)");
+console.log("[AI Session Extractor] Background v4.1 loaded (fixed channel-closed errors)");
