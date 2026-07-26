@@ -331,6 +331,23 @@ body {
   font-size: 15px;
 }
 
+.btn-dump {
+  background: linear-gradient(135deg, #0ea5e9, #06b6d4);
+  color: white;
+}
+
+.btn-dump:hover {
+  background: linear-gradient(135deg, #0284c7, #0891b2);
+  transform: translateY(-1px);
+}
+
+.btn-dump:disabled {
+  background: #1e293b;
+  color: #64748b;
+  cursor: not-allowed;
+  transform: none;
+}
+
 /* Open AI Tabs Section */
 .tabs-section {
   background: #1a1a24;

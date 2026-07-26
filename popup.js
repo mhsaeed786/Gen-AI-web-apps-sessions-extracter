@@ -1,7 +1,6 @@
 // ============================================================
-// AI Session Extractor - Popup v4
-// Multi-tab, multi-platform UI. Batch runs in background.
-// Closing popup does NOT stop extraction.
+// AI Session Extractor - Popup v4.1
+// Added: "Dump DOMs" button — scrapes every open AI tab at once
 // ============================================================
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -15,6 +14,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const btnExtract = $("btn-extract");
   const btnExtractAll = $("btn-extract-all");
   const btnExtractMulti = $("btn-extract-multi");
+  const btnDump = $("btn-dump");
   const btnCapture = $("btn-capture");
   const captureLabel = $("capture-label");
   const captureStatus = $("capture-status");
@@ -59,6 +59,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         ["grok.com", "Grok"], ["x.com/i/grok", "Grok"], ["kimi.moonshot.cn", "Kimi"],
         ["meta.ai", "Meta AI"], ["hailuoai.com", "MiniMax"], ["minimax.io", "MiniMax"],
         ["manus.im", "Manus"], ["manus.app", "Manus"], ["z.ai", "Zai"],
+        ["perplexity.ai", "Perplexity"], ["poe.com", "Poe"], ["chat.mistral.ai", "Mistral"],
+        ["chatglm.cn", "ChatGLM"], ["kimi.moonshot.cn", "Kimi"],
       ];
       for (const [pattern, name] of platforms) {
         if (url.includes(pattern)) { setStatus("active", `${name} detected ✓`); return; }
@@ -141,6 +143,36 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (resp && resp.started) { showBatchUI(); startPolling(); showMsg("info", `Extracting from ${resp.tabCount} AI tabs in background. Close popup freely!`); }
       else if (resp && resp.error) showMsg("error", resp.error);
     } catch (e) { showMsg("error", e.message); }
+  });
+
+  // ============================================================
+  // DUMP DOMs OF ALL OPEN AI TABS
+  // ============================================================
+  btnDump.addEventListener("click", async () => {
+    hideMsg(); results.classList.add("hidden");
+    btnDump.disabled = true;
+    btnDump.innerHTML = '<span class="btn-icon">⏳</span> Dumping...';
+    try {
+      const resp = await chrome.runtime.sendMessage({ action: "dumpAllDOMs" });
+      if (resp && resp.downloaded && resp.downloads && resp.downloads.length > 0) {
+        showMsg("success", `Dumped ${resp.downloads.length} AI tabs! Check your Downloads folder.`);
+        results.classList.remove("hidden");
+        resultsTitle.textContent = "DOM Dumps";
+        msgCount.textContent = `${resp.downloads.length} files`;
+        preview.innerHTML = resp.downloads.map(d =>
+          `<div class="conv-block">
+            <div class="conv-title">🔍 [${esc(d.platform || "unknown")}] ${esc(d.hostname || "")}</div>
+            <div style="font-size:10px;color:#a5b4fc;padding:2px 0">Filename: ${esc(d.filename)}</div>
+            <div style="font-size:10px;color:#71717a;padding:2px 0">Message selectors found: ${d.messageSelectorCount || 0} · Custom elements: ${d.customElementCount || 0}</div>
+          </div>`
+        ).join("");
+      } else if (resp && resp.error) {
+        showMsg("error", resp.error);
+      } else {
+        showMsg("error", "No AI tabs found with active conversations.");
+      }
+    } catch (e) { showMsg("error", "Failed: " + e.message); }
+    finally { btnDump.disabled = false; btnDump.innerHTML = '<span class="btn-icon">🔍</span> Dump DOMs of All Tabs'; }
   });
 
   btnCancelBatch.addEventListener("click", async () => {
@@ -331,7 +363,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     return c;
   }
   function batchTxt(d) {
-    let t = `AI Session Extractor - ALL CHATS\nExported: ${d.exportedAt}\nConversations: ${d.conversationCount}\nTotal Messages: ${d.totalMessages}\n${"=".repeat(70)}\n`;
+    let t = `AI Session Extractor - ALL CHATS\nExported: ${d.exportedAt}\nConversations: ${d.conversationCount}\nTotal Messages: ${d.totalMessages}\n${"=".repeat(70)}`;
     d.conversations.forEach((conv, ci) => {
       t += `\n${"█".repeat(70)}\n[${conv.platformName || conv.platform}] ${conv.sidebarTitle || conv.title}\nURL: ${conv.url}\n${"█".repeat(70)}\n\n`;
       conv.messages.forEach((m, i) => { t += `[${m.role === "user" ? "YOU" : "AI"}] #${i + 1}\n${m.content}\n\n`; });

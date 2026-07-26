@@ -1,31 +1,21 @@
 // ============================================================
-// AI Session Extractor - Background Service Worker v4.1
-// FIX: handles "message channel closed" errors during navigation
+// AI Session Extractor - Background Service Worker v4.1b
+// Added: dumpAllDOMs action to scrape all open AI tabs at once
 // ============================================================
 
 const AI_URL_PATTERNS = [
   "gemini.google.com", "chatgpt.com", "chat.openai.com", "claude.ai",
   "chat.deepseek.com", "copilot.microsoft.com", "grok.com", "x.com/i/grok",
   "kimi.moonshot.cn", "meta.ai", "hailuoai.com", "minimax.io",
-  "manus.im", "manus.app", "z.ai",
+  "manus.im", "manus.app", "z.ai", "perplexity.ai", "poe.com",
+  "chat.mistral.ai", "chatglm.cn", "tongyi.aliyun.com", "yiyan.baidu.com",
 ];
 
-// ---- Batch State ----
 let batchState = {
-  running: false,
-  cancelled: false,
-  phase: "idle",
-  totalTabs: 0,
-  currentTab: 0,
-  currentPlatform: "",
-  currentChatTitle: "",
-  totalChats: 0,
-  currentChat: 0,
-  conversations: [],
-  failedCount: 0,
-  log: [],
-  done: false,
-  error: null,
+  running: false, cancelled: false, phase: "idle",
+  totalTabs: 0, currentTab: 0, currentPlatform: "", currentChatTitle: "",
+  totalChats: 0, currentChat: 0,
+  conversations: [], failedCount: 0, log: [], done: false, error: null,
 };
 
 // ---- Install ----
@@ -33,9 +23,7 @@ chrome.runtime.onInstalled.addListener(() => {
   try {
     chrome.contextMenus.removeAll(() => {
       chrome.contextMenus.create({
-        id: "extract-conversation",
-        title: "Extract AI Conversation",
-        contexts: ["page"],
+        id: "extract-conversation", title: "Extract AI Conversation", contexts: ["page"],
         documentUrlPatterns: AI_URL_PATTERNS.map(p => `https://${p}/*`),
       });
     });
@@ -60,10 +48,8 @@ chrome.contextMenus.onClicked.addListener(async (info, tab) => {
 // ============================================================
 // MESSAGE HANDLER
 // ============================================================
-
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   switch (request.action) {
-
     case "discoverTabs": {
       discoverAITabs().then(tabs => sendResponse(tabs));
       return true;
@@ -87,6 +73,16 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
       return true;
     }
 
+    case "dumpAllDOMs": {
+      (async () => {
+        const tabs = await discoverAITabs();
+        if (tabs.length === 0) { sendResponse({ error: "No AI tabs found open" }); return; }
+        const downloads = await dumpAllDOMs(tabs);
+        sendResponse({ downloaded: downloads.length > 0, downloads });
+      })();
+      return true;
+    }
+
     case "cancelBatch": {
       batchState.cancelled = true;
       sendResponse({ cancelled: true });
@@ -95,19 +91,12 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 
     case "getBatchProgress": {
       sendResponse({
-        running: batchState.running,
-        done: batchState.done,
-        phase: batchState.phase,
-        totalTabs: batchState.totalTabs,
-        currentTab: batchState.currentTab,
-        currentPlatform: batchState.currentPlatform,
-        currentChatTitle: batchState.currentChatTitle,
-        totalChats: batchState.totalChats,
-        currentChat: batchState.currentChat,
-        successCount: batchState.conversations.length,
-        failedCount: batchState.failedCount,
-        log: batchState.log.slice(-40),
-        error: batchState.error,
+        running: batchState.running, done: batchState.done, phase: batchState.phase,
+        totalTabs: batchState.totalTabs, currentTab: batchState.currentTab,
+        currentPlatform: batchState.currentPlatform, currentChatTitle: batchState.currentChatTitle,
+        totalChats: batchState.totalChats, currentChat: batchState.currentChat,
+        successCount: batchState.conversations.length, failedCount: batchState.failedCount,
+        log: batchState.log.slice(-40), error: batchState.error,
       });
       break;
     }
@@ -115,16 +104,13 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     case "getBatchResults": {
       if (batchState.conversations.length > 0) {
         sendResponse({
-          platform: "multi",
-          exportedAt: new Date().toISOString(),
+          platform: "multi", exportedAt: new Date().toISOString(),
           conversationCount: batchState.conversations.length,
           totalMessages: batchState.conversations.reduce((s, c) => s + c.messageCount, 0),
           failedCount: batchState.failedCount,
           conversations: batchState.conversations,
         });
-      } else {
-        sendResponse(null);
-      }
+      } else { sendResponse(null); }
       break;
     }
 
@@ -138,10 +124,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
       return true;
     }
     case "getHistory": {
-      (async () => {
-        const { history = [] } = await chrome.storage.local.get("history");
-        sendResponse(history);
-      })();
+      (async () => { const { history = [] } = await chrome.storage.local.get("history"); sendResponse(history); })();
       return true;
     }
     case "clearHistory": {
@@ -158,7 +141,6 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 // ============================================================
 // DISCOVER OPEN AI TABS
 // ============================================================
-
 async function discoverAITabs() {
   const allTabs = await chrome.tabs.query({});
   const aiTabs = [];
@@ -181,14 +163,64 @@ async function discoverAITabs() {
 }
 
 // ============================================================
+// DUMP DOMs OF ALL AI TABS
+// ============================================================
+async function dumpAllDOMs(tabs) {
+  const downloads = [];
+  for (const tab of tabs) {
+    try {
+      await ensureContentScript(tab.id);
+      await sleep(500);
+
+      let dump = null;
+      let attempts = 0;
+      while (attempts < 3) {
+        attempts++;
+        try {
+          dump = await sendToTab(tab.id, { action: "dumpDOM" });
+          if (dump) break;
+        } catch (e) {
+          if (attempts < 3) { await sleep(1000); await ensureContentScript(tab.id); await sleep(500); }
+        }
+      }
+
+      if (!dump) continue;
+
+      // Download as JSON file
+      const platform = dump.meta?.platform || tab.platform || "unknown";
+      const stamp = new Date().toISOString().replace(/[:.]/g, "-");
+      const filename = `dom-dump-${platform}-${stamp}.json`;
+      const blob = new Blob([JSON.stringify(dump, null, 2)], { type: "application/json" });
+
+      const dataUrl = await new Promise((resolve) => {
+        const fr = new FileReader();
+        fr.onloadend = () => resolve(fr.result);
+        fr.readAsDataURL(blob);
+      });
+
+      const downloadId = await chrome.downloads.download({ url: dataUrl, filename, saveAs: false });
+      downloads.push({
+        tabId: tab.id, platform, hostname: dump.meta?.host || new URL(tab.url).hostname,
+        filename, downloadId,
+        messageSelectorCount: Object.keys(dump.messages || {}).length,
+        customElementCount: dump.customElements?.length || 0,
+        url: tab.url,
+      });
+      console.log(`[BG] DOM dump downloaded: ${filename}`);
+    } catch (e) {
+      console.error(`[BG] Failed to dump tab ${tab.id}:`, e);
+    }
+  }
+  return downloads;
+}
+
+// ============================================================
 // MULTI-TAB BATCH ENGINE
 // ============================================================
-
 async function startBatchExtraction(tabIds) {
   batchState = {
     running: true, cancelled: false, phase: "collecting",
-    totalTabs: tabIds.length, currentTab: 0,
-    currentPlatform: "", currentChatTitle: "",
+    totalTabs: tabIds.length, currentTab: 0, currentPlatform: "", currentChatTitle: "",
     totalChats: 0, currentChat: 0,
     conversations: [], failedCount: 0, log: [], done: false, error: null,
   };
@@ -213,7 +245,6 @@ async function startBatchExtraction(tabIds) {
       batchState.currentPlatform = platformName;
       addLog(`\n🌐 [Tab ${t + 1}/${tabIds.length}] ${platformName} — ${tabInfo.url}`);
 
-      // Collect all chats from sidebar
       let chatList;
       try { chatList = await sendToTab(tabId, { action: "collectAllChats" }); }
       catch (e) { addLog(`  ❌ Failed to collect chats: ${e.message}`); batchState.failedCount++; continue; }
@@ -221,8 +252,7 @@ async function startBatchExtraction(tabIds) {
       if (!chatList || !chatList.chats || chatList.chats.length === 0) {
         addLog(`  ℹ️ No sidebar history found. Extracting current conversation...`);
         batchState.phase = "extracting";
-        batchState.totalChats++;
-        batchState.currentChat = batchState.totalChats;
+        batchState.totalChats++; batchState.currentChat = batchState.totalChats;
         batchState.currentChatTitle = "Current conversation";
 
         try {
@@ -236,7 +266,6 @@ async function startBatchExtraction(tabIds) {
         continue;
       }
 
-      // Extract each chat
       const total = chatList.chats.length;
       addLog(`  📋 Found ${total} conversations. Extracting...`);
       batchState.phase = "extracting";
@@ -245,78 +274,52 @@ async function startBatchExtraction(tabIds) {
         if (batchState.cancelled) break;
 
         const chat = chatList.chats[i];
-        batchState.totalChats++;
-        batchState.currentChat = batchState.totalChats;
+        batchState.totalChats++; batchState.currentChat = batchState.totalChats;
         batchState.currentChatTitle = chat.title;
         const shortTitle = chat.title.length > 45 ? chat.title.substring(0, 45) + "..." : chat.title;
         addLog(`  📂 [${i + 1}/${total}] ${shortTitle}`);
 
         try {
-          // ---- NAVIGATE (fire-and-forget via executeScript) ----
-          // We use executeScript instead of sendMessage to avoid channel-closed errors
+          // Navigate via executeScript to avoid channel-closed errors
           await chrome.scripting.executeScript({
             target: { tabId },
             func: (url, chatLinksSelector) => {
-              // Try clicking sidebar link
               const links = document.querySelectorAll(chatLinksSelector);
               for (const link of links) {
                 const href = link.getAttribute("href") || link.href || "";
                 if (href === url || link.href === url || url.endsWith(href)) {
-                  link.click();
-                  return;
+                  link.click(); return;
                 }
               }
-              // Fallback: direct navigation
               window.location.href = url;
             },
             args: [chat.url, getChatLinksSelector(platformName)],
           });
 
-          // Wait for SPA navigation to complete
           await sleep(3000);
-
-          // Re-inject content script (old one is dead after navigation)
           await ensureContentScript(tabId);
           await sleep(800);
 
-          // Wait for conversation content to render
           let waitResult;
-          try {
-            waitResult = await sendToTab(tabId, { action: "waitForContent", maxWait: 12000 });
-          } catch (e) {
-            // Content script might still be initializing, retry
-            await sleep(2000);
-            await ensureContentScript(tabId);
-            await sleep(500);
-            try {
-              waitResult = await sendToTab(tabId, { action: "waitForContent", maxWait: 10000 });
-            } catch (e2) {
-              addLog(`    ⚠️ Skipped (content script unreachable)`);
-              batchState.failedCount++;
-              continue;
-            }
+          try { waitResult = await sendToTab(tabId, { action: "waitForContent", maxWait: 12000 }); }
+          catch (e) {
+            await sleep(2000); await ensureContentScript(tabId); await sleep(500);
+            try { waitResult = await sendToTab(tabId, { action: "waitForContent", maxWait: 10000 }); }
+            catch (e2) { addLog(`    ⚠️ Skipped (content script unreachable)`); batchState.failedCount++; continue; }
           }
 
           if (!waitResult || !waitResult.ready) {
-            addLog(`    ⚠️ Skipped (content didn't load in time)`);
-            batchState.failedCount++;
-            continue;
+            addLog(`    ⚠️ Skipped (content didn't load in time)`); batchState.failedCount++; continue;
           }
 
-          // Extract the conversation
           const conv = await sendToTab(tabId, { action: "extract" });
           if (conv && conv.messages && conv.messages.length > 0) {
-            conv.chatId = chat.id;
-            conv.sidebarTitle = chat.title;
+            conv.chatId = chat.id; conv.sidebarTitle = chat.title;
             batchState.conversations.push(conv);
             addLog(`    ✅ ${conv.messages.length} messages`);
-          } else {
-            addLog(`    ⚠️ No messages found`);
-            batchState.failedCount++;
-          }
+          } else { addLog(`    ⚠️ No messages found`); batchState.failedCount++; }
         } catch (e) {
-          addLog(`    ❌ ${e.message}`);
-          batchState.failedCount++;
+          addLog(`    ❌ ${e.message}`); batchState.failedCount++;
           try { await ensureContentScript(tabId); } catch (_) {}
         }
         await sleep(1000);
@@ -329,16 +332,13 @@ async function startBatchExtraction(tabIds) {
     batchState.error = e.message;
     addLog(`❌ Fatal: ${e.message}`);
   } finally {
-    batchState.running = false;
-    batchState.done = true;
-    batchState.phase = "done";
+    batchState.running = false; batchState.done = true; batchState.phase = "done";
   }
 }
 
 // ============================================================
 // HELPERS
 // ============================================================
-
 function getChatLinksSelector(platformName) {
   const map = {
     "Gemini": '[data-test-id="conversation"] a, a[href*="/app/"]',
@@ -352,8 +352,11 @@ function getChatLinksSelector(platformName) {
     "MiniMax": 'a[href*="/chat/"]',
     "Manus": 'a[href*="/task/"], a[href*="/chat/"]',
     "Zai": 'a[href*="/chat/"]',
+    "Perplexity": 'a[href*="/search/"], a[href*="/thread/"]',
+    "Poe": 'a[href*="/chat/"]',
+    "Mistral": 'a[href*="/chat/"]',
   };
-  return map[platformName] || 'a[href*="/chat/"], a[href*="/c/"]';
+  return map[platformName] || 'a[href*="/chat/"], a[href*="/c/"], a[href*="/conversation/"]';
 }
 
 function addLog(msg) {
@@ -363,48 +366,26 @@ function addLog(msg) {
 
 async function ensureContentScript(tabId) {
   try {
-    // Use world: "MAIN" check first, or just re-inject
-    // The content script has a guard (window.__AI_EXTRACTOR_LOADED__)
-    // but after navigation that flag is gone, so re-injection works
-    await chrome.scripting.executeScript({
-      target: { tabId },
-      files: ["content.js"],
-    });
+    await chrome.scripting.executeScript({ target: { tabId }, files: ["content.js"] });
     await sleep(300);
-  } catch (e) {
-    // Tab might not be ready yet
-    console.log("[BG] ensureContentScript failed:", e.message);
-  }
+  } catch (e) { console.log("[BG] ensureContentScript failed:", e.message); }
 }
 
 async function sendToTab(tabId, msg, retries = 3) {
   for (let i = 0; i <= retries; i++) {
     try {
-      const resp = await chrome.tabs.sendMessage(tabId, msg);
-      return resp;
+      return await chrome.tabs.sendMessage(tabId, msg);
     } catch (e) {
       const errMsg = e.message || "";
-      // "message channel closed" = context was destroyed during navigation
-      // This is expected, just retry after re-injecting
       if (errMsg.includes("message channel closed") || errMsg.includes("Could not establish connection") || errMsg.includes("Receiving end does not exist")) {
-        if (i < retries) {
-          await sleep(1500);
-          await ensureContentScript(tabId);
-          await sleep(800);
-          continue;
-        }
+        if (i < retries) { await sleep(1500); await ensureContentScript(tabId); await sleep(800); continue; }
       }
-      if (i < retries) {
-        await sleep(1000);
-        await ensureContentScript(tabId);
-        await sleep(500);
-      } else {
-        throw e;
-      }
+      if (i < retries) { await sleep(1000); await ensureContentScript(tabId); await sleep(500); }
+      else throw e;
     }
   }
 }
 
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 
-console.log("[AI Session Extractor] Background v4.1 loaded (fixed channel-closed errors)");
+console.log("[AI Session Extractor] Background v4.1b loaded (dumpAllDOMs added)");
