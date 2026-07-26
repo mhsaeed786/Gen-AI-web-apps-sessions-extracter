@@ -50,8 +50,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   // ============================================================
   async function detectPlatform() {
     try {
-      const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-      if (!tab) { setStatus("error", "No active tab"); return; }
+      let tab;
+      const activeTabs = await chrome.tabs.query({ active: true, currentWindow: true });
+      if (activeTabs && activeTabs.length > 0) tab = activeTabs[0];
+      else { setStatus("error", "No active tab"); return; }
+
       const url = tab.url || "";
       const platforms = [
         ["gemini.google.com", "Gemini"], ["chatgpt.com", "ChatGPT"], ["chat.openai.com", "ChatGPT"],
@@ -110,7 +113,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     try {
       const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
       await inject(tab.id);
-      const resp = await chrome.tabs.sendMessage(tab.id, { action: "extract" });
+      // Retry once if content script not yet ready
+      let resp = null;
+      try { resp = await chrome.tabs.sendMessage(tab.id, { action: "extract" }); }
+      catch (e1) { await sleep(800); resp = await chrome.tabs.sendMessage(tab.id, { action: "extract" }); }
+
       if (resp && resp.messages && resp.messages.length > 0) {
         extractedData = resp; allChatsData = null;
         showSingleResults(resp);
@@ -399,7 +406,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   // UTILITIES
   // ============================================================
   async function inject(tabId) {
-    try { await chrome.scripting.executeScript({ target: { tabId }, files: ["content.js"] }); await sleep(300); } catch (e) {}
+    try {
+      await chrome.scripting.executeScript({ target: { tabId }, files: ["content.js"] });
+      await sleep(500);
+    } catch (e) { console.error('[Popup] Inject failed:', e); }
   }
   function showMsg(type, text) { messageBox.className = `message-box ${type}`; messageBox.textContent = text; messageBox.classList.remove("hidden"); setTimeout(() => messageBox.classList.add("hidden"), 8000); }
   function hideMsg() { messageBox.classList.add("hidden"); }

@@ -49,48 +49,61 @@ chrome.contextMenus.onClicked.addListener(async (info, tab) => {
 // MESSAGE HANDLER
 // ============================================================
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+  // Keep service worker alive during async operations
+  let aliveTimer = null;
+  function keepAlive() {
+    if (aliveTimer) clearTimeout(aliveTimer);
+    aliveTimer = setTimeout(() => {}, 1000); // prevents SW termination
+  }
+
   switch (request.action) {
     case "discoverTabs": {
-      discoverAITabs().then(tabs => sendResponse(tabs));
+      keepAlive();
+      discoverAITabs().then(tabs => { safeSend(tabs); if (aliveTimer) clearTimeout(aliveTimer); });
       return true;
     }
 
     case "startBatch": {
-      if (batchState.running) { sendResponse({ error: "Batch already running" }); return true; }
+      keepAlive();
+      if (batchState.running) { safeSend({ error: "Batch already running" }); return true; }
       startBatchExtraction([request.tabId]);
-      sendResponse({ started: true });
+      safeSend({ started: true });
       break;
     }
 
     case "startMultiBatch": {
-      if (batchState.running) { sendResponse({ error: "Batch already running" }); return true; }
+      keepAlive();
+      if (batchState.running) { safeSend({ error: "Batch already running" }); return true; }
       (async () => {
         const tabs = await discoverAITabs();
-        if (tabs.length === 0) { sendResponse({ error: "No AI tabs found open" }); return; }
+        if (tabs.length === 0) { safeSend({ error: "No AI tabs found open" }); if (aliveTimer) clearTimeout(aliveTimer); return; }
         startBatchExtraction(tabs.map(t => t.id));
-        sendResponse({ started: true, tabCount: tabs.length });
+        safeSend({ started: true, tabCount: tabs.length });
+        if (aliveTimer) clearTimeout(aliveTimer);
       })();
       return true;
     }
 
     case "dumpAllDOMs": {
+      keepAlive();
       (async () => {
         const tabs = await discoverAITabs();
-        if (tabs.length === 0) { sendResponse({ error: "No AI tabs found open" }); return; }
+        if (tabs.length === 0) { safeSend({ error: "No AI tabs found open" }); if (aliveTimer) clearTimeout(aliveTimer); return; }
         const downloads = await dumpAllDOMs(tabs);
-        sendResponse({ downloaded: downloads.length > 0, downloads });
+        safeSend({ downloaded: downloads.length > 0, downloads });
+        if (aliveTimer) clearTimeout(aliveTimer);
       })();
       return true;
     }
 
     case "cancelBatch": {
       batchState.cancelled = true;
-      sendResponse({ cancelled: true });
+      safeSend({ cancelled: true });
       break;
     }
 
     case "getBatchProgress": {
-      sendResponse({
+      safeSend({
         running: batchState.running, done: batchState.done, phase: batchState.phase,
         totalTabs: batchState.totalTabs, currentTab: batchState.currentTab,
         currentPlatform: batchState.currentPlatform, currentChatTitle: batchState.currentChatTitle,
@@ -103,37 +116,40 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 
     case "getBatchResults": {
       if (batchState.conversations.length > 0) {
-        sendResponse({
+        safeSend({
           platform: "multi", exportedAt: new Date().toISOString(),
           conversationCount: batchState.conversations.length,
           totalMessages: batchState.conversations.reduce((s, c) => s + c.messageCount, 0),
           failedCount: batchState.failedCount,
           conversations: batchState.conversations,
         });
-      } else { sendResponse(null); }
+      } else { safeSend(null); }
       break;
     }
 
     case "saveSession": {
+      keepAlive();
       (async () => {
         const { history = [] } = await chrome.storage.local.get("history");
         history.unshift({ ...request.data, savedAt: new Date().toISOString() });
         await chrome.storage.local.set({ history: history.slice(0, 100) });
-        sendResponse({ saved: true });
+        safeSend({ saved: true });
+        if (aliveTimer) clearTimeout(aliveTimer);
       })();
       return true;
     }
     case "getHistory": {
-      (async () => { const { history = [] } = await chrome.storage.local.get("history"); sendResponse(history); })();
+      keepAlive();
+      (async () => { const { history = [] } = await chrome.storage.local.get("history"); safeSend(history); if (aliveTimer) clearTimeout(aliveTimer); })();
       return true;
     }
     case "clearHistory": {
-      chrome.storage.local.set({ history: [] }).then(() => sendResponse({ cleared: true }));
+      chrome.storage.local.set({ history: [] }).then(() => { safeSend({ cleared: true }); });
       return true;
     }
 
     default:
-      sendResponse({ error: "Unknown action" });
+      safeSend({ error: "Unknown action" });
   }
   return true;
 });
@@ -167,6 +183,7 @@ async function discoverAITabs() {
 // ============================================================
 async function dumpAllDOMs(tabs) {
   const downloads = [];
+  keepAlive();
   for (const tab of tabs) {
     try {
       await ensureContentScript(tab.id);
@@ -184,21 +201,23 @@ async function dumpAllDOMs(tabs) {
         }
       }
 
-      if (!dump) continue;
+      if (!dump) { console.log(`[BG] No DOM dump from tab ${tab.id}`); continue; }
 
-      // Download as JSON file
+      // Download as JSON file (service-worker safe: Blob + URL.createObjectURL)
       const platform = dump.meta?.platform || tab.platform || "unknown";
       const stamp = new Date().toISOString().replace(/[:.]/g, "-");
       const filename = `dom-dump-${platform}-${stamp}.json`;
-      const blob = new Blob([JSON.stringify(dump, null, 2)], { type: "application/json" });
+      const json = JSON.stringify(dump, null, 2);
+      const blob = new Blob([json], { type: "application/json" });
+      const dataUrl = URL.createObjectURL(blob);
 
-      const dataUrl = await new Promise((resolve) => {
-        const fr = new FileReader();
-        fr.onloadend = () => resolve(fr.result);
-        fr.readAsDataURL(blob);
-      });
-
-      const downloadId = await chrome.downloads.download({ url: dataUrl, filename, saveAs: false });
+      let downloadId;
+      try {
+        downloadId = await chrome.downloads.download({ url: dataUrl, filename, saveAs: false });
+      } catch (dlErr) {
+        console.error(`[BG] Download failed for ${filename}:`, dlErr);
+      }
+      URL.revokeObjectURL(dataUrl);
       downloads.push({
         tabId: tab.id, platform, hostname: dump.meta?.host || new URL(tab.url).hostname,
         filename, downloadId,
@@ -210,7 +229,9 @@ async function dumpAllDOMs(tabs) {
     } catch (e) {
       console.error(`[BG] Failed to dump tab ${tab.id}:`, e);
     }
+    keepAlive();
   }
+  if (aliveTimer) clearTimeout(aliveTimer);
   return downloads;
 }
 
@@ -218,6 +239,7 @@ async function dumpAllDOMs(tabs) {
 // MULTI-TAB BATCH ENGINE
 // ============================================================
 async function startBatchExtraction(tabIds) {
+  keepAlive();
   batchState = {
     running: true, cancelled: false, phase: "collecting",
     totalTabs: tabIds.length, currentTab: 0, currentPlatform: "", currentChatTitle: "",
@@ -333,6 +355,7 @@ async function startBatchExtraction(tabIds) {
     addLog(`❌ Fatal: ${e.message}`);
   } finally {
     batchState.running = false; batchState.done = true; batchState.phase = "done";
+    if (aliveTimer) clearTimeout(aliveTimer);
   }
 }
 
