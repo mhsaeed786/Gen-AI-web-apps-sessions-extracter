@@ -1,0 +1,443 @@
+{
+  "meta": {
+    "platform": "unknown",
+    "url": "https://jules.google.com/repo/github/mhsaeed786/FHIR-mapping-agent-/overview",
+    "host": "jules.google.com",
+    "title": "Repo overview - Jules",
+    "scrapedAt": "2026-07-28T18:41:08.439Z",
+    "bodyClasses": "enable-motion underline-links"
+  },
+  "messages": {
+    "[class*=\"message\"]": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "cdk-describedby-message-container cdk-visually-hidden",
+          "dataAttrs": [],
+          "text": "Switch to light modeHide PanelSession is in progressThis feature is experimental and may change",
+          "childCount": 4,
+          "rect": {
+            "w": 1,
+            "h": 1
+          }
+        }
+      ]
+    },
+    "[class*=\"prompt\"]": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "swebot-sample-prompts-3p-scheduled",
+          "id": null,
+          "className": "sample-scheduled-prompts",
+          "dataAttrs": [],
+          "text": "schedule Schedule\n Schedule skill-based agents boltPerformancepaletteDesignshieldSecurity",
+          "childCount": 1,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        }
+      ]
+    },
+    "[class*=\"bot\"]": {
+      "count": 4,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "bottom-buttons-row",
+          "dataAttrs": [],
+          "text": "Docs\n    \n      \n        .cls-1 {\n          fill: currentcolor;\n        }",
+          "childCount": 3,
+          "rect": {
+            "w": 248,
+            "h": 34
+          }
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "className": "bottom-button docs-button tertiary has-start-icon",
+          "dataAttrs": [],
+          "text": "Docs",
+          "childCount": 2,
+          "rect": {
+            "w": 150,
+            "h": 34
+          }
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "className": "bottom-button tertiary has-start-icon",
+          "dataAttrs": [],
+          "text": ".cls-1 {\n          fill: currentcolor;\n        }",
+          "childCount": 2,
+          "rect": {
+            "w": 42,
+            "h": 34
+          }
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "className": "bottom-button x-logo tertiary has-start-icon",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 2,
+          "rect": {
+            "w": 40,
+            "h": 34
+          }
+        }
+      ]
+    },
+    "[class*=\"content\"]": {
+      "count": 6,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "main-content",
+          "dataAttrs": [],
+          "text": "jules Sessions Ultimate All-in-One Autonomous AI Super-AgentEnhanced AI Evaluation UI & Multi-Provid",
+          "childCount": 2,
+          "rect": {
+            "w": 1365,
+            "h": 945
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "source-content",
+          "dataAttrs": [],
+          "text": "Ultimate All-in-One Autonomous AI Super-AgentEnhanced AI Evaluation UI & Multi-Provider Integration",
+          "childCount": 2,
+          "rect": {
+            "w": 248,
+            "h": 65
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "source-content",
+          "dataAttrs": [],
+          "text": "mhsaeed786/FHIR-mapping-agent-mhsaeed786/Gen-AI-web-apps-sessions-extractermhsaeed786/Goose-Ultimate",
+          "childCount": 6,
+          "rect": {
+            "w": 248,
+            "h": 262
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "main-content-inner",
+          "dataAttrs": [],
+          "text": "julesmhsaeed786/FHIR-mapping-agent-light_modeFeedbackPROOverviewEnvironmentKnowledgeSuggestionsBetaC",
+          "childCount": 2,
+          "rect": {
+            "w": 1084,
+            "h": 945
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "source-content",
+          "dataAttrs": [],
+          "text": "All  Scheduled  Completed  Archived  New Once created, active sessions will show up hereCompleted s",
+          "childCount": 2,
+          "rect": {
+            "w": 884,
+            "h": 896
+          }
+        }
+      ]
+    },
+    "[class*=\"text\"]": {
+      "count": 10,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "logo-text",
+          "dataAttrs": [],
+          "text": "jules",
+          "childCount": 0,
+          "rect": {
+            "w": 34,
+            "h": 0
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "logo-text",
+          "dataAttrs": [],
+          "text": "jules",
+          "childCount": 0,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "tag": "span",
+          "id": null,
+          "className": "source-text",
+          "dataAttrs": [],
+          "text": "mhsaeed786/FHIR-mapping-agent-",
+          "childCount": 2,
+          "rect": {
+            "w": 246,
+            "h": 17
+          }
+        },
+        {
+          "tag": "span",
+          "id": null,
+          "className": "source-text-org",
+          "dataAttrs": [],
+          "text": "mhsaeed786/",
+          "childCount": 0,
+          "rect": {
+            "w": 90,
+            "h": 17
+          }
+        },
+        {
+          "tag": "span",
+          "id": null,
+          "className": "source-text-repo",
+          "dataAttrs": [],
+          "text": "FHIR-mapping-agent-",
+          "childCount": 0,
+          "rect": {
+            "w": 156,
+            "h": 17
+          }
+        }
+      ]
+    }
+  },
+  "sidebar": {
+    "nav": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "nav",
+          "className": "mini-sidebar-menu",
+          "childCount": 1,
+          "links": [
+            {
+              "href": "/repo/github/mhsaeed786/FHIR-mapping-agent-/overview",
+              "text": "Overview"
+            },
+            {
+              "href": "/repo/github/mhsaeed786/FHIR-mapping-agent-/config",
+              "text": "Environment"
+            },
+            {
+              "href": "/repo/github/mhsaeed786/FHIR-mapping-agent-/knowledge",
+              "text": "Knowledge"
+            },
+            {
+              "href": "/repo/github/mhsaeed786/FHIR-mapping-agent-/suggestions",
+              "text": "SuggestionsBeta"
+            },
+            {
+              "href": "/repo/github/mhsaeed786/FHIR-mapping-agent-/ci-fixer",
+              "text": "CI FixerBeta"
+            }
+          ]
+        }
+      ]
+    },
+    "[class*=\"sidebar\"]": {
+      "count": 2,
+      "samples": [
+        {
+          "tag": "mini-sidebar-menu",
+          "className": "source-sidebar",
+          "childCount": 1,
+          "links": [
+            {
+              "href": "/repo/github/mhsaeed786/FHIR-mapping-agent-/overview",
+              "text": "Overview"
+            },
+            {
+              "href": "/repo/github/mhsaeed786/FHIR-mapping-agent-/config",
+              "text": "Environment"
+            },
+            {
+              "href": "/repo/github/mhsaeed786/FHIR-mapping-agent-/knowledge",
+              "text": "Knowledge"
+            },
+            {
+              "href": "/repo/github/mhsaeed786/FHIR-mapping-agent-/suggestions",
+              "text": "SuggestionsBeta"
+            },
+            {
+              "href": "/repo/github/mhsaeed786/FHIR-mapping-agent-/ci-fixer",
+              "text": "CI FixerBeta"
+            }
+          ]
+        },
+        {
+          "tag": "nav",
+          "className": "mini-sidebar-menu",
+          "childCount": 1,
+          "links": [
+            {
+              "href": "/repo/github/mhsaeed786/FHIR-mapping-agent-/overview",
+              "text": "Overview"
+            },
+            {
+              "href": "/repo/github/mhsaeed786/FHIR-mapping-agent-/config",
+              "text": "Environment"
+            },
+            {
+              "href": "/repo/github/mhsaeed786/FHIR-mapping-agent-/knowledge",
+              "text": "Knowledge"
+            },
+            {
+              "href": "/repo/github/mhsaeed786/FHIR-mapping-agent-/suggestions",
+              "text": "SuggestionsBeta"
+            },
+            {
+              "href": "/repo/github/mhsaeed786/FHIR-mapping-agent-/ci-fixer",
+              "text": "CI FixerBeta"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "scrollers": [],
+  "customElements": [
+    "dex-notifications",
+    "docs-suggestion-popover-ui",
+    "highlight-ui",
+    "mat-icon",
+    "mini-sidebar-menu",
+    "router-outlet",
+    "sidebar-trigger-ui",
+    "swebot-animated-dots",
+    "swebot-logo",
+    "swebot-navbar",
+    "swebot-popover",
+    "swebot-responsive-text",
+    "swebot-root",
+    "swebot-sample-prompts-3p-scheduled",
+    "swebot-site-root",
+    "swebot-snackbar-container",
+    "swebot-source-view",
+    "swebot-start-panel",
+    "swebot-tag",
+    "swebot-task-options",
+    "swebot-task-status",
+    "swebot-tasks-view"
+  ],
+  "dataAttributes": [
+    "data-cdk-menu-stack-id",
+    "data-dex-frame-id",
+    "data-dex-recorder-ready",
+    "data-font-stylesheet",
+    "data-href",
+    "data-id",
+    "data-mat-icon-name",
+    "data-mat-icon-type",
+    "data-name",
+    "data-noaft",
+    "data-ogsr-up",
+    "data-version",
+    "data-wxt-shadow-root"
+  ],
+  "classPatterns": [
+    {
+      "class": "source-content",
+      "count": 3
+    },
+    {
+      "class": "logo-text",
+      "count": 2
+    },
+    {
+      "class": "main-content",
+      "count": 1
+    },
+    {
+      "class": "bottom-buttons-row",
+      "count": 1
+    },
+    {
+      "class": "bottom-button docs-button tertiary has-start-icon",
+      "count": 1
+    },
+    {
+      "class": "bottom-button tertiary has-start-icon",
+      "count": 1
+    },
+    {
+      "class": "bottom-button x-logo tertiary has-start-icon",
+      "count": 1
+    },
+    {
+      "class": "main-content-inner",
+      "count": 1
+    },
+    {
+      "class": "source-text",
+      "count": 1
+    },
+    {
+      "class": "source-text-org",
+      "count": 1
+    },
+    {
+      "class": "source-text-repo",
+      "count": 1
+    },
+    {
+      "class": "new-task-button new-task-button-text primary has-start-icon",
+      "count": 1
+    },
+    {
+      "class": "schedule-text",
+      "count": 1
+    },
+    {
+      "class": "short-text",
+      "count": 1
+    },
+    {
+      "class": "long-text",
+      "count": 1
+    },
+    {
+      "class": "cdk-describedby-message-container cdk-visually-hidden",
+      "count": 1
+    },
+    {
+      "class": "context-view",
+      "count": 1
+    },
+    {
+      "class": "autoglm-main-content",
+      "count": 1
+    }
+  ],
+  "sampleHTML": [
+    {
+      "selector": "[class*=\"message\"]",
+      "count": 1,
+      "outerHTML": "<div class=\"cdk-describedby-message-container cdk-visually-hidden\" style=\"visibility: hidden;\"><div id=\"cdk-describedby-message-ng-1-3\" role=\"tooltip\">Switch to light mode</div><div id=\"cdk-describedby-message-ng-1-4\" role=\"tooltip\">Hide Panel</div><div id=\"cdk-describedby-message-ng-1-7\" role=\"tooltip\">Session is in progress</div><div id=\"cdk-describedby-message-ng-1-11\" role=\"tooltip\">This feature is experimental and may change</div></div>"
+    }
+  ]
+}

@@ -1,0 +1,1242 @@
+{
+  "meta": {
+    "platform": "metaai",
+    "url": "https://www.meta.ai/prompt/dcfe5f94-9167-4660-b085-af6b04c38a0c",
+    "host": "www.meta.ai",
+    "title": "Meta AI",
+    "scrapedAt": "2026-07-28T18:22:00.295Z",
+    "bodyClasses": ""
+  },
+  "messages": {
+    "[class*=\"message\"]": {
+      "count": 16,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "group/user-message mx-auto w-full max-w-3xl shrink-0",
+          "dataAttrs": [
+            "messageType"
+          ],
+          "text": "Places paying remote workers up to $15,000 to relocate3 Jun 2026",
+          "childCount": 1,
+          "rect": {
+            "w": 768,
+            "h": 76
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "min-h-0 min-w-0 flex justify-end items-center gap-x-1 gap-y-1 touch:opacity-100 mt-1 opacity-0 group-hover/user-message:opacity-100 has-focus-visible:opacity-100",
+          "dataAttrs": [
+            "slot"
+          ],
+          "text": "3 Jun 2026",
+          "childCount": 3,
+          "rect": {
+            "w": 135,
+            "h": 28
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "group/assistant-message relative min-w-0",
+          "dataAttrs": [
+            "testid",
+            "streamingState",
+            "streamingComplete"
+          ],
+          "text": "Places paying remote workers up to $15,000 to relocateShow thinking",
+          "childCount": 3,
+          "rect": {
+            "w": 1061,
+            "h": 212
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "group/assistant-message-actions mx-auto flex min-h-11 max-w-3xl flex-wrap items-center select-none",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 768,
+            "h": 44
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "group/user-message mx-auto w-full max-w-3xl shrink-0",
+          "dataAttrs": [
+            "messageType"
+          ],
+          "text": "How to naturally solve dry eyes and mfd\n3 Jun 2026",
+          "childCount": 1,
+          "rect": {
+            "w": 768,
+            "h": 76
+          }
+        }
+      ]
+    },
+    "[class*=\"response\"]": {
+      "count": 4,
+      "samples": [
+        {
+          "tag": "span",
+          "id": null,
+          "className": "mx-0 outline-none break-words text-response text-text-primary whitespace-pre-wrap",
+          "dataAttrs": [
+            "slot"
+          ],
+          "text": "Places paying remote workers up to $15,000 to relocate",
+          "childCount": 0,
+          "rect": {
+            "w": 398,
+            "h": 20
+          }
+        },
+        {
+          "tag": "span",
+          "id": null,
+          "className": "mx-0 outline-none break-words text-response text-text-primary whitespace-pre-wrap",
+          "dataAttrs": [
+            "slot"
+          ],
+          "text": "How to naturally solve dry eyes and mfd",
+          "childCount": 0,
+          "rect": {
+            "w": 283,
+            "h": 20
+          }
+        },
+        {
+          "tag": "span",
+          "id": null,
+          "className": "mx-0 outline-none break-words text-response text-text-primary whitespace-pre-wrap",
+          "dataAttrs": [
+            "slot"
+          ],
+          "text": "Mgd causes",
+          "childCount": 0,
+          "rect": {
+            "w": 87,
+            "h": 20
+          }
+        },
+        {
+          "tag": "span",
+          "id": null,
+          "className": "mx-0 outline-none break-words text-response text-text-primary whitespace-pre-wrap",
+          "dataAttrs": [
+            "slot"
+          ],
+          "text": "Leclerc f1 deal",
+          "childCount": 0,
+          "rect": {
+            "w": 103,
+            "h": 20
+          }
+        }
+      ]
+    },
+    "[class*=\"user\"]": {
+      "count": 8,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "group/user-message mx-auto w-full max-w-3xl shrink-0",
+          "dataAttrs": [
+            "messageType"
+          ],
+          "text": "Places paying remote workers up to $15,000 to relocate3 Jun 2026",
+          "childCount": 1,
+          "rect": {
+            "w": 768,
+            "h": 76
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "min-h-0 min-w-0 flex justify-end items-center gap-x-1 gap-y-1 touch:opacity-100 mt-1 opacity-0 group-hover/user-message:opacity-100 has-focus-visible:opacity-100",
+          "dataAttrs": [
+            "slot"
+          ],
+          "text": "3 Jun 2026",
+          "childCount": 3,
+          "rect": {
+            "w": 135,
+            "h": 28
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "group/user-message mx-auto w-full max-w-3xl shrink-0",
+          "dataAttrs": [
+            "messageType"
+          ],
+          "text": "How to naturally solve dry eyes and mfd\n3 Jun 2026",
+          "childCount": 1,
+          "rect": {
+            "w": 768,
+            "h": 76
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "min-h-0 min-w-0 flex justify-end items-center gap-x-1 gap-y-1 touch:opacity-100 mt-1 opacity-0 group-hover/user-message:opacity-100 has-focus-visible:opacity-100",
+          "dataAttrs": [
+            "slot"
+          ],
+          "text": "3 Jun 2026",
+          "childCount": 3,
+          "rect": {
+            "w": 135,
+            "h": 28
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "group/user-message mx-auto w-full max-w-3xl shrink-0",
+          "dataAttrs": [
+            "messageType"
+          ],
+          "text": "Mgd causes3 Jun 2026",
+          "childCount": 1,
+          "rect": {
+            "w": 768,
+            "h": 76
+          }
+        }
+      ]
+    },
+    "[class*=\"assistant\"]": {
+      "count": 8,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "group/assistant-message relative min-w-0",
+          "dataAttrs": [
+            "testid",
+            "streamingState",
+            "streamingComplete"
+          ],
+          "text": "Places paying remote workers up to $15,000 to relocateShow thinking",
+          "childCount": 3,
+          "rect": {
+            "w": 1061,
+            "h": 212
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "group/assistant-message-actions mx-auto flex min-h-11 max-w-3xl flex-wrap items-center select-none",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 768,
+            "h": 44
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "group/assistant-message relative min-w-0",
+          "dataAttrs": [
+            "testid",
+            "streamingState",
+            "streamingComplete"
+          ],
+          "text": "Show thinkingSince you were just looking at those remote-worker relocation programs, dry eyes and MG",
+          "childCount": 2,
+          "rect": {
+            "w": 1061,
+            "h": 727
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "group/assistant-message-actions mx-auto flex min-h-11 max-w-3xl flex-wrap items-center select-none",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 768,
+            "h": 44
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "group/assistant-message relative min-w-0",
+          "dataAttrs": [
+            "testid",
+            "streamingState",
+            "streamingComplete"
+          ],
+          "text": "Show thinkingMGD is short for meibomian gland dysfunction, and it's basically what happens when the",
+          "childCount": 2,
+          "rect": {
+            "w": 1061,
+            "h": 623
+          }
+        }
+      ]
+    },
+    "[class*=\"bot\"]": {
+      "count": 2,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "pointer-events-none sticky bottom-[var(--composer-overlap)] z-10 flex h-0 justify-center",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 1061,
+            "h": 0
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "pointer-events-none absolute bottom-0 h-[52px] w-full pe-3",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 1109,
+            "h": 52
+          }
+        }
+      ]
+    },
+    "[class*=\"markdown\"]": {
+      "count": 13,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "markdown-content min-w-0",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 1061,
+            "h": 30
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "markdown-content min-w-0",
+          "dataAttrs": [],
+          "text": "Places paying remote workers up to $15,000 to relocate",
+          "childCount": 1,
+          "rect": {
+            "w": 1061,
+            "h": 56
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "ur-markdown prose prose-trimmed citation-aware",
+          "dataAttrs": [],
+          "text": "Places paying remote workers up to $15,000 to relocate",
+          "childCount": 1,
+          "rect": {
+            "w": 768,
+            "h": 40
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "markdown-content min-w-0",
+          "dataAttrs": [],
+          "text": "Show thinking",
+          "childCount": 1,
+          "rect": {
+            "w": 736,
+            "h": 24
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "markdown-content min-w-0",
+          "dataAttrs": [],
+          "text": "Show thinking",
+          "childCount": 1,
+          "rect": {
+            "w": 736,
+            "h": 24
+          }
+        }
+      ]
+    },
+    "[class*=\"content\"]": {
+      "count": 62,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "contents",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "contents",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "contents",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "contents",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "contents",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        }
+      ]
+    },
+    "[class*=\"text\"]": {
+      "count": 98,
+      "samples": [
+        {
+          "tag": "nav",
+          "id": null,
+          "className": "group peer text-text-primary hidden select-none md:block",
+          "dataAttrs": [
+            "state",
+            "slot"
+          ],
+          "text": "New chatCtrl+Shift+OSearchCtrl+KMediaArtefactsScheduledVibesHistoryFrydo's kitchen adventureVibes an",
+          "childCount": 2,
+          "rect": {
+            "w": 256,
+            "h": 945
+          }
+        },
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "[object SVGAnimatedString]",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 2,
+          "rect": {
+            "w": 24,
+            "h": 24
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "className": "enabled:active:scale-98 inline-flex shrink-0 cursor-pointer items-center justify-center rounded-round focus:not-focus-visible:outline-none transition-transform duration-150 ease-in-out disabled:pointe",
+          "dataAttrs": [
+            "slot",
+            "sidebar"
+          ],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 32,
+            "h": 32
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "text-subheadline mt-px w-full",
+          "dataAttrs": [
+            "slot",
+            "sidebar"
+          ],
+          "text": "New chatCtrl+Shift+OSearchCtrl+KMediaArtefactsScheduledVibes",
+          "childCount": 1,
+          "rect": {
+            "w": 232,
+            "h": 197
+          }
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "className": "peer/menu-button group-hover/menu-item:bg-fill-secondary-elevated group-has-focus-visible/menu-item:bg-fill-secondary-elevated group-has-data-[opened=true]/menu-item:bg-fill-secondary-elevated active:",
+          "dataAttrs": [
+            "slot",
+            "sidebar",
+            "active",
+            "testid"
+          ],
+          "text": "New chatCtrl+Shift+O",
+          "childCount": 3,
+          "rect": {
+            "w": 232,
+            "h": 32
+          }
+        }
+      ]
+    },
+    "[data-testid*=\"message\"]": {
+      "count": 4,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "group/assistant-message relative min-w-0",
+          "dataAttrs": [
+            "testid",
+            "streamingState",
+            "streamingComplete"
+          ],
+          "text": "Places paying remote workers up to $15,000 to relocateShow thinking",
+          "childCount": 3,
+          "rect": {
+            "w": 1061,
+            "h": 212
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "group/assistant-message relative min-w-0",
+          "dataAttrs": [
+            "testid",
+            "streamingState",
+            "streamingComplete"
+          ],
+          "text": "Show thinkingSince you were just looking at those remote-worker relocation programs, dry eyes and MG",
+          "childCount": 2,
+          "rect": {
+            "w": 1061,
+            "h": 727
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "group/assistant-message relative min-w-0",
+          "dataAttrs": [
+            "testid",
+            "streamingState",
+            "streamingComplete"
+          ],
+          "text": "Show thinkingMGD is short for meibomian gland dysfunction, and it's basically what happens when the",
+          "childCount": 2,
+          "rect": {
+            "w": 1061,
+            "h": 623
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "group/assistant-message relative min-w-0",
+          "dataAttrs": [
+            "testid",
+            "streamingState",
+            "streamingComplete"
+          ],
+          "text": "Show thinkingCharles Leclerc just locked in again with Ferrari. The team announced it on June 3, 202",
+          "childCount": 2,
+          "rect": {
+            "w": 1061,
+            "h": 493
+          }
+        }
+      ]
+    },
+    "[data-testid*=\"conversation\"]": {
+      "count": 7,
+      "samples": [
+        {
+          "tag": "li",
+          "id": null,
+          "className": "group/menu-item relative",
+          "dataAttrs": [
+            "slot",
+            "sidebar",
+            "menuOpen",
+            "testid"
+          ],
+          "text": "Frydo's kitchen adventure",
+          "childCount": 2,
+          "rect": {
+            "w": 228,
+            "h": 32
+          }
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "className": "group/menu-item relative",
+          "dataAttrs": [
+            "slot",
+            "sidebar",
+            "menuOpen",
+            "testid"
+          ],
+          "text": "Vibes and Mango details",
+          "childCount": 2,
+          "rect": {
+            "w": 228,
+            "h": 32
+          }
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "className": "group/menu-item relative",
+          "dataAttrs": [
+            "slot",
+            "sidebar",
+            "menuOpen",
+            "testid"
+          ],
+          "text": "Relocation deals for remote workers",
+          "childCount": 2,
+          "rect": {
+            "w": 228,
+            "h": 32
+          }
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "className": "group/menu-item relative",
+          "dataAttrs": [
+            "slot",
+            "sidebar",
+            "menuOpen",
+            "testid"
+          ],
+          "text": "Places paying remote workers up to $15,000 to relocate",
+          "childCount": 2,
+          "rect": {
+            "w": 228,
+            "h": 32
+          }
+        },
+        {
+          "tag": "li",
+          "id": null,
+          "className": "group/menu-item relative",
+          "dataAttrs": [
+            "slot",
+            "sidebar",
+            "menuOpen",
+            "testid"
+          ],
+          "text": "You are a helpful conversational assistant. The user is responding to a proactive feed card that was",
+          "childCount": 2,
+          "rect": {
+            "w": 228,
+            "h": 32
+          }
+        }
+      ]
+    },
+    "[data-testid*=\"chat\"]": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "a",
+          "id": null,
+          "className": "peer/menu-button group-hover/menu-item:bg-fill-secondary-elevated group-has-focus-visible/menu-item:bg-fill-secondary-elevated group-has-data-[opened=true]/menu-item:bg-fill-secondary-elevated active:",
+          "dataAttrs": [
+            "slot",
+            "sidebar",
+            "active",
+            "testid"
+          ],
+          "text": "New chatCtrl+Shift+O",
+          "childCount": 3,
+          "rect": {
+            "w": 232,
+            "h": 32
+          }
+        }
+      ]
+    },
+    "[data-testid*=\"user\"]": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "div",
+          "id": "radix-_R_1cj6br5jaj9db_",
+          "className": "min-h-0 min-w-0 flex items-center gap-x-1.5 gap-y-1.5 hover:bg-fill-secondary-elevated h-9 cursor-pointer rounded-full transition-colors select-none active:filter-[brightness(0.965)] dark:active:filte",
+          "dataAttrs": [
+            "slot",
+            "testid",
+            "state"
+          ],
+          "text": "muhhassaeed",
+          "childCount": 2,
+          "rect": {
+            "w": 144,
+            "h": 36
+          }
+        }
+      ]
+    },
+    "[data-testid*=\"assistant\"]": {
+      "count": 4,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "group/assistant-message relative min-w-0",
+          "dataAttrs": [
+            "testid",
+            "streamingState",
+            "streamingComplete"
+          ],
+          "text": "Places paying remote workers up to $15,000 to relocateShow thinking",
+          "childCount": 3,
+          "rect": {
+            "w": 1061,
+            "h": 212
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "group/assistant-message relative min-w-0",
+          "dataAttrs": [
+            "testid",
+            "streamingState",
+            "streamingComplete"
+          ],
+          "text": "Show thinkingSince you were just looking at those remote-worker relocation programs, dry eyes and MG",
+          "childCount": 2,
+          "rect": {
+            "w": 1061,
+            "h": 727
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "group/assistant-message relative min-w-0",
+          "dataAttrs": [
+            "testid",
+            "streamingState",
+            "streamingComplete"
+          ],
+          "text": "Show thinkingMGD is short for meibomian gland dysfunction, and it's basically what happens when the",
+          "childCount": 2,
+          "rect": {
+            "w": 1061,
+            "h": 623
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "group/assistant-message relative min-w-0",
+          "dataAttrs": [
+            "testid",
+            "streamingState",
+            "streamingComplete"
+          ],
+          "text": "Show thinkingCharles Leclerc just locked in again with Ferrari. The team announced it on June 3, 202",
+          "childCount": 2,
+          "rect": {
+            "w": 1061,
+            "h": 493
+          }
+        }
+      ]
+    }
+  },
+  "sidebar": {
+    "nav": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "nav",
+          "className": "group peer text-text-primary hidden select-none md:block",
+          "childCount": 2,
+          "links": [
+            {
+              "href": "/",
+              "text": ""
+            },
+            {
+              "href": "/",
+              "text": "New chatCtrl+Shift+O"
+            },
+            {
+              "href": "/create",
+              "text": "Media"
+            },
+            {
+              "href": "/artifacts",
+              "text": "Artefacts"
+            },
+            {
+              "href": "/scheduled",
+              "text": "Scheduled"
+            },
+            {
+              "href": "/vibes?rsid=6d2b32b9-547b-486e-b32b-7b623fc2d258",
+              "text": "Vibes"
+            },
+            {
+              "href": "/prompt/f530c527-3c43-4c6f-ac91-4d2e71adc0fb",
+              "text": "Frydo's kitchen adventure"
+            },
+            {
+              "href": "/prompt/073b840d-313d-4a47-9bb6-f4051405cfc8",
+              "text": "Vibes and Mango details"
+            },
+            {
+              "href": "/prompt/bc4f93b5-149b-4f34-bc2e-1acede8d17be",
+              "text": "Relocation deals for remote workers"
+            },
+            {
+              "href": "/prompt/dcfe5f94-9167-4660-b085-af6b04c38a0c",
+              "text": "Places paying remote workers up to $15,000 to relocate"
+            }
+          ]
+        }
+      ]
+    },
+    "[class*=\"sidebar\"]": {
+      "count": 4,
+      "samples": [
+        {
+          "tag": "div",
+          "className": "min-w-0 flex group/sidebar-wrapper min-h-svh w-full",
+          "childCount": 5,
+          "links": [
+            {
+              "href": "/",
+              "text": ""
+            },
+            {
+              "href": "/",
+              "text": "New chatCtrl+Shift+O"
+            },
+            {
+              "href": "/create",
+              "text": "Media"
+            },
+            {
+              "href": "/artifacts",
+              "text": "Artefacts"
+            },
+            {
+              "href": "/scheduled",
+              "text": "Scheduled"
+            },
+            {
+              "href": "/vibes?rsid=6d2b32b9-547b-486e-b32b-7b623fc2d258",
+              "text": "Vibes"
+            },
+            {
+              "href": "/prompt/f530c527-3c43-4c6f-ac91-4d2e71adc0fb",
+              "text": "Frydo's kitchen adventure"
+            },
+            {
+              "href": "/prompt/073b840d-313d-4a47-9bb6-f4051405cfc8",
+              "text": "Vibes and Mango details"
+            },
+            {
+              "href": "/prompt/bc4f93b5-149b-4f34-bc2e-1acede8d17be",
+              "text": "Relocation deals for remote workers"
+            },
+            {
+              "href": "/prompt/dcfe5f94-9167-4660-b085-af6b04c38a0c",
+              "text": "Places paying remote workers up to $15,000 to relocate"
+            }
+          ]
+        },
+        {
+          "tag": "div",
+          "className": "min-h-0 min-w-0 flex flex-col group/sidebar bg-bg-primary relative h-full w-full",
+          "childCount": 3,
+          "links": [
+            {
+              "href": "/",
+              "text": ""
+            },
+            {
+              "href": "/",
+              "text": "New chatCtrl+Shift+O"
+            },
+            {
+              "href": "/create",
+              "text": "Media"
+            },
+            {
+              "href": "/artifacts",
+              "text": "Artefacts"
+            },
+            {
+              "href": "/scheduled",
+              "text": "Scheduled"
+            },
+            {
+              "href": "/vibes?rsid=6d2b32b9-547b-486e-b32b-7b623fc2d258",
+              "text": "Vibes"
+            },
+            {
+              "href": "/prompt/f530c527-3c43-4c6f-ac91-4d2e71adc0fb",
+              "text": "Frydo's kitchen adventure"
+            },
+            {
+              "href": "/prompt/073b840d-313d-4a47-9bb6-f4051405cfc8",
+              "text": "Vibes and Mango details"
+            },
+            {
+              "href": "/prompt/bc4f93b5-149b-4f34-bc2e-1acede8d17be",
+              "text": "Relocation deals for remote workers"
+            },
+            {
+              "href": "/prompt/dcfe5f94-9167-4660-b085-af6b04c38a0c",
+              "text": "Places paying remote workers up to $15,000 to relocate"
+            }
+          ]
+        },
+        {
+          "tag": "div",
+          "className": "min-h-0 flex flex-col w-full min-w-0 bg-bg-sidebar relative z-10 shrink-0 pe-2",
+          "childCount": 1,
+          "links": [
+            {
+              "href": "/",
+              "text": "New chatCtrl+Shift+O"
+            },
+            {
+              "href": "/create",
+              "text": "Media"
+            },
+            {
+              "href": "/artifacts",
+              "text": "Artefacts"
+            },
+            {
+              "href": "/scheduled",
+              "text": "Scheduled"
+            },
+            {
+              "href": "/vibes?rsid=6d2b32b9-547b-486e-b32b-7b623fc2d258",
+              "text": "Vibes"
+            }
+          ]
+        }
+      ]
+    },
+    "[data-testid*=\"conversation\"]": {
+      "count": 7,
+      "samples": [
+        {
+          "tag": "li",
+          "className": "group/menu-item relative",
+          "childCount": 2,
+          "links": [
+            {
+              "href": "/prompt/f530c527-3c43-4c6f-ac91-4d2e71adc0fb",
+              "text": "Frydo's kitchen adventure"
+            }
+          ]
+        },
+        {
+          "tag": "li",
+          "className": "group/menu-item relative",
+          "childCount": 2,
+          "links": [
+            {
+              "href": "/prompt/073b840d-313d-4a47-9bb6-f4051405cfc8",
+              "text": "Vibes and Mango details"
+            }
+          ]
+        },
+        {
+          "tag": "li",
+          "className": "group/menu-item relative",
+          "childCount": 2,
+          "links": [
+            {
+              "href": "/prompt/bc4f93b5-149b-4f34-bc2e-1acede8d17be",
+              "text": "Relocation deals for remote workers"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "scrollers": [
+    {
+      "tag": "div",
+      "id": null,
+      "className": "group/scroller flex flex-col overflow-hidden z-0 scrollbar-none relative perspective-[1px] perspective-origin-top-right transform-3d overflow-y-auto o",
+      "scrollHeight": 2899,
+      "clientHeight": 945,
+      "childCount": 4,
+      "dataTestId": null
+    }
+  ],
+  "customElements": [
+    "composer-render-mark",
+    "dex-notifications",
+    "docs-suggestion-popover-ui",
+    "highlight-ui",
+    "next-route-announcer",
+    "sidebar-trigger-ui"
+  ],
+  "dataAttributes": [
+    "data-accent-color",
+    "data-active",
+    "data-badged-icon",
+    "data-composer-focus",
+    "data-default-icon",
+    "data-dex-recorder-ready",
+    "data-disable-auto-track",
+    "data-ignore-initial-load",
+    "data-lexical-editor",
+    "data-menu-open",
+    "data-message-id",
+    "data-message-item",
+    "data-message-type",
+    "data-precedence",
+    "data-route",
+    "data-sdkn",
+    "data-sdkv",
+    "data-sidebar",
+    "data-slot",
+    "data-state",
+    "data-streamdown",
+    "data-streaming-complete",
+    "data-streaming-state",
+    "data-style",
+    "data-subagent-list-phase",
+    "data-subagent-pulse-direction",
+    "data-testid",
+    "data-thinking-state",
+    "data-thumb",
+    "data-version",
+    "data-wxt-shadow-root"
+  ],
+  "classPatterns": [
+    {
+      "class": "contents",
+      "count": 41
+    },
+    {
+      "class": "enabled:active:scale-98 inline-flex shrink-0 cursor-pointer items-center justify-center rounded-roun",
+      "count": 40
+    },
+    {
+      "class": "peer/menu-button group-hover/menu-item:bg-fill-secondary-elevated group-has-focus-visible/menu-item:",
+      "count": 12
+    },
+    {
+      "class": "markdown-content min-w-0",
+      "count": 9
+    },
+    {
+      "class": "group/user-message mx-auto w-full max-w-3xl shrink-0",
+      "count": 4
+    },
+    {
+      "class": "bg-fill-secondary text-text-primary relative z-[1] rounded-22 max-w-[100%] px-4 py-2.25",
+      "count": 4
+    },
+    {
+      "class": "mx-0 outline-none break-words text-response text-text-primary whitespace-pre-wrap",
+      "count": 4
+    },
+    {
+      "class": "min-h-0 min-w-0 flex justify-end items-center gap-x-1 gap-y-1 touch:opacity-100 mt-1 opacity-0 group",
+      "count": 4
+    },
+    {
+      "class": "mx-0 outline-none break-words text-caption-1 text-text-secondary me-2 cursor-default",
+      "count": 4
+    },
+    {
+      "class": "group/assistant-message relative min-w-0",
+      "count": 4
+    },
+    {
+      "class": "text-text-secondary rounded-8 group flex h-6 min-w-0 items-center overflow-visible text-start",
+      "count": 4
+    },
+    {
+      "class": "min-w-0 text-subheadline text-text-secondary truncate",
+      "count": 4
+    },
+    {
+      "class": "text-text-secondary flex size-5 shrink-0 items-center justify-center overflow-hidden",
+      "count": 4
+    },
+    {
+      "class": "group/assistant-message-actions mx-auto flex min-h-11 max-w-3xl flex-wrap items-center select-none",
+      "count": 4
+    },
+    {
+      "class": "bg-transparent hidden absolute box-content top-0 end-0 z-20 opacity-0 w-[16px] h-full transition-opa",
+      "count": 3
+    },
+    {
+      "class": "text-subheadline mt-px w-full",
+      "count": 2
+    },
+    {
+      "class": "touch:hidden text-text-tertiary shrink-0",
+      "count": 2
+    },
+    {
+      "class": "enabled:active:scale-98 inline-flex shrink-0 cursor-pointer select-none items-center justify-center ",
+      "count": 2
+    },
+    {
+      "class": "contents dark",
+      "count": 2
+    },
+    {
+      "class": "group peer text-text-primary hidden select-none md:block",
+      "count": 1
+    },
+    {
+      "class": "enabled:cursor-pointer peer/menu-button group-hover/menu-item:bg-fill-secondary-elevated group-has-f",
+      "count": 1
+    },
+    {
+      "class": "text-text-secondary bg-bg-primary text-caption-1-emphasized sticky -top-px z-10 flex shrink-0 items-",
+      "count": 1
+    },
+    {
+      "class": "flex items-center gap-x-1.5 gap-y-1.5 relative min-h-[60px] px-3 py-2 before:absolute before:start-3",
+      "count": 1
+    },
+    {
+      "class": "relative shrink-0 size-7 text-subheadline-emphasized",
+      "count": 1
+    },
+    {
+      "class": "text-subheadline truncate",
+      "count": 1
+    },
+    {
+      "class": "text-body-medium bg-fill-blur-thick backdrop-blur-elevation-01 rounded-12 h-8 max-w-full min-w-0 fle",
+      "count": 1
+    },
+    {
+      "class": "mt-6 mb-2 font-semibold text-3xl",
+      "count": 1
+    },
+    {
+      "class": "bg-fill-secondary hover:bg-fill-tertiary relative -top-0.5 inline-flex h-[18px] w-[18px] cursor-poin",
+      "count": 1
+    },
+    {
+      "class": "mx-0 outline-none break-words text-text-secondary text-sm",
+      "count": 1
+    },
+    {
+      "class": "pointer-events-none sticky bottom-[var(--composer-overlap)] z-10 flex h-0 justify-center",
+      "count": 1
+    },
+    {
+      "class": "pointer-events-none absolute bottom-0 h-[52px] w-full pe-3",
+      "count": 1
+    },
+    {
+      "class": "backdrop-blur-elevation-01 bg-fill-blur-thick shadow-blur-elevation-01 rounded-32 relative flex w-fu",
+      "count": 1
+    },
+    {
+      "class": "min-w-0 flex-col flex min-h-7 flex-1 justify-center gap-1 text-center has-data-[slot=dialog-descript",
+      "count": 1
+    },
+    {
+      "class": "text-title-3-emphasized flex flex-col justify-center",
+      "count": 1
+    },
+    {
+      "class": "text-body text-text-secondary",
+      "count": 1
+    },
+    {
+      "class": "autoglm-main-content",
+      "count": 1
+    }
+  ],
+  "sampleHTML": [
+    {
+      "selector": "[class*=\"message\"]",
+      "count": 16,
+      "outerHTML": "<div data-message-type=\"user\" class=\"group/user-message mx-auto w-full max-w-3xl shrink-0\"><div data-slot=\"flexbox\" class=\"min-h-0 min-w-0 flex gap-x-4 gap-y-4 justify-end\"><div class=\"relative flex max-w-[calc(100%-2rem)] flex-col items-end sm:max-w-[520px]\"><div class=\"bg-fill-secondary text-text-primary relative z-[1] rounded-22 max-w-[100%] px-4 py-2.25\"><div class=\"relative\"><div class=\"\"><span dir=\"auto\" data-slot=\"text\" class=\"mx-0 outline-none break-words text-response text-text-primary whitespace-pre-wrap\" style=\"margin-top:-0.4628em;margin-bottom:-0.4623em\">Places paying remote workers up to $15,000 to relocate</span></div></div></div><div style=\"opacity:1;transform:none\"><div data-slot=\"flexbox\" class=\"min-h-0 min-w-0 flex justify-end items-center gap-x-1 gap-y-1 touch:opacity-100 mt-1 opacity-0 group-hover/user-message:opacity-100 has-focus-visible:opacity-100\"><span data-state=\"closed\" data-slot=\"tooltip-trigger\"><span dir=\"auto\" data-slot=\"text\" class=\"mx-0 outline-none break-words text-caption-1 text-text-secondary me-2 cursor-default\">3 Jun 2026</span></span><div class=\"contents\"><button aria-label=\"Copy response\" class=\"enabled:active:scale-98 inline-flex shrink-0 cursor-pointer items-center justify-center rounded-round focus:not-focus-visible:outline-none transition-transform duration-150 ease-in-out disabled:cursor-not-allowed disabled:opacity-50 select-none size-7 hover:enabled:bg-fill-secondary-elevated enabled:active:filter-[brightness(0.965)] dark:enabled:active:filter-[brightness(0.9)] text-text-secondary\" data-slot=\"tooltip-trigger\" data-state=\"closed\"><div class=\"relative\"><div class=\"\"><svg viewBox=\"0 0 24 24\" fill=\"currentColor\" width=\"1em\" height=\"1em\" class=\"m-0.5\" size=\"20\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M5 14h1v2H5a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v1h-2V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1zm14 6h-8a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1zm3-1a3 3 0 0 1-3 3h-8a3 3 0 0 1-3-"
+    },
+    {
+      "selector": "[class*=\"response\"]",
+      "count": 4,
+      "outerHTML": "<span dir=\"auto\" data-slot=\"text\" class=\"mx-0 outline-none break-words text-response text-text-primary whitespace-pre-wrap\" style=\"margin-top:-0.4628em;margin-bottom:-0.4623em\">Places paying remote workers up to $15,000 to relocate</span>"
+    },
+    {
+      "selector": "[class*=\"markdown\"]",
+      "count": 13,
+      "outerHTML": "<div class=\"markdown-content min-w-0\"><div class=\"stack mx-auto flex max-w-3xl min-w-0 flex-col items-center overflow-visible\"><div class=\"flex min-w-0 w-full justify-start\"><div><div><div class=\"group/media-item bg-bg-secondary rounded-22 relative me-auto inline-block max-w-full overflow-hidden\"><button type=\"button\" class=\"enabled:cursor-pointer rounded-22 block w-fit cursor-pointer -outline-offset-2 select-none\" aria-label=\"View media\"><img data-testid=\"ur-image-tile\" src=\"https://cdn.fbsbx.com/m1/v/t0.71334-21/An8wglZioxSENRXLwxDkvmJkunW1m12UEnnb4Yi5LeCjnDnUzTKHncYzj9c06nBXTJEaNYXMMr4acUSILz_qOsZLZi2VmmcyuHLXvJdbk7ox/3217f16c-843f-4796-afff-9c2ce8751236?_nc_gid=-8z4CfD2iEN80zsa0dk2mA&amp;_nc_oc=AdpY8xhAkb_BNjn7xywKebCZKsh_x-3_BcDicEVdFBtPI5S_6muP-juLYlI814nxAgwVAg_sd2gYgeuy35Qh3FNx&amp;ccb=10-5&amp;oh=00_Af_CXLu88bCe2Nogm3EZ1iDdxcplhJEePw8VxtI6d9fuGg&amp;oe=6A224324&amp;_nc_sid=5962a6\" alt=\"Generated image\" draggable=\"false\" class=\"outline-fill-divider rounded-22 block h-auto max-h-[40vh] w-auto max-w-full outline outline-[0.5px] -outline-offset-[0.5px]\" style=\"opacity: 1; transition: opacity 0.3s ease-out;\"></button><div class=\"rounded-22 pointer-events-none absolute inset-0 bg-black/[0.03]\"></div><div class=\"absolute end-3 top-3 z-10 flex flex-row gap-2\"><div class=\"contents dark\"><button aria-label=\"Use as reference\" class=\"enabled:active:scale-98 inline-flex shrink-0 cursor-pointer items-center justify-center rounded-round focus:not-focus-visible:outline-none duration-150 ease-in-out disabled:pointer-events-none disabled:opacity-50 select-none size-7 shadow-blur-elevation-01 backdrop-blur-elevation-01 enabled:hover:filter-[brightness(0.99)] enabled:active:filter-[brightness(0.975)] dark:enabled:active:filter-[brightness(0.9)] text-text-primary relative enabled:hover:after:absolute enabled:hover:after:inset-0 enabled:hover:after:rounded-round enabled:hover:after:bg-[rgba(255,255,255,0.025)] enabled:hover:after:content-[''] dark:enabled:hover:filter-none trans"
+    }
+  ]
+}

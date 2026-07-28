@@ -1,0 +1,421 @@
+{
+  "meta": {
+    "platform": "pi",
+    "url": "https://pi.ai/talk/Gh2fEYGTKnTkCnBnpGPAK",
+    "host": "pi.ai",
+    "title": "Pi, your personal AI",
+    "scrapedAt": "2026-07-28T18:22:46.845Z",
+    "bodyClasses": ""
+  },
+  "messages": {
+    "[class*=\"message\"]": {
+      "count": 2,
+      "samples": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "[object SVGAnimatedString]",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 2,
+          "rect": {
+            "w": 26,
+            "h": 22
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "t-body-chat relative h-full px-5 text-message-text space-y-6 w-full mx-auto max-w-1.5xl 2xl:max-w-[56rem]",
+          "dataAttrs": [],
+          "text": "Hey! What's up? 😊CopyRead aloudGood responseBad responseMore optionsMore optionshey see the previou",
+          "childCount": 3,
+          "rect": {
+            "w": 616,
+            "h": 759
+          }
+        }
+      ]
+    },
+    "[class*=\"chat\"]": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "t-body-chat relative h-full px-5 text-message-text space-y-6 w-full mx-auto max-w-1.5xl 2xl:max-w-[56rem]",
+          "dataAttrs": [],
+          "text": "Hey! What's up? 😊CopyRead aloudGood responseBad responseMore optionsMore optionshey see the previou",
+          "childCount": 3,
+          "rect": {
+            "w": 616,
+            "h": 759
+          }
+        }
+      ]
+    },
+    "[class*=\"bot\"]": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "scrollbar-gutter-both-edges relative h-full overflow-y-auto overflow-x-hidden pt-12 text-text-primary",
+          "dataAttrs": [
+            "chatScroll"
+          ],
+          "text": "Hey! What's up? 😊CopyRead aloudGood responseBad responseMore optionsMore optionshey see the previou",
+          "childCount": 1,
+          "rect": {
+            "w": 1075,
+            "h": 807
+          }
+        }
+      ]
+    },
+    "[class*=\"content\"]": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "div",
+          "id": "autoglm-main-content",
+          "className": "autoglm-main-content",
+          "dataAttrs": [
+            "version"
+          ],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 1365,
+            "h": 0
+          }
+        }
+      ]
+    },
+    "[class*=\"text\"]": {
+      "count": 65,
+      "samples": [
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "[object SVGAnimatedString]",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 2,
+          "rect": {
+            "w": 26,
+            "h": 22
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "className": "inline-flex items-center justify-center transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-offset-1 disabled:pointer-events-none disabled:opacity-50 size-8 rounded-[0",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "className": "inline-flex items-center justify-center transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-offset-1 disabled:pointer-events-none disabled:opacity-50 size-10 rounded-[",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 40,
+            "h": 40
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "className": "inline-flex cursor-pointer items-center transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-offset-1 disabled:pointer-events-none disabled:opacity-50 h-10 w-full gap-3",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "New chat",
+          "childCount": 2,
+          "rect": {
+            "w": 255,
+            "h": 40
+          }
+        },
+        {
+          "tag": "span",
+          "id": null,
+          "className": "text-body-s flex-1 truncate text-left",
+          "dataAttrs": [],
+          "text": "New chat",
+          "childCount": 0,
+          "rect": {
+            "w": 199,
+            "h": 22
+          }
+        }
+      ]
+    },
+    "[data-testid*=\"chat\"]": {
+      "count": 5,
+      "samples": [
+        {
+          "tag": "button",
+          "id": null,
+          "className": "inline-flex cursor-pointer items-center transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-offset-1 disabled:pointer-events-none disabled:opacity-50 h-10 w-full gap-3",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "New chat",
+          "childCount": 2,
+          "rect": {
+            "w": 255,
+            "h": 40
+          }
+        },
+        {
+          "tag": "audio",
+          "id": null,
+          "className": "",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "relative z-10 flex cursor-text flex-col gap-1 self-stretch overflow-hidden rounded-3xl border border-divider-stroke bg-base-contrast p-2 transition-all duration-300 max-h-24 sm:max-h-[272px]",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "",
+          "childCount": 2,
+          "rect": {
+            "w": 616,
+            "h": 70
+          }
+        },
+        {
+          "tag": "textarea",
+          "id": null,
+          "className": "scrollbar-thin scrollbar-thumb-misc-scrollbar scrollbar-track-transparent block max-h-full w-full resize-none border-none bg-transparent text-body-alt-m-desktop leading-8 text-text-primary outline-non",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 542,
+            "h": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "className": "inline-flex items-center justify-center transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-offset-1 disabled:pointer-events-none disabled:opacity-50 size-9 rounded-fu",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 36,
+            "h": 36
+          }
+        }
+      ]
+    },
+    "[aria-label*=\"message\"]": {
+      "count": 2,
+      "samples": [
+        {
+          "tag": "button",
+          "id": null,
+          "className": "inline-flex items-center justify-center transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-offset-1 disabled:pointer-events-none disabled:opacity-50 size-8 rounded-[0",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 32,
+            "h": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "className": "inline-flex items-center justify-center transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-offset-1 disabled:pointer-events-none disabled:opacity-50 size-8 rounded-[0",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 32,
+            "h": 32
+          }
+        }
+      ]
+    }
+  },
+  "sidebar": {
+    "nav": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "nav",
+          "className": "absolute left-0 top-0 z-[999] flex h-[100dvh] flex-col overflow-hidden border-r border-divider-stroke bg-background-alt md:relative md:flex  w-[280px]",
+          "childCount": 3,
+          "links": []
+        }
+      ]
+    },
+    "[data-testid*=\"nav\"]": {
+      "count": 5,
+      "samples": [
+        {
+          "tag": "nav",
+          "className": "absolute left-0 top-0 z-[999] flex h-[100dvh] flex-col overflow-hidden border-r border-divider-stroke bg-background-alt md:relative md:flex  w-[280px]",
+          "childCount": 3,
+          "links": []
+        },
+        {
+          "tag": "button",
+          "className": "inline-flex cursor-pointer items-center transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-offset-1 disabled:pointer-events-none disabled:opacity-50 h-10 w-full gap-3",
+          "childCount": 2,
+          "links": []
+        },
+        {
+          "tag": "button",
+          "className": "inline-flex cursor-pointer items-center transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-offset-1 disabled:pointer-events-none disabled:opacity-50 h-10 w-full gap-3",
+          "childCount": 2,
+          "links": []
+        }
+      ]
+    }
+  },
+  "scrollers": [
+    {
+      "tag": "div",
+      "id": null,
+      "className": "scrollbar-gutter-both-edges relative h-full overflow-y-auto overflow-x-hidden pt-12 text-text-primary",
+      "scrollHeight": 2059,
+      "clientHeight": 807,
+      "childCount": 1,
+      "dataTestId": null
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "className": "t-body-chat relative h-full px-5 text-message-text space-y-6 w-full mx-auto max-w-1.5xl 2xl:max-w-[56rem]",
+      "scrollHeight": 2011,
+      "clientHeight": 759,
+      "childCount": 3,
+      "dataTestId": null
+    }
+  ],
+  "customElements": [
+    "dex-notifications",
+    "docs-suggestion-popover-ui",
+    "highlight-ui",
+    "next-route-announcer",
+    "sidebar-trigger-ui"
+  ],
+  "dataAttributes": [
+    "data-chat-message",
+    "data-chat-scroll",
+    "data-dex-recorder-ready",
+    "data-ellipsis",
+    "data-n-css",
+    "data-n-g",
+    "data-next-font",
+    "data-next-head",
+    "data-testid",
+    "data-thread-history-scroll",
+    "data-version",
+    "data-wxt-shadow-root"
+  ],
+  "classPatterns": [
+    {
+      "class": "inline-flex items-center justify-center transition-colors focus-visible:outline-none focus-visible:r",
+      "count": 17
+    },
+    {
+      "class": "text-action-s font-medium leading-[1.1] text-background",
+      "count": 11
+    },
+    {
+      "class": "inline-flex cursor-pointer items-center transition-colors focus-visible:outline-none focus-visible:r",
+      "count": 5
+    },
+    {
+      "class": "text-body-s flex-1 truncate text-left",
+      "count": 5
+    },
+    {
+      "class": "text-label-s truncate font-medium text-text-secondary",
+      "count": 2
+    },
+    {
+      "class": "flex items-center rounded-[0.625rem] transition-colors focus-visible:outline-none focus-visible:ring",
+      "count": 2
+    },
+    {
+      "class": "text-body-s truncate text-text-secondary",
+      "count": 2
+    },
+    {
+      "class": "flex size-9 items-center justify-center rounded-full p-1.5 text-text-primary bg-fill-default hover:b",
+      "count": 2
+    },
+    {
+      "class": "text-body-alt-m whitespace-pre-wrap lg:text-body-alt-m-desktop 2xl:text-body-alt-m-desktop-xl mb-4 l",
+      "count": 2
+    },
+    {
+      "class": "scrollbar-gutter-both-edges relative h-full overflow-y-auto overflow-x-hidden pt-12 text-text-primar",
+      "count": 1
+    },
+    {
+      "class": "t-body-chat relative h-full px-5 text-message-text space-y-6 w-full mx-auto max-w-1.5xl 2xl:max-w-[5",
+      "count": 1
+    },
+    {
+      "class": "text-body-alt-m md:text-body-alt-m-desktop rounded-10 bg-secondary-default px-[14px] py-[6px]",
+      "count": 1
+    },
+    {
+      "class": "relative z-10 flex cursor-text flex-col gap-1 self-stretch overflow-hidden rounded-3xl border border",
+      "count": 1
+    },
+    {
+      "class": "scrollbar-thin scrollbar-thumb-misc-scrollbar scrollbar-track-transparent block max-h-full w-full re",
+      "count": 1
+    },
+    {
+      "class": "flex shrink-0 items-center justify-center [&>svg]:size-full size-6 text-text-secondary",
+      "count": 1
+    },
+    {
+      "class": "text-label-s flex-1 whitespace-pre-wrap text-center text-text-secondary",
+      "count": 1
+    },
+    {
+      "class": "autoglm-main-content",
+      "count": 1
+    }
+  ],
+  "sampleHTML": [
+    {
+      "selector": "[class*=\"message\"]",
+      "count": 2,
+      "outerHTML": "<svg width=\"26\" height=\"22\" viewBox=\"0 0 212 180\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"text-message-text\"><path d=\"M145.556 172.496V172.275C145.556 167.64 148.222 164.771 154.444 162.784C160.667 160.577 162.222 159.032 162.222 150.866V110.475C162.222 102.308 160 101.205 153.778 99.2183C148.667 97.6732 145.556 95.2454 145.556 91.4932C145.556 88.4032 147.556 85.9753 150.444 84.8718L182.667 73.3946C189.778 70.746 195.333 74.2774 195.333 80.6782V150.866C195.333 159.032 196.889 160.577 203.111 162.784C209.333 164.771 212 167.64 212 172.275V172.496C212 176.91 208.444 180 203.111 180H154.444C149.111 180 145.556 176.91 145.556 172.496ZM62.4445 55.9581C62.4445 27.7065 66.4444 18.4365 78.6667 18.4365C93.5555 18.4365 102.222 32.783 102.222 57.2824C102.222 81.7818 93.7778 96.5697 80 96.5697C66.2222 96.5697 62.4445 85.7546 62.4445 55.9581ZM0 172.275V172.496C0 176.91 3.55556 180 8.88889 180H81.7778C87.1111 180 90.6667 176.91 90.6667 172.496V172.275C90.6667 168.081 88.2222 164.991 82 163.667C66.4444 160.136 64.4445 158.591 64.4445 149.983V118.42C64.4445 114.448 66.2222 111.799 70 111.799C73.7778 111.799 76.8889 113.565 83.7778 113.565C119.778 113.565 145.333 89.7275 145.333 56.1788C145.333 22.6301 121.333 1 87.1111 1C68.4444 1 54.6667 7.84217 36.6667 7.84217H8.88889C3.55556 7.84217 0 10.9322 0 15.3465V15.5672C0 20.2022 2.66667 23.0715 8.88889 24.6165C20 27.2651 21.5556 28.8101 21.5556 36.9766V150.866C21.5556 159.032 20 160.577 8.88889 163.226C2.66667 164.771 0 167.64 0 172.275Z\" fill=\"currentColor\"></path><path d=\"M179.067 18.4305C181.646 18.4313 184.316 18.8327 186.864 19.9205C189.642 21.0871 192.145 23.1601 193.802 25.6715C193.999 26.0142 194.188 26.36 194.37 26.7079C196.93 26.9915 199.465 27.4271 201.97 27.9933C204.3 28.5218 206.439 29.1743 208.779 29.9325C209.545 30.2008 210.282 30.6132 210.823 31.2224C211.365 31.8313 211.669 32.5802 211.669 33.3484C211.669 34.1158 211.364 34.8616 210.823 35.47C210.282 36.0794 209.545 36.4961 208.779 36.7643C206.515 37.5242 20"
+    }
+  ]
+}

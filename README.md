@@ -35,8 +35,12 @@ A Chrome extension that extracts complete AI chat sessions word-by-word from man
 | Perplexity | ✓ | partial | ✓ |
 | Poe | ✓ | partial | ✓ |
 | Mistral | ✓ | partial | ✓ |
+| Qwen | ✓ | partial | ✓ |
+| Pi | ✓ | partial | ✓ |
+| Jules | ✓ | partial | ✓ |
+| Generic fallback | ✓ | partial | ✓ |
 
-For platforms not listed, the extension falls back to a generic DOM scanner.
+For platforms not listed, the extension uses a generic DOM scanner.
 
 ---
 
@@ -65,9 +69,10 @@ ai-session-extractor/
 │   └── copy-profile.ps1
 ├── docs/
 │   └── ALL-PLATFORMS.js    # Reference list of AI platforms
+├── data/
+│   └── dom-dumps/          # Saved DOM dumps for analysis
 ├── screenshots/            # Place screenshots here
 ├── tests/                  # Place automated/manual tests here
-├── dom-analysis/           # DOM dump outputs (gitignored)
 ├── .gitignore
 ├── package.json
 └── README.md
@@ -111,14 +116,14 @@ ai-session-extractor/
 2. Click the extension icon.
 3. Click **🔍 Dump DOMs of All Tabs**.
 4. One JSON file per tab downloads to your Downloads folder.
-5. Share those JSONs to improve selectors.
+5. Move the JSONs into `data/dom-dumps/` for analysis.
 
 ---
 
 ## 🔬 Selector discovery tools
 
 ### DOM-SCRAPER-UNIVERSAL.js
-A universal console script. Paste it into DevTools Console on any AI chat page and it downloads a JSON DOM analysis.
+A universal console script. Paste it into DevTools Console on any AI chat page and it downloads a JSON DOM analysis, including detected selectors and actual extracted messages.
 
 ### PASTE-IN-CONSOLE.js
 Legacy Gemini-specific console dump script.
@@ -127,7 +132,7 @@ Legacy Gemini-specific console dump script.
 Run on an opened Gemini conversation to verify selectors.
 
 ### scrape-gemini-dom.js
-Playwright-based scraper for headless DOM discovery.
+Playwright headless scraper for DOM discovery.
 
 ---
 
@@ -150,7 +155,7 @@ When a feature is proven stable on `feature/improvements`, it can be merged into
 
 ## 🤝 Contributing data
 
-If you want better extraction for a platform, run **🔍 Dump DOMs of All Tabs** and share the resulting JSON files. Exact selectors can then be added to `extension/content.js`.
+If you want better extraction for a platform, run **🔍 Dump DOMs of All Tabs** and add the resulting JSON files to `data/dom-dumps/`. Exact selectors can then be added to `extension/content.js`.
 
 ---
 

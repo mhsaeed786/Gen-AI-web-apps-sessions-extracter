@@ -1,0 +1,864 @@
+{
+  "meta": {
+    "platform": "minimax",
+    "url": "https://agent.minimax.io/mavis?id=424077327995176",
+    "host": "agent.minimax.io",
+    "title": "MiniMax Agent: Minimize Effort, Maximize Intelligence",
+    "scrapedAt": "2026-07-28T18:21:38.477Z",
+    "bodyClasses": ""
+  },
+  "messages": {
+    "[class*=\"message\"]": {
+      "count": 6,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "message-container-chat-content max-w-[768px] mx-auto px-4",
+          "dataAttrs": [],
+          "text": "continueJul 26, 10:38Thought 5 time(s), Ran 1 command(s), Used 5 tool(s)Hey — looks like this sessio",
+          "childCount": 2,
+          "rect": {
+            "w": 768,
+            "h": 478
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "w-full flex justify-end message-animate-in group",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "continueJul 26, 10:38",
+          "childCount": 1,
+          "rect": {
+            "w": 736,
+            "h": 80
+          }
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "className": "message-container-user-text whitespace-pre-wrap break-words text-base leading-6 text-text_default_primary ",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "continue",
+          "childCount": 1,
+          "rect": {
+            "w": 62,
+            "h": 24
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "w-full message-animate-in group relative",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "Thought 5 time(s), Ran 1 command(s), Used 5 tool(s)",
+          "childCount": 1,
+          "rect": {
+            "w": 736,
+            "h": 20
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "w-full message-animate-in group relative",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "Hey — looks like this session is fresh, nothing in the workspace and no prior context to pick up fro",
+          "childCount": 2,
+          "rect": {
+            "w": 736,
+            "h": 152
+          }
+        }
+      ]
+    },
+    "[class*=\"chat\"]": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "message-container-chat-content max-w-[768px] mx-auto px-4",
+          "dataAttrs": [],
+          "text": "continueJul 26, 10:38Thought 5 time(s), Ran 1 command(s), Used 5 tool(s)Hey — looks like this sessio",
+          "childCount": 2,
+          "rect": {
+            "w": 768,
+            "h": 478
+          }
+        }
+      ]
+    },
+    "[class*=\"user\"]": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "p",
+          "id": null,
+          "className": "message-container-user-text whitespace-pre-wrap break-words text-base leading-6 text-text_default_primary ",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "continue",
+          "childCount": 1,
+          "rect": {
+            "w": 62,
+            "h": 24
+          }
+        }
+      ]
+    },
+    "[class*=\"bot\"]": {
+      "count": 3,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "pointer-events-none absolute inset-x-0 bottom-0 h-[0.6px] bg-border_default transition-opacity duration-150 ease-out opacity-0",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 259,
+            "h": 1
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "flex w-full flex-col pt-3 transition-[padding-bottom] duration-200 ease-in-out pb-5",
+          "dataAttrs": [],
+          "text": "MoreMaxHermesMaxClaw",
+          "childCount": 2,
+          "rect": {
+            "w": 243,
+            "h": 133
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "absolute inset-x-0 bottom-0 z-30 w-full bg-bg_grouped_secondary px-4 pb-2 sm:px-6",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "AgentAgent TeamThinkingMiniMax-M3MiniMax Agent is AI and can make mistakes",
+          "childCount": 1,
+          "rect": {
+            "w": 841,
+            "h": 162
+          }
+        }
+      ]
+    },
+    "[class*=\"markdown\"]": {
+      "count": 2,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "matrix-markdown message-content flex-1 relative max-w-full overflow-hidden text-pretty",
+          "dataAttrs": [],
+          "text": "Hey — looks like this session is fresh, nothing in the workspace and no prior context to pick up fro",
+          "childCount": 1,
+          "rect": {
+            "w": 736,
+            "h": 120
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "matrix-markdown matrix-markdown--shifted",
+          "dataAttrs": [],
+          "text": "Hey — looks like this session is fresh, nothing in the workspace and no prior context to pick up fro",
+          "childCount": 2,
+          "rect": {
+            "w": 736,
+            "h": 120
+          }
+        }
+      ]
+    },
+    "[class*=\"content\"]": {
+      "count": 3,
+      "samples": [
+        {
+          "tag": "div",
+          "id": "autoglm-main-content",
+          "className": "autoglm-main-content",
+          "dataAttrs": [
+            "version"
+          ],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 1365,
+            "h": 0
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "message-container-chat-content max-w-[768px] mx-auto px-4",
+          "dataAttrs": [],
+          "text": "continueJul 26, 10:38Thought 5 time(s), Ran 1 command(s), Used 5 tool(s)Hey — looks like this sessio",
+          "childCount": 2,
+          "rect": {
+            "w": 768,
+            "h": 478
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "matrix-markdown message-content flex-1 relative max-w-full overflow-hidden text-pretty",
+          "dataAttrs": [],
+          "text": "Hey — looks like this session is fresh, nothing in the workspace and no prior context to pick up fro",
+          "childCount": 1,
+          "rect": {
+            "w": 736,
+            "h": 120
+          }
+        }
+      ]
+    },
+    "[class*=\"text\"]": {
+      "count": 87,
+      "samples": [
+        {
+          "tag": "button",
+          "id": null,
+          "className": "flex size-8 cursor-pointer items-center justify-center rounded-[8px] text-icon_default_primary transition-colors hover:bg-bg_interaction_tertiary_hover [-webkit-app-region:no-drag]",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 32,
+            "h": 32
+          }
+        },
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "[object SVGAnimatedString]",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 24,
+            "h": 24
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "className": "flex size-8 items-center justify-center rounded-[8px] text-text_default_tertiary transition-colors hover:bg-bg_interaction_tertiary_hover hover:text-text_default_secondary [-webkit-app-region:no-drag]",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 32,
+            "h": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "className": "flex h-[34px] w-full items-center gap-2 rounded-[8px] pl-2 pr-2.5 text-left text-sm leading-5 text-text_default_primary transition-colors focus:outline-none focus-visible:bg-bg_interaction_tertiary_ho",
+          "dataAttrs": [],
+          "text": "New task",
+          "childCount": 2,
+          "rect": {
+            "w": 243,
+            "h": 34
+          }
+        },
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "[object SVGAnimatedString]",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 18,
+            "h": 18
+          }
+        }
+      ]
+    },
+    "[data-testid*=\"message\"]": {
+      "count": 13,
+      "samples": [
+        {
+          "tag": "div",
+          "id": "message-container",
+          "className": "scrollbar-hide relative h-full w-full overflow-y-scroll overflow-x-hidden",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "continueJul 26, 10:38Thought 5 time(s), Ran 1 command(s), Used 5 tool(s)Hey — looks like this sessio",
+          "childCount": 1,
+          "rect": {
+            "w": 793,
+            "h": 889
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "w-full flex justify-end message-animate-in group",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "continueJul 26, 10:38",
+          "childCount": 1,
+          "rect": {
+            "w": 736,
+            "h": 80
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "max-w-[80%] px-3 py-2 bg-bg_grouped_tertiary text-left rounded-[16px_10px_16px_16px]",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "continue",
+          "childCount": 1,
+          "rect": {
+            "w": 86,
+            "h": 40
+          }
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "className": "message-container-user-text whitespace-pre-wrap break-words text-base leading-6 text-text_default_primary ",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "continue",
+          "childCount": 1,
+          "rect": {
+            "w": 62,
+            "h": 24
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "flex h-8 items-center justify-end gap-1",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "Jul 26, 10:38",
+          "childCount": 2,
+          "rect": {
+            "w": 101,
+            "h": 32
+          }
+        }
+      ]
+    },
+    "[data-testid*=\"conversation\"]": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "relative flex min-h-0 flex-1 flex-col overflow-hidden",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "continueJul 26, 10:38Thought 5 time(s), Ran 1 command(s), Used 5 tool(s)Hey — looks like this sessio",
+          "childCount": 2,
+          "rect": {
+            "w": 841,
+            "h": 889
+          }
+        }
+      ]
+    },
+    "[data-testid*=\"chat\"]": {
+      "count": 6,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "flex h-full min-h-0 flex-col",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "ContinuecontinueJul 26, 10:38Thought 5 time(s), Ran 1 command(s), Used 5 tool(s)Hey — looks like thi",
+          "childCount": 1,
+          "rect": {
+            "w": 1105,
+            "h": 945
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "hidden h-[56px] items-center px-2 transition-[padding] duration-200 ease-in-out md:flex ",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "Continue",
+          "childCount": 2,
+          "rect": {
+            "w": 1105,
+            "h": 56
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "relative flex flex-col flex-1 min-w-0 overflow-hidden",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "continueJul 26, 10:38Thought 5 time(s), Ran 1 command(s), Used 5 tool(s)Hey — looks like this sessio",
+          "childCount": 1,
+          "rect": {
+            "w": 841,
+            "h": 889
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "relative flex min-h-0 flex-1 flex-col overflow-hidden",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "continueJul 26, 10:38Thought 5 time(s), Ran 1 command(s), Used 5 tool(s)Hey — looks like this sessio",
+          "childCount": 2,
+          "rect": {
+            "w": 841,
+            "h": 889
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "absolute inset-x-0 bottom-0 z-30 w-full bg-bg_grouped_secondary px-4 pb-2 sm:px-6",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "AgentAgent TeamThinkingMiniMax-M3MiniMax Agent is AI and can make mistakes",
+          "childCount": 1,
+          "rect": {
+            "w": 841,
+            "h": 162
+          }
+        }
+      ]
+    },
+    "[data-testid*=\"user\"]": {
+      "count": 5,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "ant-dropdown-trigger flex w-full min-w-0 cursor-pointer items-center justify-between gap-2 px-4 h-[60px]",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "Hassan Saeed",
+          "childCount": 2,
+          "rect": {
+            "w": 259,
+            "h": 60
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "max-w-[80%] px-3 py-2 bg-bg_grouped_tertiary text-left rounded-[16px_10px_16px_16px]",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "continue",
+          "childCount": 1,
+          "rect": {
+            "w": 86,
+            "h": 40
+          }
+        },
+        {
+          "tag": "p",
+          "id": null,
+          "className": "message-container-user-text whitespace-pre-wrap break-words text-base leading-6 text-text_default_primary ",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "continue",
+          "childCount": 1,
+          "rect": {
+            "w": 62,
+            "h": 24
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "flex h-8 items-center justify-end gap-1",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "Jul 26, 10:38",
+          "childCount": 2,
+          "rect": {
+            "w": 101,
+            "h": 32
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "opacity-0 pointer-events-none transition-opacity duration-150 group-hover:opacity-100 group-hover:pointer-events-auto group-focus-within:opacity-100 group-focus-within:pointer-events-auto",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 28,
+            "h": 28
+          }
+        }
+      ]
+    },
+    "[data-testid*=\"assistant\"]": {
+      "count": 2,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "space-y-4",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "Hey — looks like this session is fresh, nothing in the workspace and no prior context to pick up fro",
+          "childCount": 1,
+          "rect": {
+            "w": 736,
+            "h": 120
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "space-y-4",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "Hey — looks like this session is fresh, nothing in the workspace and no prior context to pick up fro",
+          "childCount": 1,
+          "rect": {
+            "w": 736,
+            "h": 120
+          }
+        }
+      ]
+    },
+    "[aria-label*=\"message\"]": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "select-none flex items-center justify-center w-8 h-8 bg-bg_interaction_primary_inactive text-icon_interaction_primary_default rounded-[10px] transition-colors cursor-not-allowed",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 32,
+            "h": 32
+          }
+        }
+      ]
+    }
+  },
+  "sidebar": {
+    "[data-testid*=\"conversation\"]": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "div",
+          "className": "relative flex min-h-0 flex-1 flex-col overflow-hidden",
+          "childCount": 2,
+          "links": []
+        }
+      ]
+    },
+    "[data-testid*=\"sidebar\"]": {
+      "count": 5,
+      "samples": [
+        {
+          "tag": "div",
+          "className": "flex flex-col bg-bg_grouped_secondary overflow-hidden z-50 relative select-none",
+          "childCount": 4,
+          "links": []
+        },
+        {
+          "tag": "button",
+          "className": "flex size-8 cursor-pointer items-center justify-center rounded-[8px] text-icon_default_primary transition-colors hover:bg-bg_interaction_tertiary_hover [-webkit-app-region:no-drag]",
+          "childCount": 1,
+          "links": []
+        },
+        {
+          "tag": "div",
+          "className": "flex flex-col gap-px",
+          "childCount": 2,
+          "links": []
+        }
+      ]
+    },
+    "[data-testid*=\"nav\"]": {
+      "count": 2,
+      "samples": [
+        {
+          "tag": "div",
+          "className": "flex flex-col gap-px",
+          "childCount": 2,
+          "links": []
+        },
+        {
+          "tag": "button",
+          "className": "flex h-[34px] w-full items-center gap-2 rounded-[8px] pl-2 pr-2.5 text-left text-sm leading-5 text-text_default_primary transition-colors focus:outline-none focus-visible:bg-bg_interaction_tertiary_ho",
+          "childCount": 2,
+          "links": []
+        }
+      ]
+    }
+  },
+  "scrollers": [],
+  "customElements": [
+    "dex-notifications",
+    "docs-suggestion-popover-ui",
+    "highlight-ui",
+    "next-route-announcer",
+    "sidebar-trigger-ui"
+  ],
+  "dataAttributes": [
+    "data-agent-id",
+    "data-container-up",
+    "data-css-hash",
+    "data-dex-recorder-ready",
+    "data-mavis-surface",
+    "data-message-collapse-trigger",
+    "data-message-input-root",
+    "data-message-role",
+    "data-message-root-id",
+    "data-msg-id",
+    "data-nscript",
+    "data-pinned-no-drag",
+    "data-placeholder",
+    "data-precedence",
+    "data-rc-order",
+    "data-rc-priority",
+    "data-reveal-ready",
+    "data-session-id",
+    "data-sidebar-keep-open",
+    "data-state",
+    "data-testid",
+    "data-tiptap-style",
+    "data-token-hash",
+    "data-ueto",
+    "data-version",
+    "data-wxt-shadow-root"
+  ],
+  "classPatterns": [
+    {
+      "class": "flex h-[34px] w-full items-center gap-2 rounded-[8px] pl-2 pr-2.5 text-left text-sm leading-5 text-t",
+      "count": 6
+    },
+    {
+      "class": "flex items-center gap-1 flex-1 min-w-0 text-left",
+      "count": 4
+    },
+    {
+      "class": "text-sm font-normal leading-5 text-text_default_tertiary truncate",
+      "count": 4
+    },
+    {
+      "class": "flex items-center gap-2 flex-1 min-w-0 h-full text-left",
+      "count": 3
+    },
+    {
+      "class": "text-sm text-text_default_primary truncate",
+      "count": 3
+    },
+    {
+      "class": "ant-dropdown-trigger flex items-center justify-center w-8 h-8 rounded text-text_default_tertiary tra",
+      "count": 3
+    },
+    {
+      "class": "w-full flex items-center gap-2 pl-2 pr-0.5 h-[34px] rounded-lg text-text_default_primary transition-",
+      "count": 2
+    },
+    {
+      "class": "flex-1 text-left text-sm font-normal truncate flex items-center",
+      "count": 2
+    },
+    {
+      "class": "hidden h-[30px] w-[30px] -mr-1.5 flex-shrink-0 items-center justify-center rounded-[8px] text-text_d",
+      "count": 2
+    },
+    {
+      "class": "select-none md:hover:bg-bg_interaction_tertiary_hover flex items-center justify-center rounded-[8px]",
+      "count": 2
+    },
+    {
+      "class": "w-full message-animate-in group relative",
+      "count": 2
+    },
+    {
+      "class": "text-sm text-text_default_primary space-y-4",
+      "count": 2
+    },
+    {
+      "class": "autoglm-main-content",
+      "count": 1
+    },
+    {
+      "class": "flex size-8 cursor-pointer items-center justify-center rounded-[8px] text-icon_default_primary trans",
+      "count": 1
+    },
+    {
+      "class": "flex size-8 items-center justify-center rounded-[8px] text-text_default_tertiary transition-colors h",
+      "count": 1
+    },
+    {
+      "class": "pointer-events-none absolute inset-x-0 bottom-0 h-[0.6px] bg-border_default transition-opacity durat",
+      "count": 1
+    },
+    {
+      "class": "flex w-full flex-col pt-3 transition-[padding-bottom] duration-200 ease-in-out pb-5",
+      "count": 1
+    },
+    {
+      "class": "group/more flex h-8 items-center gap-1 px-2 pb-1.5 pt-2 text-left",
+      "count": 1
+    },
+    {
+      "class": "text-sm leading-5 text-text_default_tertiary",
+      "count": 1
+    },
+    {
+      "class": "flex h-[34px] w-full items-center gap-2 rounded-[8px] pl-2 pr-0.5 text-left text-text_default_second",
+      "count": 1
+    },
+    {
+      "class": "truncate text-sm leading-5",
+      "count": 1
+    },
+    {
+      "class": "w-full flex items-center gap-2 pl-2 pr-0.5 h-[30px] text-left transition-colors rounded-lg bg-bg_gro",
+      "count": 1
+    },
+    {
+      "class": "text-sm truncate ",
+      "count": 1
+    },
+    {
+      "class": "flex h-[30px] w-[30px] items-center justify-center text-icon_default_tertiary transition-colors hove",
+      "count": 1
+    },
+    {
+      "class": "ant-dropdown-trigger flex h-[30px] w-[30px] items-center justify-center text-icon_default_tertiary t",
+      "count": 1
+    },
+    {
+      "class": "flex h-8 items-center px-2 text-sm text-text_default_tertiary",
+      "count": 1
+    },
+    {
+      "class": "truncate text-sm leading-5 text-text_default_primary",
+      "count": 1
+    },
+    {
+      "class": "flex size-8 flex-shrink-0 items-center justify-center rounded-[8px] border-0 bg-transparent p-0 text",
+      "count": 1
+    },
+    {
+      "class": "min-w-0 max-w-[250px] truncate text-body-strong text-text_default_primary",
+      "count": 1
+    },
+    {
+      "class": "ant-dropdown-trigger flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-[8px] transition",
+      "count": 1
+    },
+    {
+      "class": "select-none flex items-center justify-center w-8 h-8 rounded-lg text-icon_default_secondary hover:te",
+      "count": 1
+    },
+    {
+      "class": "message-container-chat-content max-w-[768px] mx-auto px-4",
+      "count": 1
+    },
+    {
+      "class": "w-full flex justify-end message-animate-in group",
+      "count": 1
+    },
+    {
+      "class": "max-w-[80%] px-3 py-2 bg-bg_grouped_tertiary text-left rounded-[16px_10px_16px_16px]",
+      "count": 1
+    },
+    {
+      "class": "text-text_default_primary",
+      "count": 1
+    },
+    {
+      "class": "message-container-user-text whitespace-pre-wrap break-words text-base leading-6 text-text_default_pr",
+      "count": 1
+    },
+    {
+      "class": "text-caption-base text-text_default_tertiary mr-1 opacity-0 pointer-events-none transition-opacity d",
+      "count": 1
+    },
+    {
+      "class": "text-activity-body-small w-full text-sm leading-5",
+      "count": 1
+    },
+    {
+      "class": "group/header text-activity-body-small inline-flex max-w-[80%] min-w-0 pr-1 text-left text-sm leading",
+      "count": 1
+    },
+    {
+      "class": "min-w-0 truncate  text-text_default_tertiary group-hover/header:text-text_default_secondary",
+      "count": 1
+    }
+  ],
+  "sampleHTML": [
+    {
+      "selector": "[class*=\"message\"]",
+      "count": 6,
+      "outerHTML": "<div class=\"message-container-chat-content max-w-[768px] mx-auto px-4\"><div><div class=\"mb-4\" data-msg-id=\"424077288194331\" data-message-root-id=\"424077288194331\" data-message-role=\"user\"><div class=\"w-full flex justify-end message-animate-in group\" data-testid=\"message-item\"><div class=\"w-full flex flex-col items-end gap-2\"><div class=\"max-w-[80%] px-3 py-2 bg-bg_grouped_tertiary text-left rounded-[16px_10px_16px_16px]\" data-testid=\"user-message-bubble\"><div class=\"text-text_default_primary\"><div><div class=\"relative\"><p data-testid=\"user-message-text\" class=\"message-container-user-text whitespace-pre-wrap break-words text-base leading-6 text-text_default_primary \"><span>continue</span></p></div></div></div></div><div class=\"flex h-8 items-center justify-end gap-1\" data-testid=\"user-message-actions\"><span class=\"text-caption-base text-text_default_tertiary mr-1 opacity-0 pointer-events-none transition-opacity duration-150 group-hover:opacity-100 group-hover:pointer-events-auto group-focus-within:opacity-100 group-focus-within:pointer-events-auto\">Jul 26, 10:38</span><div data-testid=\"user-message-copy-button\" class=\"opacity-0 pointer-events-none transition-opacity duration-150 group-hover:opacity-100 group-hover:pointer-events-auto group-focus-within:opacity-100 group-focus-within:pointer-events-auto\"><div role=\"button\" tabindex=\"0\" class=\"select-none md:hover:bg-bg_interaction_tertiary_hover flex items-center justify-center rounded-[8px] min-h-7 min-w-7 rounded-[8px] text-text_default_tertiary cursor-pointer\" aria-label=\"Copy\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M14.4819 2.43701C16.1841 2.43701 17.564 3.8169 17.564 5.51904V10.896C17.5639 12.5981 16.1841 13.978 14.4819 13.978H13.98V14.4819C13.9798 16.1838 12.5999 17.5639 10.8979 17.564H5.52002C3.81838 17.564 2.43875 16.1845 2.43799 14.4829L2.43604 9.1001C2.4357 7.40007 3.81221 6.02043 5.51221 6.01709L6.02295 "
+    },
+    {
+      "selector": "[class*=\"markdown\"]",
+      "count": 2,
+      "outerHTML": "<div class=\"matrix-markdown message-content flex-1 relative max-w-full overflow-hidden text-pretty\"><div class=\"matrix-markdown matrix-markdown--shifted\"><p>Hey — looks like this session is fresh, nothing in the workspace and no prior context to pick up from. I don't have a \"previous\" to continue.</p>\n<p>Did you mean to continue a different session? Or were we working on something that didn't make it over? Tell me what we were doing and I'll jump right back in.</p></div></div>"
+    }
+  ]
+}

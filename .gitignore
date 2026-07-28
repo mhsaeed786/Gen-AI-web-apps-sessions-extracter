@@ -17,3 +17,5 @@ pnpm-lock.yaml
 dist/
 build/
 coverage/
+# Keep data/dom-dumps in repo for analysis
+# data/dom-dumps/  # uncomment to ignore

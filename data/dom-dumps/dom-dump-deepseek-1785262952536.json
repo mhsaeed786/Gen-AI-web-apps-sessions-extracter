@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "platform": "deepseek",
+    "url": "https://chat.deepseek.com/",
+    "host": "chat.deepseek.com",
+    "title": "DeepSeek - Into the Unknown",
+    "scrapedAt": "2026-07-28T18:22:32.533Z",
+    "bodyClasses": "en_US dark"
+  },
+  "messages": {
+    "[class*=\"content\"]": {
+      "count": 3,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--m ds-button--icon-relative-m ds-button--sizing-content d05a0287",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 2,
+          "rect": {
+            "w": 16,
+            "h": 16
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--m ds-button--icon-relative-m ds-button--sizing-content _7d1f5e2",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 2,
+          "rect": {
+            "w": 16,
+            "h": 16
+          }
+        },
+        {
+          "tag": "div",
+          "id": "autoglm-main-content",
+          "className": "autoglm-main-content",
+          "dataAttrs": [
+            "version"
+          ],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 1365,
+            "h": 0
+          }
+        }
+      ]
+    },
+    "[data-role]": {
+      "count": 3,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "aa40b5de",
+          "dataAttrs": [
+            "role"
+          ],
+          "text": "Instant",
+          "childCount": 2,
+          "rect": {
+            "w": 65,
+            "h": 17
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "aa40b5de",
+          "dataAttrs": [
+            "role"
+          ],
+          "text": "Expert",
+          "childCount": 2,
+          "rect": {
+            "w": 63,
+            "h": 17
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "aa40b5de",
+          "dataAttrs": [
+            "role"
+          ],
+          "text": "Vision",
+          "childCount": 2,
+          "rect": {
+            "w": 60,
+            "h": 17
+          }
+        }
+      ]
+    }
+  },
+  "sidebar": {},
+  "scrollers": [
+    {
+      "tag": "div",
+      "id": null,
+      "className": "_6d215eb ds-scroll-area ds-scroll-area--show-on-focus-within ds-scroll-area--enabled",
+      "scrollHeight": 972,
+      "clientHeight": 757,
+      "childCount": 1,
+      "dataTestId": null
+    }
+  ],
+  "customElements": [
+    "dex-notifications",
+    "docs-suggestion-popover-ui",
+    "highlight-ui",
+    "sidebar-trigger-ui"
+  ],
+  "dataAttributes": [
+    "data-dex-recorder-ready",
+    "data-ds-dark-theme",
+    "data-layout",
+    "data-model-type",
+    "data-role",
+    "data-rspack",
+    "data-version",
+    "data-wxt-shadow-root"
+  ],
+  "classPatterns": [
+    {
+      "class": "ds-button ds-button--iconLabelTertiary ds-button--icon ds-button--capsule ds-button--m ds-button--ic",
+      "count": 2
+    },
+    {
+      "class": "autoglm-main-content",
+      "count": 1
+    }
+  ],
+  "sampleHTML": []
+}

@@ -1,0 +1,674 @@
+{
+  "meta": {
+    "platform": "perplexity",
+    "url": "https://www.perplexity.ai/search/7184763b-9a53-4a6d-af2f-f2b2b0423ae0",
+    "host": "www.perplexity.ai",
+    "title": "Based on my health documents please see what problems I have",
+    "scrapedAt": "2026-07-28T18:20:25.451Z",
+    "bodyClasses": "md:bg-underlay bg-transparent"
+  },
+  "messages": {
+    "[class*=\"query\"]": {
+      "count": 6,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "group/query relative whitespace-pre-line !text-wrap break-words [word-break:break-word] font-sans text-base text-foreground selection:bg-super/50 selection:text-foreground dark:selection:bg-super/10 d",
+          "dataAttrs": [],
+          "text": "Based on my health documents please see what problems I have",
+          "childCount": 1,
+          "rect": {
+            "w": 489,
+            "h": 48
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "group/query relative whitespace-pre-line !text-wrap break-words [word-break:break-word] font-sans text-base text-foreground selection:bg-super/50 selection:text-foreground dark:selection:bg-super/10 d",
+          "dataAttrs": [],
+          "text": "Hey I have a bad masturbation addiction and extensive phone use habit for the last ten years , this",
+          "childCount": 1,
+          "rect": {
+            "w": 600,
+            "h": 168
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "group/query relative whitespace-pre-line !text-wrap break-words [word-break:break-word] font-sans text-base text-foreground selection:bg-super/50 selection:text-foreground dark:selection:bg-super/10 d",
+          "dataAttrs": [],
+          "text": "I don't have sleep issues",
+          "childCount": 1,
+          "rect": {
+            "w": 199,
+            "h": 48
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "group/query relative whitespace-pre-line !text-wrap break-words [word-break:break-word] font-sans text-base text-foreground selection:bg-super/50 selection:text-foreground dark:selection:bg-super/10 d",
+          "dataAttrs": [],
+          "text": "Ok so masturbation is bad it means",
+          "childCount": 1,
+          "rect": {
+            "w": 278,
+            "h": 48
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "group/query relative whitespace-pre-line !text-wrap break-words [word-break:break-word] font-sans text-base text-foreground selection:bg-super/50 selection:text-foreground dark:selection:bg-super/10 d",
+          "dataAttrs": [],
+          "text": "My current frequency is mostly 2 times a week . Sometimes if I am overly triggered 2 times in short",
+          "childCount": 1,
+          "rect": {
+            "w": 600,
+            "h": 96
+          }
+        }
+      ]
+    },
+    "[class*=\"user\"]": {
+      "count": 71,
+      "samples": [
+        {
+          "tag": "button",
+          "id": null,
+          "className": "reset interactable select-none [-webkit-user-drag:none] outline-none font-medium transition-[background-color,border-color,transform,color,opacity] duration-300 ease-out font-sans text-center items-ce",
+          "dataAttrs": [],
+          "text": "Upgrade plan",
+          "childCount": 3,
+          "rect": {
+            "w": 110,
+            "h": 24
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "className": "reset interactable-alt select-none [-webkit-user-drag:none] outline-none font-medium transition-[background-color,border-color,transform,color,opacity] duration-300 ease-out font-sans text-center item",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 36,
+            "h": 40
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "className": "reset interactable select-none [-webkit-user-drag:none] outline-none font-medium transition-[background-color,border-color,transform,color,opacity] duration-300 ease-out font-sans text-center items-ce",
+          "dataAttrs": [
+            "state"
+          ],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 36,
+            "h": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "className": "reset interactable select-none [-webkit-user-drag:none] outline-none font-medium transition-[background-color,border-color,transform,color,opacity] duration-300 ease-out font-sans text-center items-ce",
+          "dataAttrs": [
+            "state"
+          ],
+          "text": "Share",
+          "childCount": 3,
+          "rect": {
+            "w": 81,
+            "h": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "className": "reset interactable select-none [-webkit-user-drag:none] outline-none font-medium transition-[background-color,border-color,transform,color,opacity] duration-300 ease-out font-sans text-center items-ce",
+          "dataAttrs": [
+            "state"
+          ],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 32,
+            "h": 32
+          }
+        }
+      ]
+    },
+    "[class*=\"bot\"]": {
+      "count": 40,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "pointer-events-none absolute inset-x-0 bottom-0 z-10 h-px border-b transition-opacity duration-150 opacity-0 border-subtlest ring-subtlest divide-subtlest",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 200,
+            "h": 1
+          }
+        },
+        {
+          "tag": "span",
+          "id": null,
+          "className": "text-box-trim-both pl-1",
+          "dataAttrs": [],
+          "text": "Upgrade plan",
+          "childCount": 0,
+          "rect": {
+            "w": 80,
+            "h": 14
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "flex h-10 cursor-pointer items-center relative group/sidebar-bottom-item shrink-0 w-full",
+          "dataAttrs": [],
+          "text": "Hassan SaeedFree plan",
+          "childCount": 2,
+          "rect": {
+            "w": 199,
+            "h": 40
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "pointer-events-none absolute inset-y-0 inset-x-sm bg-subtle rounded-xl opacity-0 group-hover/sidebar-bottom-item:opacity-100",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 183,
+            "h": 40
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "flex items-center justify-center shrink-0 relative size-6 overflow-visible text-quiet group-hover/sidebar-bottom-item:text-foreground",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 24,
+            "h": 24
+          }
+        }
+      ]
+    },
+    "[class*=\"Bot\"]": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "bottom-safeAreaInsetBottom z-10 pointer-events-none p-md inset-x-0 w-full md:w-auto absolute pr-[calc(var(--context-pane-width)+var(--context-pane-gutter-width)+var(--size-md))]",
+          "dataAttrs": [],
+          "text": "ProFree preview of advanced search enabled.Learn moreHealth SearchComputerModel",
+          "childCount": 1,
+          "rect": {
+            "w": 1155,
+            "h": 200
+          }
+        }
+      ]
+    },
+    "[class*=\"content\"]": {
+      "count": 21,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "contents",
+          "dataAttrs": [],
+          "text": "[data-radix-scroll-area-viewport]{scrollbar-width:none;-ms-overflow-style:none;-webkit-overflow-scro",
+          "childCount": 1,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "!w-[5px] before:content-[''] before:absolute before:top-[50%] before:left-[50%] before:translate-x-[-50%] before:translate-y-[-50%] before:w-[100%] before:h-[100%] before:min-w-[10px] before:min-h-[10",
+          "dataAttrs": [
+            "state"
+          ],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 5,
+            "h": 637
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "flex-1 min-w-0 relative flex group/wrapped-content h-full",
+          "dataAttrs": [],
+          "text": "Hassan SaeedFree plan",
+          "childCount": 2,
+          "rect": {
+            "w": 138,
+            "h": 40
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "absolute inset-y-0 left-sm right-0 opacity-50 group-hover/wrapped-content:bg-subtle rounded-l-xl border-subtlest ring-subtlest divide-subtlest",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 130,
+            "h": 40
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "contents",
+          "dataAttrs": [
+            "orientation"
+          ],
+          "text": "AnswerAnswerLinksLinksImagesImagesShareBased on my health documents please see what problems I haveC",
+          "childCount": 3,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        }
+      ]
+    },
+    "[class*=\"Content\"]": {
+      "count": 2,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "mx-auto flex flex-col pointer-events-auto max-w-threadContentWidth gap-md md:gap-lg",
+          "dataAttrs": [],
+          "text": "Based on my health documents please see what problems I haveCompleted 2 stepsYour health documents p",
+          "childCount": 1,
+          "rect": {
+            "w": 720,
+            "h": 7596
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "mx-auto flex flex-col pointer-events-auto max-w-threadContentWidth gap-sm",
+          "dataAttrs": [],
+          "text": "ProFree preview of advanced search enabled.Learn moreHealth SearchComputerModel",
+          "childCount": 2,
+          "rect": {
+            "w": 720,
+            "h": 168
+          }
+        }
+      ]
+    },
+    "[class*=\"text\"]": {
+      "count": 366,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "flex items-center gap-xs pr-xs visible group-hover/sidebar:visible font-sans text-base text-quiet  selection:bg-super/50 selection:text-foreground dark:selection:bg-super/10 dark:selection:text-super",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 36,
+            "h": 32
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "relative size-6 grid place-items-center shrink-0 pointer-events-none text-quiet group-hover/sidebar-sub-menu:text-foreground",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 24,
+            "h": 24
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "flex-1 truncate group-hover/sidebar-sub-menu:text-foreground font-sans text-quiet  text-sm text-start selection:bg-super/50 selection:text-foreground dark:selection:bg-super/10 dark:selection:text-sup",
+          "dataAttrs": [],
+          "text": "New",
+          "childCount": 0,
+          "rect": {
+            "w": 120,
+            "h": 20
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "shrink-0 opacity-0 group-hover/sidebar-sub-menu:opacity-100 font-sans text-quieter text-xs select-none selection:bg-super/50 selection:text-foreground dark:selection:bg-super/10 dark:selection:text-su",
+          "dataAttrs": [],
+          "text": "⌃I",
+          "childCount": 0,
+          "rect": {
+            "w": 12,
+            "h": 16
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "relative size-6 grid place-items-center shrink-0 pointer-events-none text-quiet group-hover/sidebar-sub-menu:text-foreground",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 2,
+          "rect": {
+            "w": 24,
+            "h": 24
+          }
+        }
+      ]
+    }
+  },
+  "sidebar": {
+    "nav": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "nav",
+          "className": "group/sidebar hidden relative z-10 min-h-0 flex-none h-full md:flex border-subtlest ring-subtlest divide-subtlest bg-subtle",
+          "childCount": 1,
+          "links": [
+            {
+              "href": "/",
+              "text": ""
+            },
+            {
+              "href": "/",
+              "text": ""
+            },
+            {
+              "href": "/computer/tasks",
+              "text": ""
+            },
+            {
+              "href": "/spaces",
+              "text": ""
+            },
+            {
+              "href": "/computer/artifacts",
+              "text": ""
+            },
+            {
+              "href": "/computer/connectors",
+              "text": ""
+            },
+            {
+              "href": "/computer/connectors",
+              "text": ""
+            },
+            {
+              "href": "/computer/skills",
+              "text": ""
+            },
+            {
+              "href": "/computer/workflows",
+              "text": ""
+            },
+            {
+              "href": "/computer/memory?thread=bc33de2c-631f-42d2-af7e-efb70f30284c",
+              "text": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "scrollers": [
+    {
+      "tag": "div",
+      "id": null,
+      "className": "size-full [&>div]:!flex [&>div]:min-h-full [&>div]:w-full [&>div]:!min-w-0 [&>div]:flex-col h-full overflow-x-hidden scrollbar-subtle",
+      "scrollHeight": 982,
+      "clientHeight": 792,
+      "childCount": 1,
+      "dataTestId": null
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "className": "scrollable-container flex flex-1 basis-0 overflow-auto [scrollbar-gutter:stable] scrollbar-subtle",
+      "scrollHeight": 7860,
+      "clientHeight": 889,
+      "childCount": 1,
+      "dataTestId": null
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "className": "mx-auto size-full max-w-none",
+      "scrollHeight": 7860,
+      "clientHeight": 889,
+      "childCount": 5,
+      "dataTestId": null
+    }
+  ],
+  "customElements": [
+    "dex-notifications",
+    "docs-suggestion-popover-ui",
+    "highlight-ui",
+    "sidebar-trigger-ui"
+  ],
+  "dataAttributes": [
+    "data-answer-font",
+    "data-ask-input-container",
+    "data-cf-beacon",
+    "data-color-scheme",
+    "data-default-favicon-href",
+    "data-dex-frame-id",
+    "data-dex-recorder-ready",
+    "data-lexical-decorator",
+    "data-lexical-editor",
+    "data-lexical-text",
+    "data-modality",
+    "data-orientation",
+    "data-pplx-citation",
+    "data-pplx-citation-url",
+    "data-radix-collection-item",
+    "data-radix-scroll-area-viewport",
+    "data-renderer",
+    "data-state",
+    "data-testid",
+    "data-type",
+    "data-upsell-slot"
+  ],
+  "classPatterns": [
+    {
+      "class": "reset interactable select-none [-webkit-user-drag:none] outline-none font-medium transition-[backgro",
+      "count": 69
+    },
+    {
+      "class": "relative -mt-px max-w-full min-w-0 whitespace-nowrap -top-px font-sans text-base text-foreground sel",
+      "count": 48
+    },
+    {
+      "class": "text-3xs rounded-md group min-w-4 max-w-full cursor-pointer align-middle font-mono tabular-nums font",
+      "count": 48
+    },
+    {
+      "class": "reset interactable-alt size-6 grid place-items-center rounded-md shrink-0 text-quiet md:hover:bg-qui",
+      "count": 25
+    },
+    {
+      "class": "flex-1 group-hover/sidebar-sub-menu:text-foreground truncate pl-[5px] font-sans text-quiet  text-xs ",
+      "count": 23
+    },
+    {
+      "class": "font-semibold leading-tight text-pretty mb-2 mt-4 [.has-inline-images_&]:clear-end text-lg first:mt-",
+      "count": 13
+    },
+    {
+      "class": "border-subtlest p-sm min-w-[48px] break-normal border-b text-left align-bottom border-r last:border-",
+      "count": 10
+    },
+    {
+      "class": "contents",
+      "count": 8
+    },
+    {
+      "class": "text-box-trim-both",
+      "count": 7
+    },
+    {
+      "class": "relative size-6 grid place-items-center shrink-0 pointer-events-none text-quiet group-hover/sidebar-",
+      "count": 6
+    },
+    {
+      "class": "flex-1 truncate group-hover/sidebar-sub-menu:text-foreground font-sans text-quiet  text-sm text-star",
+      "count": 6
+    },
+    {
+      "class": "group reset font-sans font-medium select-none transition-colors duration-300 relative flex gap-1.5 i",
+      "count": 6
+    },
+    {
+      "class": "group/query relative whitespace-pre-line !text-wrap break-words [word-break:break-word] font-sans te",
+      "count": 6
+    },
+    {
+      "class": "min-w-0 font-sans text-base text-foreground font-normal select-text break-words selection:bg-super/5",
+      "count": 6
+    },
+    {
+      "class": "relative font-sans text-base text-foreground selection:bg-super/50 selection:text-foreground dark:se",
+      "count": 6
+    },
+    {
+      "class": "gap-y-md after:clear-both after:block after:content-['']",
+      "count": 6
+    },
+    {
+      "class": "text-quiet font-normal gap-x-xs flex flex-row -ml-0.5",
+      "count": 6
+    },
+    {
+      "class": "marker:text-quiet list-disc pl-8",
+      "count": 5
+    },
+    {
+      "class": "flex flex-col min-w-0 text-quiet relative",
+      "count": 5
+    },
+    {
+      "class": "group-hover/tool-wrapper:text-foreground font-sans text-quiet  text-sm select-none truncate selectio",
+      "count": 5
+    },
+    {
+      "class": "ml-xs duration-quick md:group-hover:!text-super inline-flex shrink-0 translate-y-two transition-all ",
+      "count": 5
+    },
+    {
+      "class": "md:group-hover:!text-super duration-quick min-w-0 flex-1 transition-all font-sans text-base text-for",
+      "count": 5
+    },
+    {
+      "class": "flex items-center whitespace-nowrap truncate h-7 mx-3 font-sans text-quieter text-xs select-none sel",
+      "count": 3
+    },
+    {
+      "class": "[&_tr:last-child_td]:border-b-0 my-0 w-full table-auto border-separate border-spacing-0 text-sm font",
+      "count": 3
+    },
+    {
+      "class": "text-box-trim-both pl-1",
+      "count": 2
+    },
+    {
+      "class": "reset interactable-alt select-none [-webkit-user-drag:none] outline-none font-medium transition-[bac",
+      "count": 2
+    },
+    {
+      "class": "text-box-trim-both pr-1",
+      "count": 2
+    },
+    {
+      "class": "reset interactable-alt inline-flex select-none h-8 max-w-full items-center border text-sm transition",
+      "count": 2
+    },
+    {
+      "class": "pointer-events-none absolute inset-x-0 bottom-0 z-10 h-px border-b transition-opacity duration-150 o",
+      "count": 1
+    },
+    {
+      "class": "flex items-center gap-xs pr-xs visible group-hover/sidebar:visible font-sans text-base text-quiet  s",
+      "count": 1
+    },
+    {
+      "class": "shrink-0 opacity-0 group-hover/sidebar-sub-menu:opacity-100 font-sans text-quieter text-xs select-no",
+      "count": 1
+    },
+    {
+      "class": "flex-1 group-hover/sidebar-sub-menu:text-foreground truncate pl-[5px] font-sans text-foreground text",
+      "count": 1
+    },
+    {
+      "class": "!w-[5px] before:content-[''] before:absolute before:top-[50%] before:left-[50%] before:translate-x-[",
+      "count": 1
+    },
+    {
+      "class": "flex h-10 cursor-pointer items-center relative group/sidebar-bottom-item shrink-0 w-full",
+      "count": 1
+    },
+    {
+      "class": "pointer-events-none absolute inset-y-0 inset-x-sm bg-subtle rounded-xl opacity-0 group-hover/sidebar",
+      "count": 1
+    },
+    {
+      "class": "flex-1 min-w-0 relative flex group/wrapped-content h-full",
+      "count": 1
+    },
+    {
+      "class": "absolute inset-y-0 left-sm right-0 opacity-50 group-hover/wrapped-content:bg-subtle rounded-l-xl bor",
+      "count": 1
+    },
+    {
+      "class": "flex items-center justify-center shrink-0 relative size-6 overflow-visible text-quiet group-hover/si",
+      "count": 1
+    },
+    {
+      "class": "text-inverse relative",
+      "count": 1
+    },
+    {
+      "class": "flex items-center justify-center font-sans text-base text-quiet  selection:bg-super/50 selection:tex",
+      "count": 1
+    }
+  ],
+  "sampleHTML": [
+    {
+      "selector": "[class*=\"query\"]",
+      "count": 6,
+      "outerHTML": "<div class=\"group/query relative whitespace-pre-line !text-wrap break-words [word-break:break-word] font-sans text-base text-foreground selection:bg-super/50 selection:text-foreground dark:selection:bg-super/10 dark:selection:text-super\" role=\"heading\" aria-level=\"1\"><div class=\"min-w-[48px] select-none p-3 bg-subtle rounded-2xl flex items-center justify-center\" style=\"max-width: 600px;\"><span class=\"min-w-0 font-sans text-base text-foreground font-normal select-text break-words selection:bg-super/50 selection:text-foreground dark:selection:bg-super/10 dark:selection:text-super\">Based on my health documents please see what problems I have</span></div></div>"
+    }
+  ]
+}

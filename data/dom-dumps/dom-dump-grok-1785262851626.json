@@ -1,0 +1,1162 @@
+{
+  "meta": {
+    "platform": "grok",
+    "url": "https://grok.com/c/66d32cb7-3c5c-4f7e-b1d2-14318b494c92?rid=9b246770-a09b-4808-91e6-eb35ced8c098",
+    "host": "grok.com",
+    "title": "Grok: xAI's truth-seeking AI assistant - Grok",
+    "scrapedAt": "2026-07-28T18:20:51.606Z",
+    "bodyClasses": "antialiased font-body text-fg-primary bg-surface-base overflow-x-hidden tracking-[-0.1px] ibm_plex_mono_7ccba913-module__7wS0Na__variable inter_7f3390d8-module__sEGfFG__variable universalsans_661f68e9-module__1v96Qa__variable universalsansdisplay_168ff884-module__9xjxqG__variable vazirmatn_1cfc912f-module__LWuCHG__variable"
+  },
+  "messages": {
+    "[class*=\"message\"]": {
+      "count": 16,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "message-bubble relative rounded-3xl text-primary min-h-7 prose dark:prose-invert break-words prose-p:opacity-100 prose-strong:opacity-100 prose-li:opacity-100 prose-ul:opacity-100 prose-ol:opacity-100",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "what model are you grok",
+          "childCount": 2,
+          "rect": {
+            "w": 215,
+            "h": 46
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "message-bubble relative rounded-3xl text-primary min-h-7 prose dark:prose-invert break-words prose-p:opacity-100 prose-strong:opacity-100 prose-li:opacity-100 prose-ul:opacity-100 prose-ol:opacity-100",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "I'm Grok, an AI built by xAI.\nI'm the current version of Grok (powered by xAI's latest models), desi",
+          "childCount": 4,
+          "rect": {
+            "w": 768,
+            "h": 168
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "message-bubble relative rounded-3xl text-primary min-h-7 prose dark:prose-invert break-words prose-p:opacity-100 prose-strong:opacity-100 prose-li:opacity-100 prose-ul:opacity-100 prose-ol:opacity-100",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "no are you grok 4.5",
+          "childCount": 2,
+          "rect": {
+            "w": 175,
+            "h": 46
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "message-bubble relative rounded-3xl text-primary min-h-7 prose dark:prose-invert break-words prose-p:opacity-100 prose-strong:opacity-100 prose-li:opacity-100 prose-ul:opacity-100 prose-ol:opacity-100",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "No, I'm not Grok 4.5.\nI'm the current version of Grok from xAI (as of July 2026). xAI hasn't release",
+          "childCount": 4,
+          "rect": {
+            "w": 768,
+            "h": 148
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "message-bubble relative rounded-3xl text-primary min-h-7 prose dark:prose-invert break-words prose-p:opacity-100 prose-strong:opacity-100 prose-li:opacity-100 prose-ul:opacity-100 prose-ol:opacity-100",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "BUT THEY anounced it's release 11 hours ago",
+          "childCount": 2,
+          "rect": {
+            "w": 364,
+            "h": 46
+          }
+        }
+      ]
+    },
+    "[class*=\"chat\"]": {
+      "count": 11,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "relative flex h-full flex-col items-center @container/chat min-w-0 [--content-max-width:32rem] @[40rem]:[--content-max-width:38rem] @[44rem]:[--content-max-width:40rem] @[52rem]:[--content-max-width:4",
+          "dataAttrs": [],
+          "text": "what model are you grokI'm Grok, an AI built by xAI.\nI'm the current version of Grok (powered by xAI",
+          "childCount": 3,
+          "rect": {
+            "w": 1108,
+            "h": 945
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "group flex-col items-center gap-1 hidden @[860px]/chat:flex",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 3,
+          "rect": {
+            "w": 40,
+            "h": 264
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "flex items-center gap-[2px] w-max rounded-lg text-xs px-2 start-0 @md/chat:start-3 -ml-4",
+          "dataAttrs": [],
+          "text": "1 / 2",
+          "childCount": 9,
+          "rect": {
+            "w": 316,
+            "h": 32
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "flex items-center gap-[2px] w-max rounded-lg text-xs px-2 start-0 @md/chat:start-3 -ml-4",
+          "dataAttrs": [],
+          "text": "1 / 2",
+          "childCount": 9,
+          "rect": {
+            "w": 316,
+            "h": 32
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "flex items-center gap-[2px] w-max rounded-lg text-xs px-2 start-0 @md/chat:start-3 -ml-4",
+          "dataAttrs": [],
+          "text": "1 / 2",
+          "childCount": 9,
+          "rect": {
+            "w": 316,
+            "h": 32
+          }
+        }
+      ]
+    },
+    "[class*=\"response\"]": {
+      "count": 81,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "relative response-content-markdown markdown [&_a:not(.not-prose)]:text-current [&_a:not(.not-prose):hover]:text-primary [&_a:not(.not-prose):hover]:decoration-primary [&_a:not(.not-prose)]:underline [",
+          "dataAttrs": [],
+          "text": "what model are you grok",
+          "childCount": 1,
+          "rect": {
+            "w": 181,
+            "h": 28
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cur",
+          "dataAttrs": [
+            "state"
+          ],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 32,
+            "h": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cur",
+          "dataAttrs": [
+            "state"
+          ],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 32,
+            "h": 32
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "relative response-content-markdown markdown [&_a:not(.not-prose)]:text-current [&_a:not(.not-prose):hover]:text-primary [&_a:not(.not-prose):hover]:decoration-primary [&_a:not(.not-prose)]:underline [",
+          "dataAttrs": [],
+          "text": "I'm Grok, an AI built by xAI.\nI'm the current version of Grok (powered by xAI's latest models), desi",
+          "childCount": 3,
+          "rect": {
+            "w": 768,
+            "h": 156
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cur",
+          "dataAttrs": [
+            "state"
+          ],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 32,
+            "h": 32
+          }
+        }
+      ]
+    },
+    "[class*=\"query\"]": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "query-bar group z-20 relative w-full overflow-hidden @container/input pb-0 bg-surface-l1/75 backdrop-blur-xl [@media(prefers-reduced-transparency:reduce)]:bg-surface-l1 [@media(prefers-reduced-transpa",
+          "dataAttrs": [],
+          "text": "Fast",
+          "childCount": 2,
+          "rect": {
+            "w": 800,
+            "h": 60
+          }
+        }
+      ]
+    },
+    "[class*=\"bot\"]": {
+      "count": 36,
+      "samples": [
+        {
+          "tag": "section",
+          "id": null,
+          "className": "inline-media-container flex flex-col gap-1 clear-both",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 181,
+            "h": 0
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "absolute bottom-0 h-px",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 0,
+            "h": 1
+          }
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "className": "inline-media-container flex flex-col gap-1 clear-both",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 768,
+            "h": 0
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "absolute bottom-0 h-px",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 0,
+            "h": 1
+          }
+        },
+        {
+          "tag": "section",
+          "id": null,
+          "className": "inline-media-container flex flex-col gap-1 clear-both",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 141,
+            "h": 0
+          }
+        }
+      ]
+    },
+    "[class*=\"markdown\"]": {
+      "count": 16,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "relative response-content-markdown markdown [&_a:not(.not-prose)]:text-current [&_a:not(.not-prose):hover]:text-primary [&_a:not(.not-prose):hover]:decoration-primary [&_a:not(.not-prose)]:underline [",
+          "dataAttrs": [],
+          "text": "what model are you grok",
+          "childCount": 1,
+          "rect": {
+            "w": 181,
+            "h": 28
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "relative response-content-markdown markdown [&_a:not(.not-prose)]:text-current [&_a:not(.not-prose):hover]:text-primary [&_a:not(.not-prose):hover]:decoration-primary [&_a:not(.not-prose)]:underline [",
+          "dataAttrs": [],
+          "text": "I'm Grok, an AI built by xAI.\nI'm the current version of Grok (powered by xAI's latest models), desi",
+          "childCount": 3,
+          "rect": {
+            "w": 768,
+            "h": 156
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "relative response-content-markdown markdown [&_a:not(.not-prose)]:text-current [&_a:not(.not-prose):hover]:text-primary [&_a:not(.not-prose):hover]:decoration-primary [&_a:not(.not-prose)]:underline [",
+          "dataAttrs": [],
+          "text": "no are you grok 4.5",
+          "childCount": 1,
+          "rect": {
+            "w": 141,
+            "h": 28
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "relative response-content-markdown markdown [&_a:not(.not-prose)]:text-current [&_a:not(.not-prose):hover]:text-primary [&_a:not(.not-prose):hover]:decoration-primary [&_a:not(.not-prose)]:underline [",
+          "dataAttrs": [],
+          "text": "No, I'm not Grok 4.5.\nI'm the current version of Grok from xAI (as of July 2026). xAI hasn't release",
+          "childCount": 4,
+          "rect": {
+            "w": 768,
+            "h": 136
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "relative response-content-markdown markdown [&_a:not(.not-prose)]:text-current [&_a:not(.not-prose):hover]:text-primary [&_a:not(.not-prose):hover]:decoration-primary [&_a:not(.not-prose)]:underline [",
+          "dataAttrs": [],
+          "text": "BUT THEY anounced it's release 11 hours ago",
+          "childCount": 1,
+          "rect": {
+            "w": 330,
+            "h": 28
+          }
+        }
+      ]
+    },
+    "[class*=\"content\"]": {
+      "count": 37,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "inset-y-0 h-full box-content md:flex overflow-hidden relative bg-surface-base transition-[left,right,width] duration-300 ease-out-quint motion-reduce:transition-none w-[--sidebar-width] block group-da",
+          "dataAttrs": [],
+          "text": "Toggle SidebarSearchCtrl+KNew ChatCtrl+JImagineAutomationsSkills and ConnectorsProjectsAdd projectHi",
+          "childCount": 2,
+          "rect": {
+            "w": 257,
+            "h": 945
+          }
+        },
+        {
+          "tag": "div",
+          "id": "grok-content-area",
+          "className": "flex w-full h-full overflow-hidden @container/mainview relative [anchor-name:--grok-content-area]",
+          "dataAttrs": [],
+          "text": "what model are you grokI'm Grok, an AI built by xAI.\nI'm the current version of Grok (powered by xAI",
+          "childCount": 1,
+          "rect": {
+            "w": 1108,
+            "h": 945
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "relative flex h-full flex-col items-center @container/chat min-w-0 [--content-max-width:32rem] @[40rem]:[--content-max-width:38rem] @[44rem]:[--content-max-width:40rem] @[52rem]:[--content-max-width:4",
+          "dataAttrs": [],
+          "text": "what model are you grokI'm Grok, an AI built by xAI.\nI'm the current version of Grok (powered by xAI",
+          "childCount": 3,
+          "rect": {
+            "w": 1108,
+            "h": 945
+          }
+        },
+        {
+          "tag": "div",
+          "id": "response-2dba7ad1-d724-4f99-a144-f913ff858a4e",
+          "className": "relative group flex flex-col justify-center w-full max-w-[var(--content-max-width)] pb-0.5 items-end",
+          "dataAttrs": [],
+          "text": "what model are you grok",
+          "childCount": 4,
+          "rect": {
+            "w": 768,
+            "h": 90
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "relative response-content-markdown markdown [&_a:not(.not-prose)]:text-current [&_a:not(.not-prose):hover]:text-primary [&_a:not(.not-prose):hover]:decoration-primary [&_a:not(.not-prose)]:underline [",
+          "dataAttrs": [],
+          "text": "what model are you grok",
+          "childCount": 1,
+          "rect": {
+            "w": 181,
+            "h": 28
+          }
+        }
+      ]
+    },
+    "[class*=\"text\"]": {
+      "count": 278,
+      "samples": [
+        {
+          "tag": "body",
+          "id": null,
+          "className": "antialiased font-body text-fg-primary bg-surface-base overflow-x-hidden tracking-[-0.1px] ibm_plex_mono_7ccba913-module__7wS0Na__variable inter_7f3390d8-module__sEGfFG__variable universalsans_661f68e9",
+          "dataAttrs": [],
+          "text": "<iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-TBL6BD7W\" height=\"0\" width=\"0\" style=\"d",
+          "childCount": 88,
+          "rect": {
+            "w": 1365,
+            "h": 945
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "group peer md:block text-sidebar-foreground z-[40] print:hidden",
+          "dataAttrs": [
+            "state",
+            "collapsible",
+            "variant",
+            "side"
+          ],
+          "text": "Toggle SidebarSearchCtrl+KNew ChatCtrl+JImagineAutomationsSkills and ConnectorsProjectsAdd projectHi",
+          "childCount": 1,
+          "rect": {
+            "w": 257,
+            "h": 945
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opa",
+          "dataAttrs": [
+            "sidebar",
+            "state"
+          ],
+          "text": "Toggle Sidebar",
+          "childCount": 2,
+          "rect": {
+            "w": 40,
+            "h": 40
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "className": "peer/menu-button flex items-center gap-2 overflow-hidden rounded-xl text-left text-sm outline-none ring-sidebar-ring transition-[width,height,padding] focus:outline-none focus:ring-0 group-has-[[data-",
+          "dataAttrs": [
+            "sidebar",
+            "active",
+            "state"
+          ],
+          "text": "Search",
+          "childCount": 2,
+          "rect": {
+            "w": 236,
+            "h": 36
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "size-6 flex items-center justify-center shrink-0 transition-transform [.wd-refresh_&]:text-secondary",
+          "dataAttrs": [
+            "sidebar"
+          ],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 24,
+            "h": 24
+          }
+        }
+      ]
+    },
+    "[class*=\"bubble\"]": {
+      "count": 16,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "message-bubble relative rounded-3xl text-primary min-h-7 prose dark:prose-invert break-words prose-p:opacity-100 prose-strong:opacity-100 prose-li:opacity-100 prose-ul:opacity-100 prose-ol:opacity-100",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "what model are you grok",
+          "childCount": 2,
+          "rect": {
+            "w": 215,
+            "h": 46
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "message-bubble relative rounded-3xl text-primary min-h-7 prose dark:prose-invert break-words prose-p:opacity-100 prose-strong:opacity-100 prose-li:opacity-100 prose-ul:opacity-100 prose-ol:opacity-100",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "I'm Grok, an AI built by xAI.\nI'm the current version of Grok (powered by xAI's latest models), desi",
+          "childCount": 4,
+          "rect": {
+            "w": 768,
+            "h": 168
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "message-bubble relative rounded-3xl text-primary min-h-7 prose dark:prose-invert break-words prose-p:opacity-100 prose-strong:opacity-100 prose-li:opacity-100 prose-ul:opacity-100 prose-ol:opacity-100",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "no are you grok 4.5",
+          "childCount": 2,
+          "rect": {
+            "w": 175,
+            "h": 46
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "message-bubble relative rounded-3xl text-primary min-h-7 prose dark:prose-invert break-words prose-p:opacity-100 prose-strong:opacity-100 prose-li:opacity-100 prose-ul:opacity-100 prose-ol:opacity-100",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "No, I'm not Grok 4.5.\nI'm the current version of Grok from xAI (as of July 2026). xAI hasn't release",
+          "childCount": 4,
+          "rect": {
+            "w": 768,
+            "h": 148
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "message-bubble relative rounded-3xl text-primary min-h-7 prose dark:prose-invert break-words prose-p:opacity-100 prose-strong:opacity-100 prose-li:opacity-100 prose-ul:opacity-100 prose-ol:opacity-100",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "BUT THEY anounced it's release 11 hours ago",
+          "childCount": 2,
+          "rect": {
+            "w": 364,
+            "h": 46
+          }
+        }
+      ]
+    },
+    "[data-testid*=\"message\"]": {
+      "count": 16,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "message-bubble relative rounded-3xl text-primary min-h-7 prose dark:prose-invert break-words prose-p:opacity-100 prose-strong:opacity-100 prose-li:opacity-100 prose-ul:opacity-100 prose-ol:opacity-100",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "what model are you grok",
+          "childCount": 2,
+          "rect": {
+            "w": 215,
+            "h": 46
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "message-bubble relative rounded-3xl text-primary min-h-7 prose dark:prose-invert break-words prose-p:opacity-100 prose-strong:opacity-100 prose-li:opacity-100 prose-ul:opacity-100 prose-ol:opacity-100",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "I'm Grok, an AI built by xAI.\nI'm the current version of Grok (powered by xAI's latest models), desi",
+          "childCount": 4,
+          "rect": {
+            "w": 768,
+            "h": 168
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "message-bubble relative rounded-3xl text-primary min-h-7 prose dark:prose-invert break-words prose-p:opacity-100 prose-strong:opacity-100 prose-li:opacity-100 prose-ul:opacity-100 prose-ol:opacity-100",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "no are you grok 4.5",
+          "childCount": 2,
+          "rect": {
+            "w": 175,
+            "h": 46
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "message-bubble relative rounded-3xl text-primary min-h-7 prose dark:prose-invert break-words prose-p:opacity-100 prose-strong:opacity-100 prose-li:opacity-100 prose-ul:opacity-100 prose-ol:opacity-100",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "No, I'm not Grok 4.5.\nI'm the current version of Grok from xAI (as of July 2026). xAI hasn't release",
+          "childCount": 4,
+          "rect": {
+            "w": 768,
+            "h": 148
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "message-bubble relative rounded-3xl text-primary min-h-7 prose dark:prose-invert break-words prose-p:opacity-100 prose-strong:opacity-100 prose-li:opacity-100 prose-ul:opacity-100 prose-ol:opacity-100",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "BUT THEY anounced it's release 11 hours ago",
+          "childCount": 2,
+          "rect": {
+            "w": 364,
+            "h": 46
+          }
+        }
+      ]
+    },
+    "[data-testid*=\"chat\"]": {
+      "count": 2,
+      "samples": [
+        {
+          "tag": "a",
+          "id": null,
+          "className": "peer/menu-button flex items-center gap-2 overflow-hidden rounded-xl text-left text-sm outline-none ring-sidebar-ring transition-[width,height,padding] focus:outline-none focus:ring-0 group-has-[[data-",
+          "dataAttrs": [
+            "testid",
+            "sidebar",
+            "active",
+            "state"
+          ],
+          "text": "New Chat",
+          "childCount": 2,
+          "rect": {
+            "w": 236,
+            "h": 36
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "relative min-h-[60px]",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 587,
+            "h": 60
+          }
+        }
+      ]
+    },
+    "[data-testid*=\"user\"]": {
+      "count": 8,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "message-bubble relative rounded-3xl text-primary min-h-7 prose dark:prose-invert break-words prose-p:opacity-100 prose-strong:opacity-100 prose-li:opacity-100 prose-ul:opacity-100 prose-ol:opacity-100",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "what model are you grok",
+          "childCount": 2,
+          "rect": {
+            "w": 215,
+            "h": 46
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "message-bubble relative rounded-3xl text-primary min-h-7 prose dark:prose-invert break-words prose-p:opacity-100 prose-strong:opacity-100 prose-li:opacity-100 prose-ul:opacity-100 prose-ol:opacity-100",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "no are you grok 4.5",
+          "childCount": 2,
+          "rect": {
+            "w": 175,
+            "h": 46
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "message-bubble relative rounded-3xl text-primary min-h-7 prose dark:prose-invert break-words prose-p:opacity-100 prose-strong:opacity-100 prose-li:opacity-100 prose-ul:opacity-100 prose-ol:opacity-100",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "BUT THEY anounced it's release 11 hours ago",
+          "childCount": 2,
+          "rect": {
+            "w": 364,
+            "h": 46
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "message-bubble relative rounded-3xl text-primary min-h-7 prose dark:prose-invert break-words prose-p:opacity-100 prose-strong:opacity-100 prose-li:opacity-100 prose-ul:opacity-100 prose-ol:opacity-100",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "what the hell ?",
+          "childCount": 2,
+          "rect": {
+            "w": 141,
+            "h": 46
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "message-bubble relative rounded-3xl text-primary min-h-7 prose dark:prose-invert break-words prose-p:opacity-100 prose-strong:opacity-100 prose-li:opacity-100 prose-ul:opacity-100 prose-ol:opacity-100",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "no no no no ,I didn't mean that . 'Opus' class model and you can't figure out who you are",
+          "childCount": 2,
+          "rect": {
+            "w": 678,
+            "h": 46
+          }
+        }
+      ]
+    },
+    "[data-testid*=\"assistant\"]": {
+      "count": 8,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "message-bubble relative rounded-3xl text-primary min-h-7 prose dark:prose-invert break-words prose-p:opacity-100 prose-strong:opacity-100 prose-li:opacity-100 prose-ul:opacity-100 prose-ol:opacity-100",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "I'm Grok, an AI built by xAI.\nI'm the current version of Grok (powered by xAI's latest models), desi",
+          "childCount": 4,
+          "rect": {
+            "w": 768,
+            "h": 168
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "message-bubble relative rounded-3xl text-primary min-h-7 prose dark:prose-invert break-words prose-p:opacity-100 prose-strong:opacity-100 prose-li:opacity-100 prose-ul:opacity-100 prose-ol:opacity-100",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "No, I'm not Grok 4.5.\nI'm the current version of Grok from xAI (as of July 2026). xAI hasn't release",
+          "childCount": 4,
+          "rect": {
+            "w": 768,
+            "h": 148
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "message-bubble relative rounded-3xl text-primary min-h-7 prose dark:prose-invert break-words prose-p:opacity-100 prose-strong:opacity-100 prose-li:opacity-100 prose-ul:opacity-100 prose-ol:opacity-100",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "Worked for 7sYes, you're right — xAI (SpaceXAI) just announced and started rolling out Grok 4.5 yest",
+          "childCount": 4,
+          "rect": {
+            "w": 768,
+            "h": 433
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "message-bubble relative rounded-3xl text-primary min-h-7 prose dark:prose-invert break-words prose-p:opacity-100 prose-strong:opacity-100 prose-li:opacity-100 prose-ul:opacity-100 prose-ol:opacity-100",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "Worked for 2sHaha, yeah I get it — \"what the hell\" is the correct reaction 😂\nxAI just dropped Grok",
+          "childCount": 4,
+          "rect": {
+            "w": 768,
+            "h": 220
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "message-bubble relative rounded-3xl text-primary min-h-7 prose dark:prose-invert break-words prose-p:opacity-100 prose-strong:opacity-100 prose-li:opacity-100 prose-ul:opacity-100 prose-ol:opacity-100",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "Worked for 5sAh, fair callout.\nYou're right — I was being a bit vague earlier.\nThe truth is: I am Gr",
+          "childCount": 4,
+          "rect": {
+            "w": 768,
+            "h": 440
+          }
+        }
+      ]
+    },
+    "[aria-label*=\"message\"]": {
+      "count": 32,
+      "samples": [
+        {
+          "tag": "button",
+          "id": null,
+          "className": "inline-flex items-center justify-center whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-6",
+          "dataAttrs": [
+            "state"
+          ],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 32,
+            "h": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "className": "inline-flex items-center justify-center whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opacity-6",
+          "dataAttrs": [
+            "state"
+          ],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 32,
+            "h": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opa",
+          "dataAttrs": [
+            "state"
+          ],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 32,
+            "h": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opa",
+          "dataAttrs": [
+            "state"
+          ],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 32,
+            "h": 32
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "className": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:opa",
+          "dataAttrs": [
+            "state"
+          ],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 32,
+            "h": 32
+          }
+        }
+      ]
+    }
+  },
+  "sidebar": {},
+  "scrollers": [
+    {
+      "tag": "div",
+      "id": null,
+      "className": "flex min-h-0 flex-col overflow-auto grow group-data-[collapsible=icon]:overflow-hidden relative overflow-y-auto overflow-x-hidden scrollbar-gutter-sta",
+      "scrollHeight": 817,
+      "clientHeight": 631,
+      "childCount": 2,
+      "dataTestId": null
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "className": "w-full h-full overflow-y-auto overflow-x-hidden scrollbar-gutter-stable flex flex-col items-center px-gutter",
+      "scrollHeight": 3609,
+      "clientHeight": 945,
+      "childCount": 1,
+      "dataTestId": null
+    }
+  ],
+  "customElements": [
+    "dex-notifications",
+    "docs-suggestion-popover-ui",
+    "highlight-ui",
+    "next-route-announcer",
+    "sidebar-trigger-ui"
+  ],
+  "dataAttributes": [
+    "data-active",
+    "data-cf-beacon",
+    "data-collapsible",
+    "data-dex-frame-id",
+    "data-dex-recorder-ready",
+    "data-domain-script",
+    "data-mcp-app-fullscreen-container",
+    "data-name",
+    "data-nosnippet",
+    "data-nscript",
+    "data-optanongroupid",
+    "data-placeholder",
+    "data-precedence",
+    "data-query-bar-mode-select",
+    "data-side",
+    "data-sidebar",
+    "data-slot",
+    "data-state",
+    "data-testid",
+    "data-tiptap-style",
+    "data-variant",
+    "data-version",
+    "data-wxt-shadow-root"
+  ],
+  "classPatterns": [
+    {
+      "class": "inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal]",
+      "count": 98
+    },
+    {
+      "class": "peer/menu-button flex items-center gap-2 overflow-hidden rounded-xl text-left text-sm outline-none r",
+      "count": 24
+    },
+    {
+      "class": "flex-1 select-none text-nowrap max-w-full overflow-hidden inline-block truncate group-hover/sidebar-",
+      "count": 19
+    },
+    {
+      "class": "items-center justify-center gap-2 whitespace-nowrap text-sm font-medium leading-[normal] cursor-poin",
+      "count": 18
+    },
+    {
+      "class": "gap-2 whitespace-nowrap font-medium cursor-pointer focus-visible:outline-none focus-visible:ring-1 f",
+      "count": 16
+    },
+    {
+      "class": "message-bubble relative rounded-3xl text-primary min-h-7 prose dark:prose-invert break-words prose-p",
+      "count": 16
+    },
+    {
+      "class": "relative response-content-markdown markdown [&_a:not(.not-prose)]:text-current [&_a:not(.not-prose):",
+      "count": 16
+    },
+    {
+      "class": "inline-media-container flex flex-col gap-1 clear-both",
+      "count": 16
+    },
+    {
+      "class": "absolute bottom-0 h-px",
+      "count": 16
+    },
+    {
+      "class": "inline-flex items-center justify-center whitespace-nowrap text-sm font-medium leading-[normal] curso",
+      "count": 10
+    },
+    {
+      "class": "relative group flex flex-col justify-center w-full max-w-[var(--content-max-width)] pb-0.5 items-end",
+      "count": 8
+    },
+    {
+      "class": "flex items-center gap-[2px] w-max rounded-lg text-xs px-2 end-4 -mr-2",
+      "count": 8
+    },
+    {
+      "class": "relative group flex flex-col justify-center w-full max-w-[var(--content-max-width)] pb-0.5 items-sta",
+      "count": 8
+    },
+    {
+      "class": "flex items-center gap-[2px] w-max rounded-lg text-xs px-2 start-0 @md/chat:start-3 -ml-4",
+      "count": 8
+    },
+    {
+      "class": "size-6 flex items-center justify-center shrink-0 transition-transform [.wd-refresh_&]:text-secondary",
+      "count": 5
+    },
+    {
+      "class": "relative mb-2 text-sm",
+      "count": 5
+    },
+    {
+      "class": "flex flex-row items-center gap-1 text-secondary text-sm leading-6 w-fit pt-3 pb-0 focus:outline-none",
+      "count": 5
+    },
+    {
+      "class": "text-xs text-secondary ms-auto me-2 opacity-0 group-hover/menu-item:opacity-100 group-focus-within/m",
+      "count": 2
+    },
+    {
+      "class": "inline-flex rounded-lg px-2 py-1 -mx-2 -my-1 focus:outline-none focus-visible:bg-button-ghost-hover ",
+      "count": 2
+    },
+    {
+      "class": "text-xs font-semibold text-primary select-none",
+      "count": 2
+    },
+    {
+      "class": "marker:text-secondary",
+      "count": 2
+    },
+    {
+      "class": "antialiased font-body text-fg-primary bg-surface-base overflow-x-hidden tracking-[-0.1px] ibm_plex_m",
+      "count": 1
+    },
+    {
+      "class": "group peer md:block text-sidebar-foreground z-[40] print:hidden",
+      "count": 1
+    },
+    {
+      "class": "inset-y-0 h-full box-content md:flex overflow-hidden relative bg-surface-base transition-[left,right",
+      "count": 1
+    },
+    {
+      "class": "flex items-center justify-center shrink-0 [.wd-refresh_&]:text-secondary size-4 -ms-px",
+      "count": 1
+    },
+    {
+      "class": "inline-flex items-center gap-2 whitespace-nowrap cursor-pointer focus-visible:outline-none focus-vis",
+      "count": 1
+    },
+    {
+      "class": "whitespace-nowrap text-sm font-medium leading-[normal] cursor-pointer focus-visible:outline-none foc",
+      "count": 1
+    },
+    {
+      "class": "flex flex-col items-start min-w-0 text-left",
+      "count": 1
+    },
+    {
+      "class": "text-sm truncate leading-tight font-medium text-fg-primary",
+      "count": 1
+    },
+    {
+      "class": "text-xs truncate text-fg-secondary leading-tight",
+      "count": 1
+    },
+    {
+      "class": "flex w-full h-full overflow-hidden @container/mainview relative [anchor-name:--grok-content-area]",
+      "count": 1
+    },
+    {
+      "class": "relative flex h-full flex-col items-center @container/chat min-w-0 [--content-max-width:32rem] @[40r",
+      "count": 1
+    },
+    {
+      "class": "group flex-col items-center gap-1 hidden @[860px]/chat:flex",
+      "count": 1
+    },
+    {
+      "class": "flex items-center justify-center gap-3 overflow-hidden text-secondary h-0",
+      "count": 1
+    },
+    {
+      "class": "no-copy ms-1 inline text-nowrap print:hidden py-[2.5px] ps-2 pe-2 rounded-full align-[0.5px] bg-surf",
+      "count": 1
+    },
+    {
+      "class": "font-semibold text-xl max-md:font-display max-md:text-[19px] max-md:leading-[155%] max-md:tracking-[",
+      "count": 1
+    },
+    {
+      "class": "truncate text-sm",
+      "count": 1
+    },
+    {
+      "class": "w-full flex-col mx-auto flex max-w-[--content-max-width]",
+      "count": 1
+    },
+    {
+      "class": "action-buttons h-8 mt-0.5 mb-2 flex flex-row flex-wrap w-full justify-between last-response print:hi",
+      "count": 1
+    },
+    {
+      "class": "absolute inset-x-0 mx-auto bottom-0 max-w-breakout z-40 print:hidden",
+      "count": 1
+    }
+  ],
+  "sampleHTML": [
+    {
+      "selector": "[class*=\"message\"]",
+      "count": 16,
+      "outerHTML": "<div dir=\"auto\" data-testid=\"user-message\" class=\"message-bubble relative rounded-3xl text-primary min-h-7 prose dark:prose-invert break-words prose-p:opacity-100 prose-strong:opacity-100 prose-li:opacity-100 prose-ul:opacity-100 prose-ol:opacity-100 prose-ul:my-1 prose-ol:my-1 prose-li:my-2 last:prose-li:mb-3 prose-li:ps-1 prose-li:ms-1 bg-surface-l1 border border-border-l1 max-w-[100%] @sm/mainview:max-w-[90%] has-[pre]:w-full px-4 py-2 rounded-br-lg overflow-x-auto\"><div class=\"relative\"><div class=\"relative response-content-markdown markdown [&amp;_a:not(.not-prose)]:text-current [&amp;_a:not(.not-prose):hover]:text-primary [&amp;_a:not(.not-prose):hover]:decoration-primary [&amp;_a:not(.not-prose)]:underline [&amp;_a:not(.not-prose)]:decoration-primary/30 [&amp;_a:not(.not-prose)]:underline-offset-2 [&amp;&gt;:first-child:not(.not-prose)]:mt-0 [&amp;&gt;:last-child:not(.not-prose)]:mb-0\"><p dir=\"auto\" class=\"break-words\" node=\"[object Object]\" style=\"white-space: pre-wrap;\">what model are you grok</p></div></div><section class=\"inline-media-container flex flex-col gap-1 clear-both\"></section></div>"
+    },
+    {
+      "selector": "[class*=\"query\"]",
+      "count": 1,
+      "outerHTML": "<div class=\"query-bar group z-20 relative w-full overflow-hidden @container/input pb-0 bg-surface-l1/75 backdrop-blur-xl [@media(prefers-reduced-transparency:reduce)]:bg-surface-l1 [@media(prefers-reduced-transparency:reduce)]:backdrop-blur-none transition-[border-radius] duration-200 ease-in-out motion-reduce:!transition-none rounded-t-[var(--border-t-radius)] rounded-b-[var(--border-b-radius)] max-w-breakout ring-1 ring-inset ring-border-l1 focus-within:ring-1 hover:ring-border-l1 focus-within:ring-border-l1 hover:focus-within:ring-border-l1 shadow-sm shadow-black/5\" style=\"transition-property: background-color, box-shadow, border-color; transition-duration: 100ms; transition-timing-function: ease-in-out; --border-t-radius: 10.00rem; --border-b-radius: 10.00rem;\"><div class=\"w-full ps-4 pe-2\"><div role=\"list\" aria-label=\"Conversation attachments\" class=\"w-full flex-row gap-2 mt-3 px-1 whitespace-nowrap hidden flex-wrap will-change-[mask-image] @sm:[mask-image:none] [mask-image:linear-gradient(to_right,transparent_0,black_0px,black_calc(100%_-_40px),transparent_100%)]\" style=\"opacity: 1; transform: none;\"></div></div><div class=\"ps-11 pe-[138px]\" style=\"padding-inline-end: 169.188px;\"><div class=\"relative z-10\"><div><div class=\"relative min-h-[60px]\" data-testid=\"chat-input\"><div dir=\"ltr\"><div contenteditable=\"true\" role=\"textbox\" aria-label=\"Ask Grok anything\" aria-multiline=\"true\" aria-disabled=\"false\" translate=\"no\" class=\"tiptap ProseMirror w-full px-2 bg-transparent focus:outline-none text-primary align-bottom max-h-[400px] overflow-y-auto !max-w-none prose [&amp;_ul&gt;li&gt;p]:my-0 [&amp;_ol&gt;li&gt;p]:my-0 [&amp;_li&gt;ol]:my-0 [&amp;_li&gt;ul]:my-0 [&amp;_p]:my-0 [&amp;_ul]:my-0 [&amp;_ol]:my-0 pt-4 my-0 scroll-feather-y\" tabindex=\"0\"><p data-placeholder=\"Ask anything\" class=\"is-empty is-editor-empty\"><br class=\"ProseMirror-trailingBreak\"></p></div></div></div></div></div><div class=\"flex absolute inset-x-0 bottom-0 border-2 border-transparent max-w-full"
+    },
+    {
+      "selector": "[class*=\"response\"]",
+      "count": 81,
+      "outerHTML": "<div class=\"relative response-content-markdown markdown [&amp;_a:not(.not-prose)]:text-current [&amp;_a:not(.not-prose):hover]:text-primary [&amp;_a:not(.not-prose):hover]:decoration-primary [&amp;_a:not(.not-prose)]:underline [&amp;_a:not(.not-prose)]:decoration-primary/30 [&amp;_a:not(.not-prose)]:underline-offset-2 [&amp;&gt;:first-child:not(.not-prose)]:mt-0 [&amp;&gt;:last-child:not(.not-prose)]:mb-0\"><p dir=\"auto\" class=\"break-words\" node=\"[object Object]\" style=\"white-space: pre-wrap;\">what model are you grok</p></div>"
+    },
+    {
+      "selector": "[class*=\"markdown\"]",
+      "count": 16,
+      "outerHTML": "<div class=\"relative response-content-markdown markdown [&amp;_a:not(.not-prose)]:text-current [&amp;_a:not(.not-prose):hover]:text-primary [&amp;_a:not(.not-prose):hover]:decoration-primary [&amp;_a:not(.not-prose)]:underline [&amp;_a:not(.not-prose)]:decoration-primary/30 [&amp;_a:not(.not-prose)]:underline-offset-2 [&amp;&gt;:first-child:not(.not-prose)]:mt-0 [&amp;&gt;:last-child:not(.not-prose)]:mb-0\"><p dir=\"auto\" class=\"break-words\" node=\"[object Object]\" style=\"white-space: pre-wrap;\">what model are you grok</p></div>"
+    }
+  ]
+}

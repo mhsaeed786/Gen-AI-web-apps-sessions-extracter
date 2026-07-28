@@ -1,0 +1,682 @@
+{
+  "meta": {
+    "platform": "chatgpt",
+    "url": "https://chatgpt.com/?temporary-chat=true",
+    "host": "chatgpt.com",
+    "title": "ChatGPT",
+    "scrapedAt": "2026-07-28T18:23:21.133Z",
+    "bodyClasses": ""
+  },
+  "messages": {
+    "[class*=\"bot\"]": {
+      "count": 12,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "pointer-events-none absolute start-0 end-0 -bottom-(--sticky-spacer) h-(--sticky-spacer) tall:[box-shadow:var(--sharp-edge-top-shadow-placeholder)] tall:group-data-scrolled-from-top/scrollport:[box-sh",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 260,
+            "h": 6
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "group/sidebar-expando-section mb-[var(--sidebar-expanded-section-margin-bottom)]",
+          "dataAttrs": [],
+          "text": "RecentsModel InquiryLatest Open-Source AI ModelsMulti-database SQL ScriptCritical Illness Explanatio",
+          "childCount": 2,
+          "rect": {
+            "w": 260,
+            "h": 500
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "@container/main relative flex min-w-0 flex-1 flex-col -translate-y-[calc(env(safe-area-inset-bottom,0px)/2)] pt-[calc(env(safe-area-inset-bottom,0px)/2)]",
+          "dataAttrs": [],
+          "text": "ChatGPTUpgradeTemporary ChatThis chat won't appear in history or be used to train our models. For sa",
+          "childCount": 1,
+          "rect": {
+            "w": 1105,
+            "h": 945
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "@w-sm/main:[scrollbar-gutter:var(--stage-scroll-gutter)] touch:[scrollbar-width:none] group/scroll-root relative flex min-h-0 min-w-0 flex-1 flex-col [scrollbar-gutter:stable] not-print:overflow-x-cli",
+          "dataAttrs": [
+            "scrollRoot"
+          ],
+          "text": "ChatGPTUpgradeTemporary ChatThis chat won't appear in history or be used to train our models. For sa",
+          "childCount": 3,
+          "rect": {
+            "w": 1105,
+            "h": 945
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "bottom-0",
+          "dataAttrs": [],
+          "text": "Temporary ChatThis chat won't appear in history or be used to train our models. For safety purposes,",
+          "childCount": 1,
+          "rect": {
+            "w": 912,
+            "h": 70
+          }
+        }
+      ]
+    },
+    "[class*=\"content\"]": {
+      "count": 16,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "box-trim-text-0.25 inline-flex whitespace-pre *:inline-flex *:font-sans *:not-last:after:px-0.5 *:not-last:after:content-['+'] touch:hidden sr-only",
+          "dataAttrs": [],
+          "text": "CtrlShiftO",
+          "childCount": 3,
+          "rect": {
+            "w": 1,
+            "h": 1
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "contents",
+          "dataAttrs": [],
+          "text": "ChatGPTUpgrade",
+          "childCount": 1,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "contents",
+          "dataAttrs": [],
+          "text": "Temporary ChatThis chat won't appear in history or be used to train our models. For safety purposes,",
+          "childCount": 1,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "contents",
+          "dataAttrs": [],
+          "text": "Temporary ChatThis chat won't appear in history or be used to train our models. For safety purposes,",
+          "childCount": 1,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "tag": "div",
+          "id": "thread-bottom-container",
+          "className": "sticky bottom-0 z-10 group/thread-bottom-container relative isolate w-full basis-auto has-data-has-thread-error:pt-2 has-data-has-thread-error:[box-shadow:var(--sharp-edge-bottom-shadow)] md:border-tr",
+          "dataAttrs": [],
+          "text": "(function wSt(e,t){e?.addEventListener(`input`,()=>{performance.mark(t)},{once:!0})})(document.curre",
+          "childCount": 5,
+          "rect": {
+            "w": 1075,
+            "h": 548
+          }
+        }
+      ]
+    },
+    "[class*=\"text\"]": {
+      "count": 63,
+      "samples": [
+        {
+          "tag": "a",
+          "id": null,
+          "className": "interactive-bg-secondary behavior-btn interactive-label-secondary pointer-events-auto rounded-2xl px-4 py-2 text-base print:hidden",
+          "dataAttrs": [
+            "skipToContent"
+          ],
+          "text": "Skip to content",
+          "childCount": 0,
+          "rect": {
+            "w": 139,
+            "h": 16
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "className": "text-token-text-primary contrast-high:not-dark:keyboard-focused:focus-ring no-draggable hover:bg-token-surface-hover keyboard-focused:bg-token-surface-hover touch:h-10 touch:w-10 flex h-9 w-9 items-ce",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 36,
+            "h": 36
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "opacity-100 motion-safe:transition-opacity motion-safe:duration-150 motion-safe:ease-linear h-full w-(--sidebar-width) overflow-x-clip overflow-y-auto text-clip whitespace-nowrap bg-token-sidebar-surf",
+          "dataAttrs": [],
+          "text": "Chat historyNew chatCtrlShiftOImagesLibraryPluginsProjectsCodexMoreRecentsModel InquiryLatest Open-S",
+          "childCount": 2,
+          "rect": {
+            "w": 260,
+            "h": 945
+          }
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "className": "text-token-text-primary contrast-high:not-dark:keyboard-focused:focus-ring no-draggable hover:bg-token-surface-hover keyboard-focused:bg-token-surface-hover touch:h-10 touch:w-10 flex h-9 w-9 items-ce",
+          "dataAttrs": [
+            "sidebarItem",
+            "discover"
+          ],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 36,
+            "h": 36
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "className": "text-token-text-tertiary contrast-high:not-dark:keyboard-focused:focus-ring no-draggable hover:bg-token-surface-hover keyboard-focused:bg-token-surface-hover touch:h-10 touch:w-10 flex h-9 w-9 items-c",
+          "dataAttrs": [
+            "state"
+          ],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 36,
+            "h": 36
+          }
+        }
+      ]
+    },
+    "[class*=\"Text\"]": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "textarea",
+          "id": null,
+          "className": "wcDTda_fallbackTextarea",
+          "dataAttrs": [
+            "virtualkeyboard"
+          ],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        }
+      ]
+    },
+    "[data-testid*=\"chat\"]": {
+      "count": 3,
+      "samples": [
+        {
+          "tag": "a",
+          "id": null,
+          "className": "group __menu-item hoverable gap-1.5 keyboard-focused:focus-ring keyboard-focused:-outline-offset-2",
+          "dataAttrs": [
+            "fill",
+            "testid",
+            "sidebarItem",
+            "discover"
+          ],
+          "text": "New chat",
+          "childCount": 2,
+          "rect": {
+            "w": 40,
+            "h": 36
+          }
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "className": "group __menu-item hoverable keyboard-focused:focus-ring keyboard-focused:-outline-offset-2",
+          "dataAttrs": [
+            "active",
+            "fill",
+            "testid",
+            "sidebarItem",
+            "discover",
+            "revealed"
+          ],
+          "text": "New chatCtrlShiftO",
+          "childCount": 2,
+          "rect": {
+            "w": 248,
+            "h": 36
+          }
+        },
+        {
+          "tag": "h1",
+          "id": null,
+          "className": "text-[28px] leading-[34px] font-normal tracking-[0.38px]",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "Temporary Chat",
+          "childCount": 0,
+          "rect": {
+            "w": 201,
+            "h": 34
+          }
+        }
+      ]
+    }
+  },
+  "sidebar": {
+    "nav": {
+      "count": 2,
+      "samples": [
+        {
+          "tag": "nav",
+          "className": "group/tiny-bar flex h-full w-(--sidebar-rail-width) cursor-e-resize flex-col items-start bg-transparent pb-1.5 motion-safe:transition-colors rtl:cursor-w-resize absolute inset-0 pointer-events-none op",
+          "childCount": 4,
+          "links": [
+            {
+              "href": "/",
+              "text": "New chat"
+            }
+          ]
+        },
+        {
+          "tag": "nav",
+          "className": "group/scrollport relative flex min-h-0 w-full flex-1 flex-col overflow-y-auto",
+          "childCount": 12,
+          "links": [
+            {
+              "href": "/",
+              "text": ""
+            },
+            {
+              "href": "/",
+              "text": "New chatCtrlShiftO"
+            },
+            {
+              "href": "/images",
+              "text": "Images"
+            },
+            {
+              "href": "/library",
+              "text": "Library"
+            },
+            {
+              "href": "/plugins",
+              "text": "Plugins"
+            },
+            {
+              "href": "/projects",
+              "text": "Projects"
+            },
+            {
+              "href": "/codex",
+              "text": "Codex"
+            },
+            {
+              "href": "/",
+              "text": ""
+            },
+            {
+              "href": "/c/6a58d088-e868-83ee-b7a9-e8b995fb2977",
+              "text": "Model Inquiry"
+            },
+            {
+              "href": "/c/6a4f9cf1-cbbc-83ee-8feb-4f1e7546089f",
+              "text": "Latest Open-Source AI Models"
+            }
+          ]
+        }
+      ]
+    },
+    "[class*=\"sidebar\"]": {
+      "count": 18,
+      "samples": [
+        {
+          "tag": "div",
+          "className": "border-token-border-extra-light bg-token-sidebar-surface-primary relative z-21 h-full shrink-0 overflow-hidden border-e max-md:hidden print:hidden stage-sidebar-pure-surface",
+          "childCount": 1,
+          "links": [
+            {
+              "href": "/",
+              "text": "New chat"
+            },
+            {
+              "href": "/",
+              "text": ""
+            },
+            {
+              "href": "/",
+              "text": "New chatCtrlShiftO"
+            },
+            {
+              "href": "/images",
+              "text": "Images"
+            },
+            {
+              "href": "/library",
+              "text": "Library"
+            },
+            {
+              "href": "/plugins",
+              "text": "Plugins"
+            },
+            {
+              "href": "/projects",
+              "text": "Projects"
+            },
+            {
+              "href": "/codex",
+              "text": "Codex"
+            },
+            {
+              "href": "/",
+              "text": ""
+            },
+            {
+              "href": "/c/6a58d088-e868-83ee-b7a9-e8b995fb2977",
+              "text": "Model Inquiry"
+            }
+          ]
+        },
+        {
+          "tag": "nav",
+          "className": "group/tiny-bar flex h-full w-(--sidebar-rail-width) cursor-e-resize flex-col items-start bg-transparent pb-1.5 motion-safe:transition-colors rtl:cursor-w-resize absolute inset-0 pointer-events-none op",
+          "childCount": 4,
+          "links": [
+            {
+              "href": "/",
+              "text": "New chat"
+            }
+          ]
+        },
+        {
+          "tag": "button",
+          "className": "text-token-text-primary contrast-high:not-dark:keyboard-focused:focus-ring no-draggable hover:bg-token-surface-hover keyboard-focused:bg-token-surface-hover touch:h-10 touch:w-10 flex h-9 w-9 items-ce",
+          "childCount": 1,
+          "links": []
+        }
+      ]
+    },
+    "[data-testid*=\"history\"]": {
+      "count": 13,
+      "samples": [
+        {
+          "tag": "button",
+          "className": "__menu-item-trailing-btn __menu-item-trailing-icon-action",
+          "childCount": 1,
+          "links": []
+        },
+        {
+          "tag": "button",
+          "className": "__menu-item-trailing-btn __menu-item-trailing-icon-action",
+          "childCount": 1,
+          "links": []
+        },
+        {
+          "tag": "button",
+          "className": "__menu-item-trailing-btn __menu-item-trailing-icon-action",
+          "childCount": 1,
+          "links": []
+        }
+      ]
+    },
+    "[data-testid*=\"sidebar\"]": {
+      "count": 4,
+      "samples": [
+        {
+          "tag": "button",
+          "className": "text-token-text-tertiary contrast-high:not-dark:keyboard-focused:focus-ring no-draggable hover:bg-token-surface-hover keyboard-focused:bg-token-surface-hover touch:h-10 touch:w-10 flex h-9 w-9 items-c",
+          "childCount": 2,
+          "links": []
+        },
+        {
+          "tag": "a",
+          "className": "group __menu-item hoverable gap-1.5 keyboard-focused:focus-ring keyboard-focused:-outline-offset-2",
+          "childCount": 2,
+          "links": []
+        },
+        {
+          "tag": "a",
+          "className": "group __menu-item hoverable gap-1.5 keyboard-focused:focus-ring keyboard-focused:-outline-offset-2",
+          "childCount": 2,
+          "links": []
+        }
+      ]
+    }
+  },
+  "scrollers": [],
+  "customElements": [
+    "dex-notifications",
+    "docs-suggestion-popover-ui",
+    "highlight-ui",
+    "sidebar-trigger-ui"
+  ],
+  "dataAttributes": [
+    "data-active",
+    "data-build",
+    "data-chat-theme",
+    "data-composer-surface",
+    "data-composer-transition-slot",
+    "data-contrast",
+    "data-conversation-options-trigger",
+    "data-dex-recorder-ready",
+    "data-discover",
+    "data-ds-color-theme-update",
+    "data-edge",
+    "data-empty-paragraph",
+    "data-fill",
+    "data-fixed-header",
+    "data-no-spacing",
+    "data-placeholder",
+    "data-precedence",
+    "data-prompt-textarea-header",
+    "data-revealed",
+    "data-rtl-flip",
+    "data-scroll-root",
+    "data-seq",
+    "data-side-pane-shell-host",
+    "data-side-pane-shell-rail",
+    "data-side-pane-shell-surface",
+    "data-sidebar-item",
+    "data-sidebar-keep-open",
+    "data-size",
+    "data-skip-to-content",
+    "data-splash-headline-option",
+    "data-state",
+    "data-tailwind-layer-order",
+    "data-testid",
+    "data-thread-footer-overflow-spacer",
+    "data-trailing-button",
+    "data-trailing-style",
+    "data-type",
+    "data-version",
+    "data-virtualkeyboard",
+    "data-wxt-shadow-root"
+  ],
+  "classPatterns": [
+    {
+      "class": "trailing highlight text-token-text-tertiary",
+      "count": 16
+    },
+    {
+      "class": "text-base mx-auto [--thread-content-margin:var(--thread-content-margin-xs,calc(var(--spacing)*4))] @",
+      "count": 5
+    },
+    {
+      "class": "[--thread-content-max-width:40rem] @w-lg/main:[--thread-content-max-width:48rem] mx-auto max-w-(--th",
+      "count": 5
+    },
+    {
+      "class": "text-token-text-primary contrast-high:not-dark:keyboard-focused:focus-ring no-draggable hover:bg-tok",
+      "count": 3
+    },
+    {
+      "class": "contents",
+      "count": 3
+    },
+    {
+      "class": "fixed inset-s-[anchor(center)] inset-e-auto top-[calc(anchor(bottom)+var(--spacing))] bottom-auto h-",
+      "count": 3
+    },
+    {
+      "class": "group enabled:hover:bg-token-text-primary/3 relative flex h-13 w-full items-center justify-start rou",
+      "count": 3
+    },
+    {
+      "class": "text-token-icon-tertiary group-hover:text-token-text-primary icon flex min-w-9 flex-none items-cente",
+      "count": 3
+    },
+    {
+      "class": "text-body-regular flex min-w-0 items-center gap-1.5 self-center ps-2",
+      "count": 3
+    },
+    {
+      "class": "text-token-text-tertiary group-hover:text-token-text-primary min-w-0 overflow-hidden text-ellipsis w",
+      "count": 3
+    },
+    {
+      "class": "text-token-text-tertiary contrast-high:not-dark:keyboard-focused:focus-ring no-draggable hover:bg-to",
+      "count": 2
+    },
+    {
+      "class": "interactive-bg-secondary behavior-btn interactive-label-secondary pointer-events-auto rounded-2xl px",
+      "count": 1
+    },
+    {
+      "class": "opacity-100 motion-safe:transition-opacity motion-safe:duration-150 motion-safe:ease-linear h-full w",
+      "count": 1
+    },
+    {
+      "class": "box-trim-text-0.25 inline-flex whitespace-pre *:inline-flex *:font-sans *:not-last:after:px-0.5 *:no",
+      "count": 1
+    },
+    {
+      "class": "pointer-events-none absolute start-0 end-0 -bottom-(--sticky-spacer) h-(--sticky-spacer) tall:[box-s",
+      "count": 1
+    },
+    {
+      "class": "group/sidebar-expando-section mb-[var(--sidebar-expanded-section-margin-bottom)]",
+      "count": 1
+    },
+    {
+      "class": "text-token-text-tertiary flex w-full items-center justify-start gap-0.5 px-4 py-1.5",
+      "count": 1
+    },
+    {
+      "class": "__menu-label text-token-text-primary font-semibold",
+      "count": 1
+    },
+    {
+      "class": "text-token-text-tertiary flex shrink-0 items-center gap-1 pe-2.5",
+      "count": 1
+    },
+    {
+      "class": "__menu-item-trailing-btn __menu-item-trailing-icon-action interactive-label-secondary can-hover:opac",
+      "count": 1
+    },
+    {
+      "class": "__menu-item-trailing-icon-lnk __menu-item-trailing-icon-action interactive-label-secondary can-hover",
+      "count": 1
+    },
+    {
+      "class": "not-group-data-disabled:text-token-text-tertiary leading-dense mb-0.5 text-xs whitespace-normal grou",
+      "count": 1
+    },
+    {
+      "class": "text-caption-regular inline-flex items-center gap-1 truncate text-token-text-tertiary",
+      "count": 1
+    },
+    {
+      "class": "trailing text-token-text-tertiary",
+      "count": 1
+    },
+    {
+      "class": "@container/main relative flex min-w-0 flex-1 flex-col -translate-y-[calc(env(safe-area-inset-bottom,",
+      "count": 1
+    },
+    {
+      "class": "@w-sm/main:[scrollbar-gutter:var(--stage-scroll-gutter)] touch:[scrollbar-width:none] group/scroll-r",
+      "count": 1
+    },
+    {
+      "class": "group flex cursor-pointer justify-center items-center gap-1 rounded-lg min-h-9 touch:min-h-10 px-2.5",
+      "count": 1
+    },
+    {
+      "class": "inline-flex items-center gap-1 rounded-full text-sm font-medium text-blue-500 dark:text-blue-100",
+      "count": 1
+    },
+    {
+      "class": "button-glimmer-cta relative flex items-center gap-1 rounded-full bg-transparent ps-2.5 whitespace-no",
+      "count": 1
+    },
+    {
+      "class": "mb-5.5 hidden text-center sm:block",
+      "count": 1
+    },
+    {
+      "class": "relative inline-flex justify-center text-center text-2xl leading-9 font-semibold",
+      "count": 1
+    },
+    {
+      "class": "bottom-0",
+      "count": 1
+    },
+    {
+      "class": "text-[28px] leading-[34px] font-normal tracking-[0.38px]",
+      "count": 1
+    },
+    {
+      "class": "text-token-text-secondary dark:text-token-text-tertiary max-w-[80%] text-center text-base leading-[2",
+      "count": 1
+    },
+    {
+      "class": "text-token-text-primary mt-[var(--screen-optical-compact-offset-amount)] [display:var(--display-hidd",
+      "count": 1
+    },
+    {
+      "class": "sticky bottom-0 z-10 group/thread-bottom-container relative isolate w-full basis-auto has-data-has-t",
+      "count": 1
+    },
+    {
+      "class": "bg-(--composer-surface-primary) cursor-text overflow-clip bg-clip-padding px-2 py-[9px] contain-inli",
+      "count": 1
+    },
+    {
+      "class": "wcDTda_prosemirror-parent text-token-text-primary max-h-[max(30svh,5rem)] max-h-52 min-h-[var(--deep",
+      "count": 1
+    },
+    {
+      "class": "wcDTda_fallbackTextarea",
+      "count": 1
+    },
+    {
+      "class": "[display:var(--display-hidden-until-loaded,block)] md:w-full md:absolute md:start-0 md:bottom-[calc(",
+      "count": 1
+    }
+  ],
+  "sampleHTML": []
+}

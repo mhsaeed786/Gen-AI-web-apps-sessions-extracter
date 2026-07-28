@@ -1,0 +1,718 @@
+{
+  "meta": {
+    "platform": "zai",
+    "url": "https://chat.z.ai/c/e6709c3b-fdc4-46dc-b3c4-4ffa0501c664",
+    "host": "chat.z.ai",
+    "title": "Z.ai - Advanced AI Chatbot & Agent powered by GLM-5.2",
+    "scrapedAt": "2026-07-28T18:19:54.805Z",
+    "bodyClasses": ""
+  },
+  "messages": {
+    "[class*=\"message\"]": {
+      "count": 3,
+      "samples": [
+        {
+          "tag": "div",
+          "id": "message-f85cf260-be1d-4566-9b33-1f33f1772221",
+          "className": "flex w-full user-message relative",
+          "dataAttrs": [],
+          "text": "wqqedomwefkwerp\\",
+          "childCount": 2,
+          "rect": {
+            "w": 768,
+            "h": 80
+          }
+        },
+        {
+          "tag": "div",
+          "id": "message-5332d6f2-ab4e-4176-a66c-f1fc68d699f8",
+          "className": " flex w-full message-5332d6f2-ab4e-4176-a66c-f1fc68d699f8 gap-4 relative svelte-1qscqw6",
+          "dataAttrs": [],
+          "text": "Model is currently at capacity. Please try again later or switch to another model.",
+          "childCount": 2,
+          "rect": {
+            "w": 768,
+            "h": 94
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "w-full messageInputContainer font-primary @container/input",
+          "dataAttrs": [],
+          "text": "@property --beam-angle-bb-3 {\n  syntax: \"<angle>\";\n  initial-value: 0deg;\n  inherits: true;\n}",
+          "childCount": 1,
+          "rect": {
+            "w": 1069,
+            "h": 108
+          }
+        }
+      ]
+    },
+    "[class*=\"Message\"]": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "button",
+          "id": "send-message-button",
+          "className": "sendMessageButton size-7 flex items-center justify-center bg-black/80 dark:bg-neutral-50 dark:hover:bg-neutral-50/90 text-white dark:text-stone-950 transition rounded-lg self-center",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 28,
+            "h": 28
+          }
+        }
+      ]
+    },
+    "[class*=\"chat\"]": {
+      "count": 3,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "self-center size-6 bg-[url(https://z-cdn.chatglm.cn/z-ai/static/logo.svg)] bg-contain bg-no-repeat",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 24,
+            "h": 24
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "chat-user w-full min-w-full markdown-prose",
+          "dataAttrs": [],
+          "text": "wqqedomwefkwerp\\",
+          "childCount": 1,
+          "rect": {
+            "w": 768,
+            "h": 80
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "chat-assistant w-full min-w-full markdown-prose svelte-1qscqw6",
+          "dataAttrs": [],
+          "text": "Model is currently at capacity. Please try again later or switch to another model.",
+          "childCount": 1,
+          "rect": {
+            "w": 764,
+            "h": 64
+          }
+        }
+      ]
+    },
+    "[class*=\"Chat\"]": {
+      "count": 2,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "AgentChatList flex flex-col h-full w-full overflow-y-auto scrollbar-none",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 251,
+            "h": 614
+          }
+        },
+        {
+          "tag": "button",
+          "id": "new-chat-button",
+          "className": "navNewChat flex md:hidden cursor-pointer rounded-xl p-1 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-850 transition",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        }
+      ]
+    },
+    "[class*=\"response\"]": {
+      "count": 2,
+      "samples": [
+        {
+          "tag": "button",
+          "id": null,
+          "className": "visible p-1 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg dark:hover:text-white hover:text-black transition copy-response-button",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 28,
+            "h": 28
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "className": "visible p-1 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg dark:hover:text-white hover:text-black transition regenerate-response-button",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 28,
+            "h": 28
+          }
+        }
+      ]
+    },
+    "[class*=\"user\"]": {
+      "count": 2,
+      "samples": [
+        {
+          "tag": "div",
+          "id": "message-f85cf260-be1d-4566-9b33-1f33f1772221",
+          "className": "flex w-full user-message relative",
+          "dataAttrs": [],
+          "text": "wqqedomwefkwerp\\",
+          "childCount": 2,
+          "rect": {
+            "w": 768,
+            "h": 80
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "chat-user w-full min-w-full markdown-prose",
+          "dataAttrs": [],
+          "text": "wqqedomwefkwerp\\",
+          "childCount": 1,
+          "rect": {
+            "w": 768,
+            "h": 80
+          }
+        }
+      ]
+    },
+    "[class*=\"assistant\"]": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "chat-assistant w-full min-w-full markdown-prose svelte-1qscqw6",
+          "dataAttrs": [],
+          "text": "Model is currently at capacity. Please try again later or switch to another model.",
+          "childCount": 1,
+          "rect": {
+            "w": 764,
+            "h": 64
+          }
+        }
+      ]
+    },
+    "[class*=\"model\"]": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "button",
+          "id": "model-selector-glm-5_2-button",
+          "className": "modelSelectorButton relative font-primary cursor-default",
+          "dataAttrs": [
+            "state",
+            "dropdownMenuTrigger",
+            "disabled"
+          ],
+          "text": "GLM-5.2",
+          "childCount": 1,
+          "rect": {
+            "w": 74,
+            "h": 28
+          }
+        }
+      ]
+    },
+    "[class*=\"bot\"]": {
+      "count": 4,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "  fixed md:hidden z-40 top-0 right-0 left-0 bottom-0 bg-[#1E1E1E] w-full min-h-screen h-screen flex justify-center overflow-hidden overscroll-contain",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "tag": "span",
+          "id": null,
+          "className": "text-left opacity-60 justify-start text-stone-950 dark:text-white text-sm font-normal leading-5 align-text-bottom",
+          "dataAttrs": [],
+          "text": "zai-web",
+          "childCount": 0,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "pointer-events-none absolute inset-0 -bottom-7 z-[-1]",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 1101,
+            "h": 80
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "absolute right-0 left-0 bottom-1 text-xs text-center text-gray-500 line-clamp-1",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 1101,
+            "h": 0
+          }
+        }
+      ]
+    },
+    "[class*=\"markdown\"]": {
+      "count": 3,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "chat-user w-full min-w-full markdown-prose",
+          "dataAttrs": [],
+          "text": "wqqedomwefkwerp\\",
+          "childCount": 1,
+          "rect": {
+            "w": 768,
+            "h": 80
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "chat-assistant w-full min-w-full markdown-prose svelte-1qscqw6",
+          "dataAttrs": [],
+          "text": "Model is currently at capacity. Please try again later or switch to another model.",
+          "childCount": 1,
+          "rect": {
+            "w": 764,
+            "h": 64
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "markdown-prose",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 764,
+            "h": 0
+          }
+        }
+      ]
+    },
+    "[class*=\"content\"]": {
+      "count": 2,
+      "samples": [
+        {
+          "tag": "div",
+          "id": "bits-c40",
+          "className": "max-w-[calc(100vw-32px)] my-auto border border-[#dbdbdb1f] text-stone-950 bg-white dark:bg-[#292929] rounded-xl shadow-3xl z-[10000] p-5 outline-none _modal-content w-[25rem]",
+          "dataAttrs": [
+            "dialogContent",
+            "state"
+          ],
+          "text": "Currently in peak hours GLM-5.2 is intensifying the coordination of resources, please switch to GLM",
+          "childCount": 3,
+          "rect": {
+            "w": 400,
+            "h": 216
+          }
+        },
+        {
+          "tag": "div",
+          "id": "autoglm-main-content",
+          "className": "autoglm-main-content",
+          "dataAttrs": [
+            "version"
+          ],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 1365,
+            "h": 0
+          }
+        }
+      ]
+    },
+    "[class*=\"text\"]": {
+      "count": 48,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": " text-stone-950 dark:text-white bg-[#f8f8f8] dark:bg-[#161616] h-screen max-h-[100dvh] overflow-visible md:overflow-auto flex flex-row justify-start",
+          "dataAttrs": [],
+          "text": "Chat  Agent  New Task   AI PPT    zai-web       Hassan Saeed                 GLM-5.2",
+          "childCount": 3,
+          "rect": {
+            "w": 1365,
+            "h": 945
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "flex flex-col h-full transition-width duration-200 ease-in-out shrink-0 bg-[#f8f8f8] text-gray-900 dark:bg-[#161616] dark:text-gray-200 text-sm border-r-1 border-black/15 dark:border-white/12 overflow",
+          "dataAttrs": [
+            "state",
+            "collapsed",
+            "mobile"
+          ],
+          "text": "Chat  Agent  New Task   AI PPT    zai-web       Hassan Saeed",
+          "childCount": 1,
+          "rect": {
+            "w": 264,
+            "h": 945
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "flex justify-between py-3.5 pl-4 pr-1.5 text-gray-600 dark:text-gray-400",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 2,
+          "rect": {
+            "w": 263,
+            "h": 52
+          }
+        },
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "[object SVGAnimatedString]",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 18,
+            "h": 18
+          }
+        },
+        {
+          "tag": "button",
+          "id": "sidebar-new-chat-button",
+          "className": "self-stretch p-2 rounded-md inline-flex justify-start items-center gap-2 overflow-hidden text-start bg-white dark:bg-transparent data-[active=true]:bg-stone-950/5 dark:data-[active=true]:bg-white/5 ho",
+          "dataAttrs": [
+            "active"
+          ],
+          "text": "Chat",
+          "childCount": 2,
+          "rect": {
+            "w": 243,
+            "h": 36
+          }
+        }
+      ]
+    },
+    "[aria-label*=\"Message\"]": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "div",
+          "id": "bits-c157",
+          "className": "flex",
+          "dataAttrs": [
+            "state",
+            "delayDuration",
+            "tooltipTrigger"
+          ],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 28,
+            "h": 28
+          }
+        }
+      ]
+    }
+  },
+  "sidebar": {
+    "nav": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "nav",
+          "className": "sticky top-0 z-30 w-full h-[52px] bg-[#f8f8f8] dark:bg-[#161616] px-4 py-2.5 -mb-8 flex items-center drag-region",
+          "childCount": 2,
+          "links": []
+        }
+      ]
+    }
+  },
+  "scrollers": [],
+  "customElements": [
+    "dex-notifications",
+    "docs-suggestion-popover-ui",
+    "highlight-ui",
+    "sidebar-trigger-ui"
+  ],
+  "dataAttributes": [
+    "data-active",
+    "data-beam",
+    "data-beam-bloom",
+    "data-collapsed",
+    "data-content",
+    "data-delay-duration",
+    "data-dex-frame-id",
+    "data-dex-recorder-ready",
+    "data-dialog-close",
+    "data-dialog-content",
+    "data-dialog-overlay",
+    "data-dialog-title",
+    "data-direction",
+    "data-disabled",
+    "data-dismissible",
+    "data-dropdown-menu-trigger",
+    "data-expanded",
+    "data-front",
+    "data-guest",
+    "data-icon",
+    "data-im-status",
+    "data-index",
+    "data-invert",
+    "data-mobile",
+    "data-mounted",
+    "data-open",
+    "data-outline-control",
+    "data-pane",
+    "data-pane-group",
+    "data-pane-group-id",
+    "data-pane-id",
+    "data-pane-state",
+    "data-promise",
+    "data-removed",
+    "data-rich-colors",
+    "data-selected",
+    "data-sidebar",
+    "data-sonner-error-icon",
+    "data-sonner-theme",
+    "data-sonner-toast",
+    "data-sonner-toaster",
+    "data-state",
+    "data-styled",
+    "data-subpanel",
+    "data-swipe-out",
+    "data-swiped",
+    "data-swiping",
+    "data-title",
+    "data-tooltip-trigger",
+    "data-type",
+    "data-ueto",
+    "data-version",
+    "data-visible",
+    "data-wxt-shadow-root",
+    "data-x-position",
+    "data-y-position"
+  ],
+  "classPatterns": [
+    {
+      "class": "visible p-1 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg dark:hover:text-white hover:text-black",
+      "count": 2
+    },
+    {
+      "class": " text-stone-950 dark:text-white bg-[#f8f8f8] dark:bg-[#161616] h-screen max-h-[100dvh] overflow-visi",
+      "count": 1
+    },
+    {
+      "class": "  fixed md:hidden z-40 top-0 right-0 left-0 bottom-0 bg-[#1E1E1E] w-full min-h-screen h-screen flex ",
+      "count": 1
+    },
+    {
+      "class": "flex flex-col h-full transition-width duration-200 ease-in-out shrink-0 bg-[#f8f8f8] text-gray-900 d",
+      "count": 1
+    },
+    {
+      "class": "flex justify-between py-3.5 pl-4 pr-1.5 text-gray-600 dark:text-gray-400",
+      "count": 1
+    },
+    {
+      "class": "self-center size-6 bg-[url(https://z-cdn.chatglm.cn/z-ai/static/logo.svg)] bg-contain bg-no-repeat",
+      "count": 1
+    },
+    {
+      "class": "self-stretch p-2 rounded-md inline-flex justify-start items-center gap-2 overflow-hidden text-start ",
+      "count": 1
+    },
+    {
+      "class": "justify-start text-stone-950 dark:text-white text-sm font-normal leading-5 line-clamp-1",
+      "count": 1
+    },
+    {
+      "class": "self-stretch p-2 bg-white dark:bg-transparent data-[active=true]:bg-stone-950/5 dark:data-[active=tr",
+      "count": 1
+    },
+    {
+      "class": "flex-1 h-5 justify-start text-stone-950 dark:text-white text-sm font-normal leading-5",
+      "count": 1
+    },
+    {
+      "class": "px-3.5 py-2 w-full rounded-md inline-flex justify-start items-center gap-2 overflow-hidden text-star",
+      "count": 1
+    },
+    {
+      "class": "p-1.25 opacity-80 text-stone-950 dark:text-white bg-black/10 dark:bg-[#fff]/8 rounded-[99px] overflo",
+      "count": 1
+    },
+    {
+      "class": "flex-1 opacity-80 justify-start text-sm font-normal leading-5 text-nowrap",
+      "count": 1
+    },
+    {
+      "class": "justify-start text-text-primary text-sm font-normal font-['Geist'] leading-5 line-clamp-1",
+      "count": 1
+    },
+    {
+      "class": "text-left opacity-60 justify-start text-stone-950 dark:text-white text-sm font-normal leading-5 alig",
+      "count": 1
+    },
+    {
+      "class": "AgentChatList flex flex-col h-full w-full overflow-y-auto scrollbar-none",
+      "count": 1
+    },
+    {
+      "class": "flex min-w-0 w-full flex-1 items-center gap-1.5 rounded-[6px] p-1.5 text-left transition hover:bg-[#",
+      "count": 1
+    },
+    {
+      "class": "truncate text-[14px] font-normal leading-5 text-stone-950/80 dark:text-white/80",
+      "count": 1
+    },
+    {
+      "class": "absolute right-2 flex size-9 shrink-0 items-center justify-center rounded-[6px] text-stone-950/80 tr",
+      "count": 1
+    },
+    {
+      "class": "pointer-events-none absolute inset-0 -bottom-7 z-[-1]",
+      "count": 1
+    },
+    {
+      "class": "navNewChat flex md:hidden cursor-pointer rounded-xl p-1 text-gray-600 dark:text-gray-400 hover:bg-gr",
+      "count": 1
+    },
+    {
+      "class": "modelSelectorButton relative font-primary cursor-default",
+      "count": 1
+    },
+    {
+      "class": "flex text-left px-0.5 outline-hidden bg-transparent truncate  text-black dark:text-white text-lg jus",
+      "count": 1
+    },
+    {
+      "class": "flex flex-none gap-2 items-center self-start text-black dark:text-white",
+      "count": 1
+    },
+    {
+      "class": "flex gap-1 items-center justify-center px-3 py-1.5 bg-[#0d0d0d] text-white rounded-md shadow-[0px_0p",
+      "count": 1
+    },
+    {
+      "class": "text-sm",
+      "count": 1
+    },
+    {
+      "class": "flex w-full user-message relative",
+      "count": 1
+    },
+    {
+      "class": "chat-user w-full min-w-full markdown-prose",
+      "count": 1
+    },
+    {
+      "class": "relative max-w-[90%] flex flex-col gap-1 text-[#0d0d0d] dark:text-[#fff] whitespace-pre-wrap data-[e",
+      "count": 1
+    },
+    {
+      "class": " flex gap-1.5 justify-end  text-gray-600 dark:text-gray-500",
+      "count": 1
+    },
+    {
+      "class": "invisible p-1 rounded-lg transition group-hover:visible hover:bg-black/5 dark:hover:bg-white/5 dark:",
+      "count": 1
+    },
+    {
+      "class": " flex w-full message-5332d6f2-ab4e-4176-a66c-f1fc68d699f8 gap-4 relative svelte-1qscqw6",
+      "count": 1
+    },
+    {
+      "class": "chat-assistant w-full min-w-full markdown-prose svelte-1qscqw6",
+      "count": 1
+    },
+    {
+      "class": " self-center text-sm",
+      "count": 1
+    },
+    {
+      "class": "flex overflow-x-auto justify-start mt-0.5 gap-1.5 text-gray-600 buttons dark:text-gray-500 svelte-1q",
+      "count": 1
+    },
+    {
+      "class": "w-full messageInputContainer font-primary @container/input",
+      "count": 1
+    },
+    {
+      "class": "max-w-[768px] 2xl:max-w-[854px] min-w-[334px] mx-auto inset-x-0 data-[outline-control=true]:border d",
+      "count": 1
+    },
+    {
+      "class": "flex-1 flex flex-col relative w-full rounded-xl border-1 border-[#0000001F] dark:border-white/10 tra",
+      "count": 1
+    },
+    {
+      "class": "input-scroll w-full px-2 text-sm bg-transparent resize-none overflow-x-hidden text-text-primary outl",
+      "count": 1
+    },
+    {
+      "class": "text-[0px]",
+      "count": 1
+    }
+  ],
+  "sampleHTML": [
+    {
+      "selector": "[class*=\"message\"]",
+      "count": 3,
+      "outerHTML": "<div class=\"flex w-full user-message relative\" id=\"message-f85cf260-be1d-4566-9b33-1f33f1772221\" dir=\"\"><div class=\"absolute -top-12\" id=\"message-f85cf260-be1d-4566-9b33-1f33f1772221-start\"></div> <!----> <div class=\"flex-auto w-0 max-w-full\"><!----> <div class=\"chat-user w-full min-w-full markdown-prose\"><!----> <!----><div class=\"relative w-full\"><!----> <!----> <div class=\"flex justify-end pb-1\"><div class=\"relative max-w-[90%] flex flex-col gap-1 text-[#0d0d0d] dark:text-[#fff] whitespace-pre-wrap data-[expanded=false]:max-h-[360px] leading-6\" data-expanded=\"false\"><!----> <div class=\"relative overflow-hidden rounded-xl p-3 bg-[#EAEAEA] dark:bg-[#fff]/10\">wqqedomwefkwerp\\ <!----></div></div></div> <div class=\" flex gap-1.5 justify-end  text-gray-600 dark:text-gray-500\"><!----> <!----> <!----><!----><!----><!----><!----><!----><!----><div id=\"bits-c139\" data-state=\"closed\" data-delay-duration=\"200\" data-tooltip-trigger=\"\" tabindex=\"0\" type=\"button\" class=\"flex\" aria-label=\"Copy\"><button class=\"invisible p-1 rounded-lg transition group-hover:visible hover:bg-black/5 dark:hover:bg-white/5 dark:hover:text-white hover:text-black\"><svg viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"size-5\" stroke-width=\"1.677\"><path d=\"M12.668 10.667C12.668 9.95614 12.668 9.46258 12.6367 9.0791C12.6137 8.79732 12.5758 8.60761 12.5244 8.46387L12.4688 8.33399C12.3148 8.03193 12.0803 7.77885 11.793 7.60254L11.666 7.53125C11.508 7.45087 11.2963 7.39395 10.9209 7.36328C10.5374 7.33197 10.0439 7.33203 9.33301 7.33203H6.5C5.78896 7.33203 5.29563 7.33195 4.91211 7.36328C4.63016 7.38632 4.44065 7.42413 4.29688 7.47559L4.16699 7.53125C3.86488 7.68518 3.61186 7.9196 3.43555 8.20703L3.36524 8.33399C3.28478 8.49198 3.22795 8.70352 3.19727 9.0791C3.16595 9.46259 3.16504 9.95611 3.16504 10.667V13.5C3.16504 14.211 3.16593 14.7044 3.19727 15.0879C3.22797 15.4636 3.28473 15.675 3.36524 15.833L3.43555 15.959C3.61186 16.2466 3.86474 16.4807 4.16699 16.6348L4.29688 16.6914C4.440"
+    },
+    {
+      "selector": "[class*=\"Message\"]",
+      "count": 1,
+      "outerHTML": "<button id=\"send-message-button\" type=\"submit\" class=\"sendMessageButton size-7 flex items-center justify-center bg-black/80 dark:bg-neutral-50 dark:hover:bg-neutral-50/90 text-white dark:text-stone-950 transition rounded-lg self-center\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"size-4\"><path d=\"M8 13.3333V2.66667M8 2.66667L4 6.66667M8 2.66667L12 6.66667\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.33\"></path></svg><!----></button>"
+    },
+    {
+      "selector": "[class*=\"response\"]",
+      "count": 2,
+      "outerHTML": "<button class=\"visible p-1 hover:bg-black/5 dark:hover:bg-white/5 rounded-lg dark:hover:text-white hover:text-black transition copy-response-button\"><svg viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"size-5\" stroke-width=\"1.677\"><path d=\"M12.668 10.667C12.668 9.95614 12.668 9.46258 12.6367 9.0791C12.6137 8.79732 12.5758 8.60761 12.5244 8.46387L12.4688 8.33399C12.3148 8.03193 12.0803 7.77885 11.793 7.60254L11.666 7.53125C11.508 7.45087 11.2963 7.39395 10.9209 7.36328C10.5374 7.33197 10.0439 7.33203 9.33301 7.33203H6.5C5.78896 7.33203 5.29563 7.33195 4.91211 7.36328C4.63016 7.38632 4.44065 7.42413 4.29688 7.47559L4.16699 7.53125C3.86488 7.68518 3.61186 7.9196 3.43555 8.20703L3.36524 8.33399C3.28478 8.49198 3.22795 8.70352 3.19727 9.0791C3.16595 9.46259 3.16504 9.95611 3.16504 10.667V13.5C3.16504 14.211 3.16593 14.7044 3.19727 15.0879C3.22797 15.4636 3.28473 15.675 3.36524 15.833L3.43555 15.959C3.61186 16.2466 3.86474 16.4807 4.16699 16.6348L4.29688 16.6914C4.44063 16.7428 4.63025 16.7797 4.91211 16.8027C5.29563 16.8341 5.78896 16.835 6.5 16.835H9.33301C10.0439 16.835 10.5374 16.8341 10.9209 16.8027C11.2965 16.772 11.508 16.7152 11.666 16.6348L11.793 16.5645C12.0804 16.3881 12.3148 16.1351 12.4688 15.833L12.5244 15.7031C12.5759 15.5594 12.6137 15.3698 12.6367 15.0879C12.6681 14.7044 12.668 14.211 12.668 13.5V10.667ZM13.998 12.665C14.4528 12.6634 14.8011 12.6602 15.0879 12.6367C15.4635 12.606 15.675 12.5492 15.833 12.4688L15.959 12.3975C16.2466 12.2211 16.4808 11.9682 16.6348 11.666L16.6914 11.5361C16.7428 11.3924 16.7797 11.2026 16.8027 10.9209C16.8341 10.5374 16.835 10.0439 16.835 9.33301V6.5C16.835 5.78896 16.8341 5.29563 16.8027 4.91211C16.7797 4.63025 16.7428 4.44063 16.6914 4.29688L16.6348 4.16699C16.4807 3.86474 16.2466 3.61186 15.959 3.43555L15.833 3.36524C15.675 3.28473 15.4636 3.22797 15.0879 3.19727C14.7044 3.16593 14.211 3.16504 13.5 3.16504H10.667C9.9561 3.16504 9.46259 3.16595 9.0791 3.19727C8.79739 3.22028 8.6076 3.2572 8.46387"
+    },
+    {
+      "selector": "[class*=\"markdown\"]",
+      "count": 3,
+      "outerHTML": "<div class=\"chat-user w-full min-w-full markdown-prose\"><!----> <!----><div class=\"relative w-full\"><!----> <!----> <div class=\"flex justify-end pb-1\"><div class=\"relative max-w-[90%] flex flex-col gap-1 text-[#0d0d0d] dark:text-[#fff] whitespace-pre-wrap data-[expanded=false]:max-h-[360px] leading-6\" data-expanded=\"false\"><!----> <div class=\"relative overflow-hidden rounded-xl p-3 bg-[#EAEAEA] dark:bg-[#fff]/10\">wqqedomwefkwerp\\ <!----></div></div></div> <div class=\" flex gap-1.5 justify-end  text-gray-600 dark:text-gray-500\"><!----> <!----> <!----><!----><!----><!----><!----><!----><!----><div id=\"bits-c139\" data-state=\"closed\" data-delay-duration=\"200\" data-tooltip-trigger=\"\" tabindex=\"0\" type=\"button\" class=\"flex\" aria-label=\"Copy\"><button class=\"invisible p-1 rounded-lg transition group-hover:visible hover:bg-black/5 dark:hover:bg-white/5 dark:hover:text-white hover:text-black\"><svg viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"size-5\" stroke-width=\"1.677\"><path d=\"M12.668 10.667C12.668 9.95614 12.668 9.46258 12.6367 9.0791C12.6137 8.79732 12.5758 8.60761 12.5244 8.46387L12.4688 8.33399C12.3148 8.03193 12.0803 7.77885 11.793 7.60254L11.666 7.53125C11.508 7.45087 11.2963 7.39395 10.9209 7.36328C10.5374 7.33197 10.0439 7.33203 9.33301 7.33203H6.5C5.78896 7.33203 5.29563 7.33195 4.91211 7.36328C4.63016 7.38632 4.44065 7.42413 4.29688 7.47559L4.16699 7.53125C3.86488 7.68518 3.61186 7.9196 3.43555 8.20703L3.36524 8.33399C3.28478 8.49198 3.22795 8.70352 3.19727 9.0791C3.16595 9.46259 3.16504 9.95611 3.16504 10.667V13.5C3.16504 14.211 3.16593 14.7044 3.19727 15.0879C3.22797 15.4636 3.28473 15.675 3.36524 15.833L3.43555 15.959C3.61186 16.2466 3.86474 16.4807 4.16699 16.6348L4.29688 16.6914C4.44063 16.7428 4.63025 16.7797 4.91211 16.8027C5.29563 16.8341 5.78896 16.835 6.5 16.835H9.33301C10.0439 16.835 10.5374 16.8341 10.9209 16.8027C11.2965 16.772 11.508 16.7152 11.666 16.6348L11.793 16.5645C12.0804 16.3881 12.3148 16.1351 12.4688 15.833L12.5"
+    }
+  ]
+}

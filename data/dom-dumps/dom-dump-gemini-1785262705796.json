@@ -1,0 +1,1474 @@
+{
+  "meta": {
+    "platform": "gemini",
+    "url": "https://gemini.google.com/app/705fe88411b5fe61",
+    "host": "gemini.google.com",
+    "title": "FHIR pricing model analysis - Google Gemini",
+    "scrapedAt": "2026-07-28T18:18:25.765Z",
+    "bodyClasses": "enable-lm-loading-animation lr26 enable-lm-fast-follows theme-host dark-theme variable-context chrome-context-v39 enable-lm-spacing-tokens enable-lm-mobile-tokens enable-lm-locale-line-height enable-lm-non-latin-bold-weight lm-component-theme sidenav-mavatar-migration-enabled enable-mweb-header-mavatar"
+  },
+  "messages": {
+    "[class*=\"message\"]": {
+      "count": 13,
+      "samples": [
+        {
+          "tag": "div",
+          "id": "ad281b5ba033ccd2",
+          "className": "conversation-container message-actions-hover-boundary ng-star-inserted",
+          "dataAttrs": [],
+          "text": "You said  modify the script to calculate pricing for DBName or Client 'ijmd_curemd'  Gemini said To",
+          "childCount": 4,
+          "rect": {
+            "w": 724,
+            "h": 5464
+          }
+        },
+        {
+          "tag": "div",
+          "id": "9464008e18bb9a5a",
+          "className": "conversation-container message-actions-hover-boundary ng-star-inserted",
+          "dataAttrs": [],
+          "text": "You said  my db has only 1 client for this tenant. but overall my fhir client are 10 on different d",
+          "childCount": 4,
+          "rect": {
+            "w": 724,
+            "h": 5644
+          }
+        },
+        {
+          "tag": "div",
+          "id": "c672e32b3920f115",
+          "className": "conversation-container message-actions-hover-boundary ng-star-inserted",
+          "dataAttrs": [],
+          "text": "You said  why are we taking these costs?  1032,450, 2, 150, 260, 510, 360  Gemini said These number",
+          "childCount": 4,
+          "rect": {
+            "w": 724,
+            "h": 968
+          }
+        },
+        {
+          "tag": "div",
+          "id": "3b66cbe1c29a4202",
+          "className": "conversation-container message-actions-hover-boundary ng-star-inserted",
+          "dataAttrs": [],
+          "text": "You said  actually we have total number of 882 clients, but we have only onboarded 11 clients  Gemi",
+          "childCount": 4,
+          "rect": {
+            "w": 724,
+            "h": 5921
+          }
+        },
+        {
+          "tag": "mini-app",
+          "id": null,
+          "className": "hide-from-message-actions ng-star-inserted",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 708,
+            "h": 591
+          }
+        }
+      ]
+    },
+    "[class*=\"chat\"]": {
+      "count": 18,
+      "samples": [
+        {
+          "tag": "main",
+          "id": null,
+          "className": "chat-app",
+          "dataAttrs": [],
+          "text": "GeminiNotebooksNew notebookAll notebooksRecents Conversation with Gemini  You said  modify the scri",
+          "childCount": 3,
+          "rect": {
+            "w": 1365,
+            "h": 945
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "chat-history collapsed ng-star-inserted",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 34,
+            "h": 8
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "chat-history-list ng-star-inserted",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 34,
+            "h": 8
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "xap-uploader-dropzone chat-container ng-trigger ng-trigger-chatHistoryImmersiveTransitions",
+          "dataAttrs": [
+            "hveid"
+          ],
+          "text": "Conversation with Gemini  You said  modify the script to calculate pricing for DBName or Client 'ij",
+          "childCount": 2,
+          "rect": {
+            "w": 1313,
+            "h": 945
+          }
+        },
+        {
+          "tag": "div",
+          "id": "chat-history",
+          "className": "chat-history-scroll-container lm",
+          "dataAttrs": [],
+          "text": "You said  modify the script to calculate pricing for DBName or Client 'ijmd_curemd'  Gemini said To",
+          "childCount": 2,
+          "rect": {
+            "w": 1313,
+            "h": 794
+          }
+        }
+      ]
+    },
+    "[class*=\"conversation\"]": {
+      "count": 10,
+      "samples": [
+        {
+          "tag": "div",
+          "id": "ad281b5ba033ccd2",
+          "className": "conversation-container message-actions-hover-boundary ng-star-inserted",
+          "dataAttrs": [],
+          "text": "You said  modify the script to calculate pricing for DBName or Client 'ijmd_curemd'  Gemini said To",
+          "childCount": 4,
+          "rect": {
+            "w": 724,
+            "h": 5464
+          }
+        },
+        {
+          "tag": "div",
+          "id": "9464008e18bb9a5a",
+          "className": "conversation-container message-actions-hover-boundary ng-star-inserted",
+          "dataAttrs": [],
+          "text": "You said  my db has only 1 client for this tenant. but overall my fhir client are 10 on different d",
+          "childCount": 4,
+          "rect": {
+            "w": 724,
+            "h": 5644
+          }
+        },
+        {
+          "tag": "div",
+          "id": "c672e32b3920f115",
+          "className": "conversation-container message-actions-hover-boundary ng-star-inserted",
+          "dataAttrs": [],
+          "text": "You said  why are we taking these costs?  1032,450, 2, 150, 260, 510, 360  Gemini said These number",
+          "childCount": 4,
+          "rect": {
+            "w": 724,
+            "h": 968
+          }
+        },
+        {
+          "tag": "div",
+          "id": "3b66cbe1c29a4202",
+          "className": "conversation-container message-actions-hover-boundary ng-star-inserted",
+          "dataAttrs": [],
+          "text": "You said  actually we have total number of 882 clients, but we have only onboarded 11 clients  Gemi",
+          "childCount": 4,
+          "rect": {
+            "w": 724,
+            "h": 5921
+          }
+        },
+        {
+          "tag": "div",
+          "id": "eb138e392b1fdf9c",
+          "className": "conversation-container message-actions-hover-boundary ng-star-inserted",
+          "dataAttrs": [],
+          "text": "You said  one thing to note is that when number of clients increase, the infrasturcture also increa",
+          "childCount": 4,
+          "rect": {
+            "w": 724,
+            "h": 3232
+          }
+        }
+      ]
+    },
+    "[class*=\"response\"]": {
+      "count": 160,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "response-tts-container hidden ng-star-inserted",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "tag": "model-response",
+          "id": null,
+          "className": "enable-lr26-response-chrome-updates ng-star-inserted",
+          "dataAttrs": [],
+          "text": "Gemini said To isolate the pricing calculation for just ijmd_curemd, we need to make two critical c",
+          "childCount": 1,
+          "rect": {
+            "w": 724,
+            "h": 5324
+          }
+        },
+        {
+          "tag": "response-container",
+          "id": null,
+          "className": "ng-tns-c63730935-14 reduced-bottom-padding enable-lr26-response-chrome-updates enable-luminous-sources ng-star-inserted",
+          "dataAttrs": [
+            "hveid",
+            "ved"
+          ],
+          "text": "Gemini said To isolate the pricing calculation for just ijmd_curemd, we need to make two critical c",
+          "childCount": 1,
+          "rect": {
+            "w": 724,
+            "h": 5324
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "response-container response-container-with-gpi ng-tns-c63730935-14 no-background",
+          "dataAttrs": [
+            "hveid"
+          ],
+          "text": "Gemini said To isolate the pricing calculation for just ijmd_curemd, we need to make two critical c",
+          "childCount": 3,
+          "rect": {
+            "w": 724,
+            "h": 5324
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "response-container-header ng-tns-c63730935-14 ng-star-inserted",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 2,
+          "rect": {
+            "w": 724,
+            "h": 0
+          }
+        }
+      ]
+    },
+    "[class*=\"Response\"]": {
+      "count": 9,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "ng-tns-c63730935-14 tts ng-trigger ng-trigger-singleResponseEnter ng-star-inserted",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 746,
+            "h": 0
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "ng-tns-c63730935-16 tts ng-trigger ng-trigger-singleResponseEnter ng-star-inserted",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 746,
+            "h": 0
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "ng-tns-c63730935-18 tts ng-trigger ng-trigger-singleResponseEnter ng-star-inserted",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 746,
+            "h": 0
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "ng-tns-c63730935-20 tts ng-trigger ng-trigger-singleResponseEnter ng-star-inserted",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 746,
+            "h": 0
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "ng-tns-c63730935-22 tts ng-trigger ng-trigger-singleResponseEnter ng-star-inserted",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 746,
+            "h": 0
+          }
+        }
+      ]
+    },
+    "[class*=\"query\"]": {
+      "count": 88,
+      "samples": [
+        {
+          "tag": "span",
+          "id": null,
+          "className": "user-query-container",
+          "dataAttrs": [],
+          "text": "You said  modify the script to calculate pricing for DBName or Client 'ijmd_curemd'",
+          "childCount": 1,
+          "rect": {
+            "w": 724,
+            "h": 140
+          }
+        },
+        {
+          "tag": "user-query-content",
+          "id": null,
+          "className": "user-query-container enable-luminous-prompt-bubble enable-luminous-fast-follows enable-luminous-edit-box-updates",
+          "dataAttrs": [],
+          "text": "You said  modify the script to calculate pricing for DBName or Client 'ijmd_curemd'",
+          "childCount": 1,
+          "rect": {
+            "w": 724,
+            "h": 140
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "user-query-container",
+          "dataAttrs": [],
+          "text": "You said  modify the script to calculate pricing for DBName or Client 'ijmd_curemd'",
+          "childCount": 3,
+          "rect": {
+            "w": 568,
+            "h": 140
+          }
+        },
+        {
+          "tag": "div",
+          "id": "user-query-content-0",
+          "className": "query-content ng-star-inserted",
+          "dataAttrs": [
+            "hveid",
+            "ved"
+          ],
+          "text": "You said  modify the script to calculate pricing for DBName or Client 'ijmd_curemd'",
+          "childCount": 1,
+          "rect": {
+            "w": 508,
+            "h": 88
+          }
+        },
+        {
+          "tag": "span",
+          "id": null,
+          "className": "user-query-bubble-with-background ng-star-inserted",
+          "dataAttrs": [
+            "testId"
+          ],
+          "text": "You said  modify the script to calculate pricing for DBName or Client 'ijmd_curemd'",
+          "childCount": 1,
+          "rect": {
+            "w": 508,
+            "h": 88
+          }
+        }
+      ]
+    },
+    "[class*=\"prompt\"]": {
+      "count": 11,
+      "samples": [
+        {
+          "tag": "user-query-content",
+          "id": null,
+          "className": "user-query-container enable-luminous-prompt-bubble enable-luminous-fast-follows enable-luminous-edit-box-updates",
+          "dataAttrs": [],
+          "text": "You said  modify the script to calculate pricing for DBName or Client 'ijmd_curemd'",
+          "childCount": 1,
+          "rect": {
+            "w": 724,
+            "h": 140
+          }
+        },
+        {
+          "tag": "user-query-content",
+          "id": null,
+          "className": "user-query-container enable-luminous-prompt-bubble enable-luminous-fast-follows enable-luminous-edit-box-updates",
+          "dataAttrs": [],
+          "text": "You said  my db has only 1 client for this tenant. but overall my fhir client are 10 on different d",
+          "childCount": 1,
+          "rect": {
+            "w": 724,
+            "h": 140
+          }
+        },
+        {
+          "tag": "user-query-content",
+          "id": null,
+          "className": "user-query-container enable-luminous-prompt-bubble enable-luminous-fast-follows enable-luminous-edit-box-updates",
+          "dataAttrs": [],
+          "text": "You said  why are we taking these costs?  1032,450, 2, 150, 260, 510, 360",
+          "childCount": 1,
+          "rect": {
+            "w": 724,
+            "h": 164
+          }
+        },
+        {
+          "tag": "user-query-content",
+          "id": null,
+          "className": "user-query-container enable-luminous-prompt-bubble enable-luminous-fast-follows enable-luminous-edit-box-updates",
+          "dataAttrs": [],
+          "text": "You said  actually we have total number of 882 clients, but we have only onboarded 11 clients",
+          "childCount": 1,
+          "rect": {
+            "w": 724,
+            "h": 140
+          }
+        },
+        {
+          "tag": "user-query-content",
+          "id": null,
+          "className": "user-query-container enable-luminous-prompt-bubble enable-luminous-fast-follows enable-luminous-edit-box-updates",
+          "dataAttrs": [],
+          "text": "You said  one thing to note is that when number of clients increase, the infrasturcture also increa",
+          "childCount": 1,
+          "rect": {
+            "w": 724,
+            "h": 140
+          }
+        }
+      ]
+    },
+    "[class*=\"user\"]": {
+      "count": 51,
+      "samples": [
+        {
+          "tag": "span",
+          "id": null,
+          "className": "user-query-container",
+          "dataAttrs": [],
+          "text": "You said  modify the script to calculate pricing for DBName or Client 'ijmd_curemd'",
+          "childCount": 1,
+          "rect": {
+            "w": 724,
+            "h": 140
+          }
+        },
+        {
+          "tag": "user-query-content",
+          "id": null,
+          "className": "user-query-container enable-luminous-prompt-bubble enable-luminous-fast-follows enable-luminous-edit-box-updates",
+          "dataAttrs": [],
+          "text": "You said  modify the script to calculate pricing for DBName or Client 'ijmd_curemd'",
+          "childCount": 1,
+          "rect": {
+            "w": 724,
+            "h": 140
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "user-query-container",
+          "dataAttrs": [],
+          "text": "You said  modify the script to calculate pricing for DBName or Client 'ijmd_curemd'",
+          "childCount": 3,
+          "rect": {
+            "w": 568,
+            "h": 140
+          }
+        },
+        {
+          "tag": "span",
+          "id": null,
+          "className": "user-query-bubble-with-background ng-star-inserted",
+          "dataAttrs": [
+            "testId"
+          ],
+          "text": "You said  modify the script to calculate pricing for DBName or Client 'ijmd_curemd'",
+          "childCount": 1,
+          "rect": {
+            "w": 508,
+            "h": 88
+          }
+        },
+        {
+          "tag": "span",
+          "id": null,
+          "className": "cdk-visually-hidden screen-reader-user-query-label",
+          "dataAttrs": [],
+          "text": "You said",
+          "childCount": 0,
+          "rect": {
+            "w": 1,
+            "h": 1
+          }
+        }
+      ]
+    },
+    "[class*=\"model\"]": {
+      "count": 33,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "model-response-label-announcer",
+          "dataAttrs": [],
+          "text": "Gemini said",
+          "childCount": 1,
+          "rect": {
+            "w": 724,
+            "h": 0
+          }
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "className": "cdk-visually-hidden screen-reader-model-response-label ng-star-inserted",
+          "dataAttrs": [],
+          "text": "Gemini said",
+          "childCount": 0,
+          "rect": {
+            "w": 1,
+            "h": 1
+          }
+        },
+        {
+          "tag": "structured-content-container",
+          "id": null,
+          "className": "model-response-text has-thoughts processing-state-visible ng-star-inserted",
+          "dataAttrs": [],
+          "text": "To isolate the pricing calculation for just ijmd_curemd, we need to make two critical changes to the",
+          "childCount": 1,
+          "rect": {
+            "w": 724,
+            "h": 5284
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "model-response-label-announcer",
+          "dataAttrs": [],
+          "text": "Gemini said",
+          "childCount": 1,
+          "rect": {
+            "w": 724,
+            "h": 0
+          }
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "className": "cdk-visually-hidden screen-reader-model-response-label ng-star-inserted",
+          "dataAttrs": [],
+          "text": "Gemini said",
+          "childCount": 0,
+          "rect": {
+            "w": 1,
+            "h": 1
+          }
+        }
+      ]
+    },
+    "[class*=\"bot\"]": {
+      "count": 15,
+      "samples": [
+        {
+          "tag": "a",
+          "id": null,
+          "className": "mat-mdc-list-item mdc-list-item mat-mdc-tooltip-trigger gem-nav-list-item gmat-override mat-mdc-list-item-interactive mdc-list-item--with-leading-icon mdc-list-item--with-trailing-meta mat-mdc-list-it",
+          "dataAttrs": [],
+          "text": "New notebook",
+          "childCount": 4,
+          "rect": {
+            "w": 34,
+            "h": 32
+          }
+        },
+        {
+          "tag": "a",
+          "id": null,
+          "className": "mat-mdc-list-item mdc-list-item mat-mdc-tooltip-trigger gem-nav-list-item gmat-override mat-mdc-list-item-interactive mdc-list-item--with-leading-icon mdc-list-item--with-trailing-meta mat-mdc-list-it",
+          "dataAttrs": [],
+          "text": "All notebooks",
+          "childCount": 4,
+          "rect": {
+            "w": 34,
+            "h": 32
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "bottom-gradient-container ng-star-inserted",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 40,
+            "h": 0
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "bottom-gradient",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 40,
+            "h": 16
+          }
+        },
+        {
+          "tag": "response-container",
+          "id": null,
+          "className": "ng-tns-c63730935-14 reduced-bottom-padding enable-lr26-response-chrome-updates enable-luminous-sources ng-star-inserted",
+          "dataAttrs": [
+            "hveid",
+            "ved"
+          ],
+          "text": "Gemini said To isolate the pricing calculation for just ijmd_curemd, we need to make two critical c",
+          "childCount": 1,
+          "rect": {
+            "w": 724,
+            "h": 5324
+          }
+        }
+      ]
+    },
+    "[class*=\"markdown\"]": {
+      "count": 12,
+      "samples": [
+        {
+          "tag": "chat-app",
+          "id": null,
+          "className": "enable-lr26-markdown-styling lr26 enable-print-overrides ng-tns-c1712802826-0",
+          "dataAttrs": [],
+          "text": "GeminiNotebooksNew notebookAll notebooksRecents Conversation with Gemini  You said  modify the scri",
+          "childCount": 1,
+          "rect": {
+            "w": 1365,
+            "h": 945
+          }
+        },
+        {
+          "tag": "infinite-scroller",
+          "id": null,
+          "className": "chat-history enable-lm-fast-follows enable-lm-fast-follows-phase-2 enable-lr26-markdown-styling lm use-legacy-vertical-spacing",
+          "dataAttrs": [
+            "testId",
+            "lhcontainer",
+            "hveid"
+          ],
+          "text": "You said  modify the script to calculate pricing for DBName or Client 'ijmd_curemd'  Gemini said To",
+          "childCount": 10,
+          "rect": {
+            "w": 1313,
+            "h": 794
+          }
+        },
+        {
+          "tag": "div",
+          "id": "model-response-message-contentr_ad281b5ba033ccd2",
+          "className": "markdown markdown-main-panel enable-luminous-fast-follows enable-updated-hr-color md-content stronger tutor-markdown-rendering",
+          "dataAttrs": [],
+          "text": "To isolate the pricing calculation for just ijmd_curemd, we need to make two critical changes to the",
+          "childCount": 5,
+          "rect": {
+            "w": 708,
+            "h": 5276
+          }
+        },
+        {
+          "tag": "div",
+          "id": "model-response-message-contentr_9464008e18bb9a5a",
+          "className": "markdown markdown-main-panel enable-luminous-fast-follows enable-updated-hr-color md-content stronger tutor-markdown-rendering",
+          "dataAttrs": [],
+          "text": "That is a massive detail that completely changes the unit economics for this practice!Because you ha",
+          "childCount": 7,
+          "rect": {
+            "w": 708,
+            "h": 5456
+          }
+        },
+        {
+          "tag": "div",
+          "id": "model-response-message-contentr_c672e32b3920f115",
+          "className": "markdown markdown-main-panel enable-luminous-fast-follows enable-updated-hr-color md-content stronger tutor-markdown-rendering",
+          "dataAttrs": [],
+          "text": "These numbers represent the direct monthly Azure infrastructure costs required to run a certified FH",
+          "childCount": 4,
+          "rect": {
+            "w": 708,
+            "h": 756
+          }
+        }
+      ]
+    },
+    "[class*=\"content\"]": {
+      "count": 64,
+      "samples": [
+        {
+          "tag": "side-navigation-v2",
+          "id": null,
+          "className": "content lr26",
+          "dataAttrs": [],
+          "text": "NotebooksNew notebookAll notebooksRecents Conversation with Gemini  You said  modify the script to c",
+          "childCount": 2,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "sidenav-with-history-container collapsed disable-onload-animations side-nav-mystuff-update ng-star-inserted content-loaded",
+          "dataAttrs": [],
+          "text": "NotebooksNew notebookAll notebooksRecents",
+          "childCount": 1,
+          "rect": {
+            "w": 52,
+            "h": 945
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "loading-content-spinner-container ng-star-inserted",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "tag": "div",
+          "id": "sidenav-section-content-notebooks",
+          "className": "expandable-section-content",
+          "dataAttrs": [
+            "testId"
+          ],
+          "text": "New notebookAll notebooks",
+          "childCount": 1,
+          "rect": {
+            "w": 40,
+            "h": 128
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "expandable-section-content-inner",
+          "dataAttrs": [],
+          "text": "New notebookAll notebooks",
+          "childCount": 1,
+          "rect": {
+            "w": 40,
+            "h": 128
+          }
+        }
+      ]
+    },
+    "[class*=\"text\"]": {
+      "count": 53,
+      "samples": [
+        {
+          "tag": "body",
+          "id": null,
+          "className": "enable-lm-loading-animation lr26 enable-lm-fast-follows theme-host dark-theme variable-context chrome-context-v39 enable-lm-spacing-tokens enable-lm-mobile-tokens enable-lm-locale-line-height enable-l",
+          "dataAttrs": [],
+          "text": "(function(){'use strict';function c(a,b=`unexpected value ${a}!`){throw Error(b);};var d=\"theme-host",
+          "childCount": 24,
+          "rect": {
+            "w": 1365,
+            "h": 945
+          }
+        },
+        {
+          "tag": "span",
+          "id": null,
+          "className": "gemini-sidenav-text gds-title-l-emphasized ng-star-inserted",
+          "dataAttrs": [],
+          "text": "Gemini",
+          "childCount": 0,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "tag": "gem-icon-button",
+          "id": null,
+          "className": "gem-button gem-button-badge-size-small gem-button-size-small gem-button-type-text-primary lm-enabled ng-star-inserted",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 36,
+            "h": 36
+          }
+        },
+        {
+          "tag": "span",
+          "id": null,
+          "className": "mat-mdc-list-item-unscoped-content mdc-list-item__primary-text",
+          "dataAttrs": [],
+          "text": "New notebook",
+          "childCount": 1,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "tag": "span",
+          "id": null,
+          "className": "title-text gds-body-s",
+          "dataAttrs": [],
+          "text": "New notebook",
+          "childCount": 0,
+          "rect": {
+            "w": 0,
+            "h": 17
+          }
+        }
+      ]
+    },
+    "[class*=\"bubble\"]": {
+      "count": 22,
+      "samples": [
+        {
+          "tag": "user-query-content",
+          "id": null,
+          "className": "user-query-container enable-luminous-prompt-bubble enable-luminous-fast-follows enable-luminous-edit-box-updates",
+          "dataAttrs": [],
+          "text": "You said  modify the script to calculate pricing for DBName or Client 'ijmd_curemd'",
+          "childCount": 1,
+          "rect": {
+            "w": 724,
+            "h": 140
+          }
+        },
+        {
+          "tag": "span",
+          "id": null,
+          "className": "user-query-bubble-with-background ng-star-inserted",
+          "dataAttrs": [
+            "testId"
+          ],
+          "text": "You said  modify the script to calculate pricing for DBName or Client 'ijmd_curemd'",
+          "childCount": 1,
+          "rect": {
+            "w": 508,
+            "h": 88
+          }
+        },
+        {
+          "tag": "user-query-content",
+          "id": null,
+          "className": "user-query-container enable-luminous-prompt-bubble enable-luminous-fast-follows enable-luminous-edit-box-updates",
+          "dataAttrs": [],
+          "text": "You said  my db has only 1 client for this tenant. but overall my fhir client are 10 on different d",
+          "childCount": 1,
+          "rect": {
+            "w": 724,
+            "h": 140
+          }
+        },
+        {
+          "tag": "span",
+          "id": null,
+          "className": "user-query-bubble-with-background ng-star-inserted",
+          "dataAttrs": [
+            "testId"
+          ],
+          "text": "You said  my db has only 1 client for this tenant. but overall my fhir client are 10 on different d",
+          "childCount": 1,
+          "rect": {
+            "w": 508,
+            "h": 88
+          }
+        },
+        {
+          "tag": "user-query-content",
+          "id": null,
+          "className": "user-query-container enable-luminous-prompt-bubble enable-luminous-fast-follows enable-luminous-edit-box-updates",
+          "dataAttrs": [],
+          "text": "You said  why are we taking these costs?  1032,450, 2, 150, 260, 510, 360",
+          "childCount": 1,
+          "rect": {
+            "w": 724,
+            "h": 164
+          }
+        }
+      ]
+    },
+    "user-query": {
+      "count": 10,
+      "samples": [
+        {
+          "tag": "user-query",
+          "id": null,
+          "className": "ng-star-inserted",
+          "dataAttrs": [],
+          "text": "You said  modify the script to calculate pricing for DBName or Client 'ijmd_curemd'",
+          "childCount": 1,
+          "rect": {
+            "w": 724,
+            "h": 140
+          }
+        },
+        {
+          "tag": "user-query",
+          "id": null,
+          "className": "ng-star-inserted",
+          "dataAttrs": [],
+          "text": "You said  my db has only 1 client for this tenant. but overall my fhir client are 10 on different d",
+          "childCount": 1,
+          "rect": {
+            "w": 724,
+            "h": 140
+          }
+        },
+        {
+          "tag": "user-query",
+          "id": null,
+          "className": "ng-star-inserted",
+          "dataAttrs": [],
+          "text": "You said  why are we taking these costs?  1032,450, 2, 150, 260, 510, 360",
+          "childCount": 1,
+          "rect": {
+            "w": 724,
+            "h": 164
+          }
+        },
+        {
+          "tag": "user-query",
+          "id": null,
+          "className": "ng-star-inserted",
+          "dataAttrs": [],
+          "text": "You said  actually we have total number of 882 clients, but we have only onboarded 11 clients",
+          "childCount": 1,
+          "rect": {
+            "w": 724,
+            "h": 140
+          }
+        },
+        {
+          "tag": "user-query",
+          "id": null,
+          "className": "ng-star-inserted",
+          "dataAttrs": [],
+          "text": "You said  one thing to note is that when number of clients increase, the infrasturcture also increa",
+          "childCount": 1,
+          "rect": {
+            "w": 724,
+            "h": 140
+          }
+        }
+      ]
+    },
+    "model-response": {
+      "count": 10,
+      "samples": [
+        {
+          "tag": "model-response",
+          "id": null,
+          "className": "enable-lr26-response-chrome-updates ng-star-inserted",
+          "dataAttrs": [],
+          "text": "Gemini said To isolate the pricing calculation for just ijmd_curemd, we need to make two critical c",
+          "childCount": 1,
+          "rect": {
+            "w": 724,
+            "h": 5324
+          }
+        },
+        {
+          "tag": "model-response",
+          "id": null,
+          "className": "enable-lr26-response-chrome-updates ng-star-inserted",
+          "dataAttrs": [],
+          "text": "Gemini said That is a massive detail that completely changes the unit economics for this practice!B",
+          "childCount": 1,
+          "rect": {
+            "w": 724,
+            "h": 5504
+          }
+        },
+        {
+          "tag": "model-response",
+          "id": null,
+          "className": "enable-lr26-response-chrome-updates ng-star-inserted",
+          "dataAttrs": [],
+          "text": "Gemini said These numbers represent the direct monthly Azure infrastructure costs required to run a",
+          "childCount": 1,
+          "rect": {
+            "w": 724,
+            "h": 804
+          }
+        },
+        {
+          "tag": "model-response",
+          "id": null,
+          "className": "enable-lr26-response-chrome-updates ng-star-inserted",
+          "dataAttrs": [],
+          "text": "Gemini said This is a fantastic scenario from a business perspective. It means you are currently in",
+          "childCount": 1,
+          "rect": {
+            "w": 724,
+            "h": 5781
+          }
+        },
+        {
+          "tag": "model-response",
+          "id": null,
+          "className": "enable-lr26-response-chrome-updates ng-star-inserted",
+          "dataAttrs": [],
+          "text": "Gemini said You are absolutely correct. My previous model treated infrastructure as a \"static\" pile",
+          "childCount": 1,
+          "rect": {
+            "w": 724,
+            "h": 3092
+          }
+        }
+      ]
+    }
+  },
+  "sidebar": {
+    "[class*=\"history\"]": {
+      "count": 5,
+      "samples": [
+        {
+          "tag": "div",
+          "className": "sidenav-with-history-container collapsed disable-onload-animations side-nav-mystuff-update ng-star-inserted content-loaded",
+          "childCount": 1,
+          "links": [
+            {
+              "href": "/app",
+              "text": ""
+            },
+            {
+              "href": "/search",
+              "text": ""
+            },
+            {
+              "href": "/images",
+              "text": ""
+            },
+            {
+              "href": "/videos",
+              "text": ""
+            },
+            {
+              "href": "library",
+              "text": ""
+            },
+            {
+              "href": "/gems/view",
+              "text": ""
+            },
+            {
+              "href": "/images",
+              "text": ""
+            },
+            {
+              "href": "/videos",
+              "text": ""
+            },
+            {
+              "href": "library",
+              "text": ""
+            },
+            {
+              "href": "/gems/view",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "tag": "div",
+          "className": "chat-history collapsed ng-star-inserted",
+          "childCount": 1,
+          "links": []
+        },
+        {
+          "tag": "div",
+          "className": "chat-history-list ng-star-inserted",
+          "childCount": 1,
+          "links": []
+        }
+      ]
+    },
+    "[class*=\"History\"]": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "div",
+          "className": "xap-uploader-dropzone chat-container ng-trigger ng-trigger-chatHistoryImmersiveTransitions",
+          "childCount": 2,
+          "links": []
+        }
+      ]
+    }
+  },
+  "scrollers": [
+    {
+      "tag": "div",
+      "id": null,
+      "className": "nl-blob nl-bg-blob",
+      "scrollHeight": 4008,
+      "clientHeight": 766,
+      "childCount": 1,
+      "dataTestId": null
+    },
+    {
+      "tag": "div",
+      "id": null,
+      "className": "nl-blob nl-fg-blob",
+      "scrollHeight": 4022,
+      "clientHeight": 920,
+      "childCount": 1,
+      "dataTestId": null
+    },
+    {
+      "tag": "infinite-scroller",
+      "id": null,
+      "className": "chat-history enable-lm-fast-follows enable-lm-fast-follows-phase-2 enable-lr26-markdown-styling lm use-legacy-vertical-spacing",
+      "scrollHeight": 29322,
+      "clientHeight": 794,
+      "childCount": 10,
+      "dataTestId": null
+    }
+  ],
+  "customElements": [
+    "auto-suggest",
+    "bard-mode-switcher",
+    "bard-sidenav",
+    "bard-sidenav-container",
+    "bard-sidenav-content",
+    "bot-banner",
+    "chat-app",
+    "chat-app-announcement-banners",
+    "chat-app-banners",
+    "chat-app-orchestrator",
+    "chat-app-side-nav-menu-button",
+    "chat-loading-animation",
+    "chat-notifications",
+    "chat-window",
+    "chat-window-content",
+    "code-block",
+    "condensed-tos-disclaimer",
+    "conversation-action-menu",
+    "conversation-actions-icon",
+    "conversations-list",
+    "copy-button",
+    "dex-notifications",
+    "docs-suggestion-popover-ui",
+    "election-info-disclaimer",
+    "expandable-section",
+    "file-drop-indicator",
+    "freemium-file-upload-near-quota-disclaimer",
+    "freemium-file-upload-quota-exceeded-disclaimer",
+    "freemium-rag-disclaimer",
+    "gem-button",
+    "gem-icon",
+    "gem-icon-button",
+    "gem-nav-list-item",
+    "gem-popover",
+    "hallucination-disclaimer",
+    "highlight-ui",
+    "infinite-scroller",
+    "input-area-v2",
+    "input-container",
+    "mat-action-list",
+    "mat-divider",
+    "mat-icon",
+    "mat-menu",
+    "mat-nav-list",
+    "mat-progress-spinner",
+    "message-actions",
+    "message-content",
+    "mini-app",
+    "model-response",
+    "model-response-disclaimers",
+    "overview-carousel",
+    "project-sidenav-list",
+    "project-sidenav-list-item",
+    "regenerate-button",
+    "response-container",
+    "response-element",
+    "rich-textarea",
+    "router-outlet",
+    "sensitive-memories-banner",
+    "side-nav-sparkle-button",
+    "side-navigation-content",
+    "side-navigation-v2",
+    "sidebar-trigger-ui",
+    "sidenav-mavatar-footer",
+    "simplified-input-menu",
+    "sources-list",
+    "speech-dictation-mic-button",
+    "structured-content-container",
+    "table-block",
+    "thinking-overlay",
+    "thumb-down-button",
+    "thumb-up-button",
+    "toolbox-drawer",
+    "top-bar-actions",
+    "tts-control-v2",
+    "user-profile-picture",
+    "user-query",
+    "user-query-content",
+    "user-query-file-carousel",
+    "user-query-file-preview",
+    "web-preview"
+  ],
+  "dataAttributes": [
+    "data-dex-frame-id",
+    "data-dex-recorder-ready",
+    "data-font-stylesheet",
+    "data-href",
+    "data-hveid",
+    "data-id",
+    "data-index-in-node",
+    "data-late-css",
+    "data-lhcontainer",
+    "data-mat-icon-name",
+    "data-mat-icon-namespace",
+    "data-mat-icon-type",
+    "data-noaft",
+    "data-ogsr-alt",
+    "data-ogsr-fb",
+    "data-ogsr-up",
+    "data-path-to-node",
+    "data-payload",
+    "data-test-id",
+    "data-ved"
+  ],
+  "classPatterns": [
+    {
+      "class": "user-query-container",
+      "count": 20
+    },
+    {
+      "class": "query-text-line ng-star-inserted",
+      "count": 16
+    },
+    {
+      "class": "conversation-container message-actions-hover-boundary ng-star-inserted",
+      "count": 10
+    },
+    {
+      "class": "user-query-container enable-luminous-prompt-bubble enable-luminous-fast-follows enable-luminous-edit",
+      "count": 10
+    },
+    {
+      "class": "cdk-visually-hidden screen-reader-user-query-label",
+      "count": 10
+    },
+    {
+      "class": "enable-lr26-response-chrome-updates ng-star-inserted",
+      "count": 10
+    },
+    {
+      "class": "model-response-label-announcer",
+      "count": 10
+    },
+    {
+      "class": "cdk-visually-hidden screen-reader-model-response-label ng-star-inserted",
+      "count": 10
+    },
+    {
+      "class": "markdown markdown-main-panel enable-luminous-fast-follows enable-updated-hr-color md-content stronge",
+      "count": 10
+    },
+    {
+      "class": "restart-chat-button-scroll-placeholder ng-star-inserted",
+      "count": 10
+    },
+    {
+      "class": "query-content ng-star-inserted",
+      "count": 9
+    },
+    {
+      "class": "user-query-bubble-with-background ng-star-inserted",
+      "count": 9
+    },
+    {
+      "class": "query-text gds-body-l",
+      "count": 9
+    },
+    {
+      "class": "model-response-text has-thoughts processing-state-visible ng-star-inserted",
+      "count": 5
+    },
+    {
+      "class": "response-footer complete has-thoughts gap",
+      "count": 5
+    },
+    {
+      "class": "model-response-text processing-state-visible ng-star-inserted",
+      "count": 4
+    },
+    {
+      "class": "response-footer complete gap",
+      "count": 4
+    },
+    {
+      "class": "expandable-section-content",
+      "count": 2
+    },
+    {
+      "class": "expandable-section-content-inner",
+      "count": 2
+    },
+    {
+      "class": "mat-mdc-list-item mdc-list-item mat-mdc-tooltip-trigger gem-nav-list-item gmat-override mat-mdc-list",
+      "count": 2
+    },
+    {
+      "class": "mdc-list-item__content",
+      "count": 2
+    },
+    {
+      "class": "mat-mdc-list-item-unscoped-content mdc-list-item__primary-text",
+      "count": 2
+    },
+    {
+      "class": "title-text gds-body-s",
+      "count": 2
+    },
+    {
+      "class": "mat-mdc-list-item-meta mdc-list-item__end trailing-content gmat-override",
+      "count": 2
+    },
+    {
+      "class": "hovered-trailing-content ng-star-inserted",
+      "count": 2
+    },
+    {
+      "class": "with-chat-padding ng-star-inserted",
+      "count": 2
+    },
+    {
+      "class": "enable-lm-loading-animation lr26 enable-lm-fast-follows theme-host dark-theme variable-context chrom",
+      "count": 1
+    },
+    {
+      "class": "chat-app",
+      "count": 1
+    },
+    {
+      "class": "gemini-sidenav-text gds-title-l-emphasized ng-star-inserted",
+      "count": 1
+    },
+    {
+      "class": "response-tts-container hidden ng-star-inserted",
+      "count": 1
+    },
+    {
+      "class": "gem-button gem-button-badge-size-small gem-button-size-small gem-button-type-text-primary lm-enabled",
+      "count": 1
+    },
+    {
+      "class": "content lr26",
+      "count": 1
+    },
+    {
+      "class": "sidenav-with-history-container collapsed disable-onload-animations side-nav-mystuff-update ng-star-i",
+      "count": 1
+    },
+    {
+      "class": "loading-content-spinner-container ng-star-inserted",
+      "count": 1
+    },
+    {
+      "class": "chat-history collapsed ng-star-inserted",
+      "count": 1
+    },
+    {
+      "class": "chat-history-list ng-star-inserted",
+      "count": 1
+    },
+    {
+      "class": "bottom-gradient-container ng-star-inserted",
+      "count": 1
+    },
+    {
+      "class": "bottom-gradient",
+      "count": 1
+    },
+    {
+      "class": "mat-mdc-tooltip-trigger mavatar-settings-button gem-button gem-button-badge-size-small gem-button-si",
+      "count": 1
+    },
+    {
+      "class": "content-wrapper",
+      "count": 1
+    }
+  ],
+  "sampleHTML": [
+    {
+      "selector": "[class*=\"message\"]",
+      "count": 13,
+      "outerHTML": "<div _ngcontent-ng-c3404161604=\"\" class=\"conversation-container message-actions-hover-boundary ng-star-inserted\" id=\"ad281b5ba033ccd2\" style=\"\"><user-query _ngcontent-ng-c3404161604=\"\" _nghost-ng-c183290594=\"\" class=\"ng-star-inserted\"><span _ngcontent-ng-c183290594=\"\" class=\"user-query-container\"><user-query-content _ngcontent-ng-c183290594=\"\" class=\"user-query-container enable-luminous-prompt-bubble enable-luminous-fast-follows enable-luminous-edit-box-updates\" _nghost-ng-c4024191598=\"\" style=\"--max-lines-for-collapse-count: 4;\"><div _ngcontent-ng-c4024191598=\"\" class=\"user-query-container\"><div _ngcontent-ng-c4024191598=\"\" class=\"file-preview-container ng-star-inserted\"><!----><!----><!----><!----><!----><!----></div><!----><div _ngcontent-ng-c4024191598=\"\" class=\"query-content ng-star-inserted\" id=\"user-query-content-0\" jslog=\"275422;track:impression,attention\" data-hveid=\"0\" decode-data-ved=\"1\" data-ved=\"0CAAQ3ucQahcKEwjE8tXo-_WVAxUAAAAAHQAAAAAQLg\"><!----><!----><!----><!----><span _ngcontent-ng-c4024191598=\"\" data-test-id=\"luminous-collapsed-bubble\" class=\"user-query-bubble-with-background ng-star-inserted\"><span _ngcontent-ng-c4024191598=\"\" class=\"horizontal-container ng-star-inserted\"><div _ngcontent-ng-c4024191598=\"\" aria-level=\"2\" role=\"heading\" class=\"query-text gds-body-l\" dir=\"ltr\"><span _ngcontent-ng-c4024191598=\"\" class=\"cdk-visually-hidden screen-reader-user-query-label\"> You said </span><!----><p _ngcontent-ng-c4024191598=\"\" class=\"query-text-line ng-star-inserted\"> modify the script to calculate pricing for DBName or Client 'ijmd_curemd' <!----><!----><!----></p><!----><!----></div><!----></span><!----><!----></span><!----><!----><!----><!----></div><div _ngcontent-ng-c4024191598=\"\" class=\"luminous-actions-container ng-star-inserted\"><gem-icon-button _ngcontent-ng-c4024191598=\"\" tabindex=\"-1\" theme=\"lm\" type=\"translucent\" arialabel=\"Copy prompt\" gemtooltip=\"Copy prompt\" data-test-id=\"prompt-copy-button\" class=\"mat-mdc-tooltip-trigger luminous-action"
+    },
+    {
+      "selector": "[class*=\"query\"]",
+      "count": 88,
+      "outerHTML": "<span _ngcontent-ng-c183290594=\"\" class=\"user-query-container\"><user-query-content _ngcontent-ng-c183290594=\"\" class=\"user-query-container enable-luminous-prompt-bubble enable-luminous-fast-follows enable-luminous-edit-box-updates\" _nghost-ng-c4024191598=\"\" style=\"--max-lines-for-collapse-count: 4;\"><div _ngcontent-ng-c4024191598=\"\" class=\"user-query-container\"><div _ngcontent-ng-c4024191598=\"\" class=\"file-preview-container ng-star-inserted\"><!----><!----><!----><!----><!----><!----></div><!----><div _ngcontent-ng-c4024191598=\"\" class=\"query-content ng-star-inserted\" id=\"user-query-content-0\" jslog=\"275422;track:impression,attention\" data-hveid=\"0\" decode-data-ved=\"1\" data-ved=\"0CAAQ3ucQahcKEwjE8tXo-_WVAxUAAAAAHQAAAAAQLg\"><!----><!----><!----><!----><span _ngcontent-ng-c4024191598=\"\" data-test-id=\"luminous-collapsed-bubble\" class=\"user-query-bubble-with-background ng-star-inserted\"><span _ngcontent-ng-c4024191598=\"\" class=\"horizontal-container ng-star-inserted\"><div _ngcontent-ng-c4024191598=\"\" aria-level=\"2\" role=\"heading\" class=\"query-text gds-body-l\" dir=\"ltr\"><span _ngcontent-ng-c4024191598=\"\" class=\"cdk-visually-hidden screen-reader-user-query-label\"> You said </span><!----><p _ngcontent-ng-c4024191598=\"\" class=\"query-text-line ng-star-inserted\"> modify the script to calculate pricing for DBName or Client 'ijmd_curemd' <!----><!----><!----></p><!----><!----></div><!----></span><!----><!----></span><!----><!----><!----><!----></div><div _ngcontent-ng-c4024191598=\"\" class=\"luminous-actions-container ng-star-inserted\"><gem-icon-button _ngcontent-ng-c4024191598=\"\" tabindex=\"-1\" theme=\"lm\" type=\"translucent\" arialabel=\"Copy prompt\" gemtooltip=\"Copy prompt\" data-test-id=\"prompt-copy-button\" class=\"mat-mdc-tooltip-trigger luminous-action-button gem-button gem-button-badge-size-small gem-button-size-small gem-button-type-translucent lm-enabled\" _nghost-ng-c1329595015=\"\" aria-describedby=\"cdk-describedby-message-ng-1-12\" cdk-describedby-host=\"ng-1\"><!----><!----><button"
+    },
+    {
+      "selector": "[class*=\"response\"]",
+      "count": 160,
+      "outerHTML": "<div _ngcontent-ng-c486892791=\"\" class=\"response-tts-container hidden ng-star-inserted\"><div _ngcontent-ng-c486892791=\"\" class=\"tts-button-container\"><button _ngcontent-ng-c486892791=\"\" mat-icon-button=\"\" class=\"mdc-icon-button mat-mdc-icon-button mat-mdc-button-base mat-mdc-tooltip-trigger tts-button mat-unthemed ng-star-inserted\" mat-ripple-loader-uninitialized=\"\" mat-ripple-loader-class-name=\"mat-mdc-button-ripple\" mat-ripple-loader-centered=\"\" aria-label=\"Listen\" jslog=\"184512;track:generic_click,impression;BardVeMetadataKey:[[null,null,null,null,null,null,null,null,1,null,null,null,0]];mutable:true\"><span class=\"mat-mdc-button-persistent-ripple mdc-icon-button__ripple\"></span><!----><!----><gem-icon _ngcontent-ng-c486892791=\"\" fonticonname=\"play_arrow\" size=\"large\" _nghost-ng-c894252133=\"\" class=\"ng-star-inserted\"><mat-icon _ngcontent-ng-c894252133=\"\" role=\"img\" class=\"mat-icon notranslate lm-icon-l lumi-symbols mat-ligature-font mat-icon-no-color ng-star-inserted\" aria-hidden=\"true\" data-mat-icon-type=\"font\" data-mat-icon-name=\"play_arrow\" data-mat-icon-namespace=\"lumi-symbols\" fonticon=\"play_arrow\"></mat-icon><!----><!----><!----></gem-icon><!----><!----><span class=\"mat-focus-indicator\"></span><span class=\"mat-mdc-button-touch-target\"></span></button><!----><!----></div></div>"
+    },
+    {
+      "selector": "[class*=\"markdown\"]",
+      "count": 12,
+      "outerHTML": "<chat-app _ngcontent-ng-c2332002910=\"\" _nghost-ng-c1712802826=\"\" class=\"enable-lr26-markdown-styling lr26 enable-print-overrides ng-tns-c1712802826-0\" style=\"--internal-bar-offset: 0px; --announcement-banner-padding-top: 0px;\"><!----><main _ngcontent-ng-c1712802826=\"\" class=\"chat-app\"><div _ngcontent-ng-c1712802826=\"\" data-test-id=\"chat-app\" class=\"side-nav-menu-button hide-on-print with-pill-ui\"><!----><!----><chat-app-side-nav-menu-button _ngcontent-ng-c1712802826=\"\" _nghost-ng-c1839397252=\"\" class=\"ng-tns-c1839397252-8 ng-tns-c1712802826-0 ng-star-inserted\"><!----><!----><!----><side-nav-sparkle-button _ngcontent-ng-c1839397252=\"\" _nghost-ng-c3171322021=\"\" class=\"ng-tns-c1839397252-8 lr26 ng-star-inserted\"><a _ngcontent-ng-c3171322021=\"\" href=\"/\" data-test-id=\"side-nav-sparkle-button\" class=\"side-nav-sparkle-button\" aria-label=\"New chat\" jslog=\"323333;track:generic_click,impression\" style=\"display: none;\"><div _ngcontent-ng-c3171322021=\"\" class=\"xap-count-badge-container\"><img _ngcontent-ng-c3171322021=\"\" alt=\"\" aria-hidden=\"true\" class=\"sparkle-image ng-star-inserted\" src=\"https://www.gstatic.com/lamda/images/gemini_sparkle_aurora_33f86dc0c0257da337c63.svg\"><!----><!----><!----></div><span _ngcontent-ng-c3171322021=\"\" class=\"gemini-sidenav-text gds-title-l-emphasized ng-star-inserted\"> Gemini</span><!----></a><button _ngcontent-ng-c3171322021=\"\" mat-icon-button=\"\" theme=\"lm\" gemtooltipposition=\"right\" data-test-id=\"side-nav-sparkle-button\" class=\"mdc-icon-button mat-mdc-icon-button mat-mdc-button-base mat-mdc-tooltip-trigger side-nav-sparkle-button mat-unthemed lm-enabled\" mat-ripple-loader-uninitialized=\"\" mat-ripple-loader-class-name=\"mat-mdc-button-ripple\" mat-ripple-loader-centered=\"\" aria-label=\"Open sidebar\" jslog=\"323334;track:generic_click,impression\" style=\"display: flex;\"><span class=\"mat-mdc-button-persistent-ripple mdc-icon-button__ripple\"></span><div _ngcontent-ng-c3171322021=\"\" class=\"xap-count-badge-container\"><gem-icon _ngcontent-ng-c3171322021=\""
+    }
+  ]
+}

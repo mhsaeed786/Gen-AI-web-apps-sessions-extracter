@@ -1,0 +1,776 @@
+{
+  "meta": {
+    "platform": "copilot",
+    "url": "https://copilot.microsoft.com/",
+    "host": "copilot.microsoft.com",
+    "title": "Microsoft Copilot: Your AI companion",
+    "scrapedAt": "2026-07-28T18:22:39.496Z",
+    "bodyClasses": ""
+  },
+  "messages": {
+    "[class*=\"chat\"]": {
+      "count": 6,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "mt-2 flex flex-col items-start text-pretty pe-0 sm:absolute sm:inset-x-0 sm:inset-y-0 sm:mx-auto sm:mt-0 sm:max-w-chat sm:px-4 sm:pb-[calc(var(--composer-container-height))]",
+          "dataAttrs": [],
+          "text": "Hi MUHAMMAD, what should we dive into today?",
+          "childCount": 1,
+          "rect": {
+            "w": 768,
+            "h": 933
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "pointer-events-auto flex w-full max-w-chat flex-col items-center justify-center px-2",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 768,
+            "h": 0
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "relative max-h-full min-h-composer min-w-16 max-w-chat rounded-5xl",
+          "dataAttrs": [],
+          "text": "Message CopilotSmart",
+          "childCount": 2,
+          "rect": {
+            "w": 744,
+            "h": 110
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "relative max-h-full w-expanded-composer max-w-chat bg-gradient-to-b p-1.5 from-background-400/5 to-background-400/8 dark:from-background-200/65 dark:to-background-200/65",
+          "dataAttrs": [],
+          "text": "Message CopilotSmart",
+          "childCount": 1,
+          "rect": {
+            "w": 744,
+            "h": 110
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "flex h-[150px] w-expanded-composer max-w-chat flex-none items-end px-1.5 sm:flex-initial sm:items-start z-20",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 744,
+            "h": 150
+          }
+        }
+      ]
+    },
+    "[class*=\"user\"]": {
+      "count": 3,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "flex grow flex-col gap-4 py-user-input",
+          "dataAttrs": [],
+          "text": "Message Copilot",
+          "childCount": 1,
+          "rect": {
+            "w": 732,
+            "h": 48
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "t-custom-scrollbar scrollbar-stable overflow-y-auto px-4 max-h-user-input-shallow",
+          "dataAttrs": [],
+          "text": "Message Copilot",
+          "childCount": 1,
+          "rect": {
+            "w": 732,
+            "h": 26
+          }
+        },
+        {
+          "tag": "textarea",
+          "id": "userInput",
+          "className": "font-ligatures-none inline-block h-user-input w-full resize-none overflow-y-hidden whitespace-pre-wrap bg-transparent align-top text-black outline-none placeholder:text-foreground-450 dark:text-white ",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 690,
+            "h": 22
+          }
+        }
+      ]
+    },
+    "[class*=\"bot\"]": {
+      "count": 8,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "z-40 absolute bottom-0 hidden",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "sticky bottom-0 z-30 w-full px-0 py-1.5 will-change-transform bg-sidebar-light dark:bg-sidebar-dark before:pointer-events-none before:absolute before:-top-10 before:h-10 before:w-full before:bg-gradie",
+          "dataAttrs": [],
+          "text": "MUHAMMADFree PlanUpgrade",
+          "childCount": 1,
+          "rect": {
+            "w": 248,
+            "h": 60
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "pointer-events-none absolute bottom-0 w-full sm:bottom-1/2 sm:translate-y-1/2 sm:pt-36",
+          "dataAttrs": [],
+          "text": "Message CopilotSmart",
+          "childCount": 1,
+          "rect": {
+            "w": 1099,
+            "h": 404
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "pointer-events-none absolute bottom-full flex w-full items-center justify-center px-3 pb-3",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 1099,
+            "h": 12
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "relative bottom-0 my-1.5 flex h-9 items-center w-0",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 0,
+            "h": 36
+          }
+        }
+      ]
+    },
+    "[class*=\"content\"]": {
+      "count": 6,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "relative flex flex-col items-start gap-0.5 pe-1 ps-sidebar-content-inline-start z-20 pt-1",
+          "dataAttrs": [],
+          "text": "New chat",
+          "childCount": 1,
+          "rect": {
+            "w": 256,
+            "h": 44
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "flex min-h-full w-full flex-col pe-1 ps-sidebar-content-inline-start justify-between",
+          "dataAttrs": [],
+          "text": "LibraryTasksPreviewProjectsDiscoverImagineExperimentsOur conversations togetherExtracting Log-Relate",
+          "childCount": 4,
+          "rect": {
+            "w": 256,
+            "h": 843
+          }
+        },
+        {
+          "tag": "span",
+          "id": null,
+          "className": "contents group-hover/expandable:hidden group-has-[:focus-visible]/expandable:hidden [&>svg]:size-5",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "pointer-events-auto contents",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "pointer-events-auto contents",
+          "dataAttrs": [],
+          "text": "Temporary",
+          "childCount": 1,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        }
+      ]
+    },
+    "[class*=\"text\"]": {
+      "count": 45,
+      "samples": [
+        {
+          "tag": "button",
+          "id": null,
+          "className": "text-foreground-800 fill-foreground-800 active:text-foreground-600 active:fill-foreground-600 dark:active:text-foreground-650 dark:active:fill-foreground-650 bg-transparent safe-hover:bg-black/5 activ",
+          "dataAttrs": [
+            "testid",
+            "spatialNavigationAutofocus"
+          ],
+          "text": "",
+          "childCount": 2,
+          "rect": {
+            "w": 78,
+            "h": 36
+          }
+        },
+        {
+          "tag": "span",
+          "id": null,
+          "className": "flex items-center text-lg-strong",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 58,
+            "h": 18
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "className": "relative flex items-center text-foreground-800 fill-foreground-800 active:text-foreground-600 active:fill-foreground-600 dark:active:text-foreground-650 dark:active:fill-foreground-650 bg-transparent ",
+          "dataAttrs": [
+            "testid",
+            "spatialNavigationAutofocus",
+            "tooltipState"
+          ],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 36,
+            "h": 36
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "className": "relative flex items-center text-foreground-800 fill-foreground-800 active:text-foreground-600 active:fill-foreground-600 dark:active:text-foreground-650 dark:active:fill-foreground-650 bg-transparent ",
+          "dataAttrs": [
+            "testid",
+            "spatialNavigationAutofocus"
+          ],
+          "text": "New chat",
+          "childCount": 1,
+          "rect": {
+            "w": 248,
+            "h": 40
+          }
+        },
+        {
+          "tag": "span",
+          "id": null,
+          "className": "flex min-h-6 w-full items-center gap-1.5 text-start",
+          "dataAttrs": [],
+          "text": "New chat",
+          "childCount": 0,
+          "rect": {
+            "w": 69,
+            "h": 26
+          }
+        }
+      ]
+    },
+    "[class*=\"Text\"]": {
+      "count": 17,
+      "samples": [
+        {
+          "tag": "button",
+          "id": null,
+          "className": "text-foreground-800 fill-foreground-800 active:text-foreground-600 active:fill-foreground-600 dark:active:text-foreground-650 dark:active:fill-foreground-650 bg-transparent safe-hover:bg-black/5 activ",
+          "dataAttrs": [
+            "testid",
+            "spatialNavigationAutofocus"
+          ],
+          "text": "",
+          "childCount": 2,
+          "rect": {
+            "w": 78,
+            "h": 36
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "bg-current forced-color-adjust-none forced-colors:bg-[ButtonText] h-[18px] w-[58px]",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 58,
+            "h": 18
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "className": "relative flex items-center text-foreground-800 fill-foreground-800 active:text-foreground-600 active:fill-foreground-600 dark:active:text-foreground-650 dark:active:fill-foreground-650 bg-transparent ",
+          "dataAttrs": [
+            "testid",
+            "spatialNavigationAutofocus",
+            "tooltipState"
+          ],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 36,
+            "h": 36
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "className": "relative flex items-center text-foreground-800 fill-foreground-800 active:text-foreground-600 active:fill-foreground-600 dark:active:text-foreground-650 dark:active:fill-foreground-650 bg-transparent ",
+          "dataAttrs": [
+            "testid",
+            "spatialNavigationAutofocus"
+          ],
+          "text": "New chat",
+          "childCount": 1,
+          "rect": {
+            "w": 248,
+            "h": 40
+          }
+        },
+        {
+          "tag": "button",
+          "id": null,
+          "className": "relative flex items-center text-foreground-800 fill-foreground-800 active:text-foreground-600 active:fill-foreground-600 dark:active:text-foreground-650 dark:active:fill-foreground-650 bg-transparent ",
+          "dataAttrs": [
+            "testid",
+            "spatialNavigationAutofocus"
+          ],
+          "text": "Library",
+          "childCount": 1,
+          "rect": {
+            "w": 248,
+            "h": 40
+          }
+        }
+      ]
+    },
+    "[data-testid*=\"conversation\"]": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "button",
+          "id": null,
+          "className": "relative flex items-center text-foreground-800 fill-foreground-800 active:text-foreground-600 active:fill-foreground-600 dark:active:text-foreground-650 dark:active:fill-foreground-650 bg-transparent ",
+          "dataAttrs": [
+            "testid",
+            "spatialNavigationAutofocus"
+          ],
+          "text": "New chat",
+          "childCount": 1,
+          "rect": {
+            "w": 248,
+            "h": 40
+          }
+        }
+      ]
+    },
+    "[data-testid*=\"chat\"]": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "button",
+          "id": null,
+          "className": "relative flex items-center text-foreground-800 fill-foreground-800 active:text-foreground-600 active:fill-foreground-600 dark:active:text-foreground-650 dark:active:fill-foreground-650 bg-transparent ",
+          "dataAttrs": [
+            "testid",
+            "spatialNavigationAutofocus"
+          ],
+          "text": "Smart",
+          "childCount": 2,
+          "rect": {
+            "w": 79,
+            "h": 36
+          }
+        }
+      ]
+    }
+  },
+  "sidebar": {
+    "nav": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "nav",
+          "className": "relative w-full bg-sidebar-light dark:bg-sidebar-dark",
+          "childCount": 3,
+          "links": [
+            {
+              "href": "/discover",
+              "text": "Discover"
+            },
+            {
+              "href": "/imagine",
+              "text": "Imagine"
+            },
+            {
+              "href": "/labs",
+              "text": "Experiments"
+            }
+          ]
+        }
+      ]
+    },
+    "[class*=\"sidebar\"]": {
+      "count": 10,
+      "samples": [
+        {
+          "tag": "div",
+          "className": "flex h-full overflow-hidden bg-sidebar-light dark:bg-sidebar-dark",
+          "childCount": 3,
+          "links": [
+            {
+              "href": "/discover",
+              "text": "Discover"
+            },
+            {
+              "href": "/imagine",
+              "text": "Imagine"
+            },
+            {
+              "href": "/labs",
+              "text": "Experiments"
+            },
+            {
+              "href": "https://support.microsoft.com/topic/microsoft-copilot-privacy-controls-8e479f27-6eb6-48c5-8d6a-c1340",
+              "text": "conversation activity"
+            }
+          ]
+        },
+        {
+          "tag": "div",
+          "className": "h-full w-0 will-change-auto max-md:bg-sidebar-light max-md:dark:bg-sidebar-dark absolute md:relative md:w-sidebar z-40",
+          "childCount": 1,
+          "links": [
+            {
+              "href": "/discover",
+              "text": "Discover"
+            },
+            {
+              "href": "/imagine",
+              "text": "Imagine"
+            },
+            {
+              "href": "/labs",
+              "text": "Experiments"
+            }
+          ]
+        },
+        {
+          "tag": "nav",
+          "className": "relative w-full bg-sidebar-light dark:bg-sidebar-dark",
+          "childCount": 3,
+          "links": [
+            {
+              "href": "/discover",
+              "text": "Discover"
+            },
+            {
+              "href": "/imagine",
+              "text": "Imagine"
+            },
+            {
+              "href": "/labs",
+              "text": "Experiments"
+            }
+          ]
+        }
+      ]
+    },
+    "[data-testid*=\"conversation\"]": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "button",
+          "className": "relative flex items-center text-foreground-800 fill-foreground-800 active:text-foreground-600 active:fill-foreground-600 dark:active:text-foreground-650 dark:active:fill-foreground-650 bg-transparent ",
+          "childCount": 1,
+          "links": []
+        }
+      ]
+    },
+    "[data-testid*=\"sidebar\"]": {
+      "count": 8,
+      "samples": [
+        {
+          "tag": "nav",
+          "className": "relative w-full bg-sidebar-light dark:bg-sidebar-dark",
+          "childCount": 3,
+          "links": [
+            {
+              "href": "/discover",
+              "text": "Discover"
+            },
+            {
+              "href": "/imagine",
+              "text": "Imagine"
+            },
+            {
+              "href": "/labs",
+              "text": "Experiments"
+            }
+          ]
+        },
+        {
+          "tag": "button",
+          "className": "text-foreground-800 fill-foreground-800 active:text-foreground-600 active:fill-foreground-600 dark:active:text-foreground-650 dark:active:fill-foreground-650 bg-transparent safe-hover:bg-black/5 activ",
+          "childCount": 2,
+          "links": []
+        },
+        {
+          "tag": "button",
+          "className": "relative flex items-center text-foreground-800 fill-foreground-800 active:text-foreground-600 active:fill-foreground-600 dark:active:text-foreground-650 dark:active:fill-foreground-650 bg-transparent ",
+          "childCount": 1,
+          "links": []
+        }
+      ]
+    },
+    "[data-testid*=\"nav\"]": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "button",
+          "className": "relative flex items-center text-foreground-800 fill-foreground-800 active:text-foreground-600 active:fill-foreground-600 dark:active:text-foreground-650 dark:active:fill-foreground-650 bg-transparent ",
+          "childCount": 1,
+          "links": []
+        }
+      ]
+    }
+  },
+  "scrollers": [],
+  "customElements": [
+    "dex-notifications",
+    "docs-suggestion-popover-ui",
+    "highlight-ui",
+    "sidebar-trigger-ui"
+  ],
+  "dataAttributes": [
+    "data-dex-frame-id",
+    "data-dex-recorder-ready",
+    "data-spatial-navigation-autofocus",
+    "data-tabster",
+    "data-tabster-dummy",
+    "data-testid",
+    "data-theme",
+    "data-tooltip-state",
+    "data-ueto",
+    "data-version",
+    "data-wxt-shadow-root"
+  ],
+  "classPatterns": [
+    {
+      "class": "relative flex items-center text-foreground-800 fill-foreground-800 active:text-foreground-600 active",
+      "count": 14
+    },
+    {
+      "class": "fixed inset-0 m-auto rounded-4xl bg-background-150 text-foreground-800 shadow-xl dark:bg-background-",
+      "count": 5
+    },
+    {
+      "class": "flex min-h-6 w-full items-center gap-1.5 text-start",
+      "count": 4
+    },
+    {
+      "class": "flex min-h-6 min-w-0 flex-1 items-center gap-2 text-start text-base",
+      "count": 3
+    },
+    {
+      "class": "pointer-events-auto contents",
+      "count": 2
+    },
+    {
+      "class": "text-foreground-800 fill-foreground-800 active:text-foreground-600 active:fill-foreground-600 dark:a",
+      "count": 1
+    },
+    {
+      "class": "flex items-center text-lg-strong",
+      "count": 1
+    },
+    {
+      "class": "bg-current forced-color-adjust-none forced-colors:bg-[ButtonText] h-[18px] w-[58px]",
+      "count": 1
+    },
+    {
+      "class": "relative flex flex-col items-start gap-0.5 pe-1 ps-sidebar-content-inline-start z-20 pt-1",
+      "count": 1
+    },
+    {
+      "class": "flex min-h-full w-full flex-col pe-1 ps-sidebar-content-inline-start justify-between",
+      "count": 1
+    },
+    {
+      "class": "pointer-events-none absolute start-1.5 top-1/2 flex size-7 -translate-y-1/2 items-center justify-cen",
+      "count": 1
+    },
+    {
+      "class": "inline flex-none rounded bg-transparent text-foreground-800 border border-foreground-450 h-min text-",
+      "count": 1
+    },
+    {
+      "class": "group/chevron absolute start-1.5 top-1/2 flex size-7 -translate-y-1/2 items-center justify-center ro",
+      "count": 1
+    },
+    {
+      "class": "contents group-hover/expandable:hidden group-has-[:focus-visible]/expandable:hidden [&>svg]:size-5",
+      "count": 1
+    },
+    {
+      "class": "relative cursor-pointer rounded-xl text-start hover:bg-black/5 focus:bg-black/5 active:bg-black/8 co",
+      "count": 1
+    },
+    {
+      "class": "z-40 absolute bottom-0 hidden",
+      "count": 1
+    },
+    {
+      "class": "sticky bottom-0 z-30 w-full px-0 py-1.5 will-change-transform bg-sidebar-light dark:bg-sidebar-dark ",
+      "count": 1
+    },
+    {
+      "class": "relative flex text-foreground-800 fill-foreground-800 active:text-foreground-600 active:fill-foregro",
+      "count": 1
+    },
+    {
+      "class": "flex min-w-0 flex-1 flex-col text-start",
+      "count": 1
+    },
+    {
+      "class": "truncate text-foreground-800 text-sm-strong",
+      "count": 1
+    },
+    {
+      "class": "truncate text-foreground-700 text-xs",
+      "count": 1
+    },
+    {
+      "class": "scrollbar-stable flex size-full flex-col items-center overflow-y-auto overflow-x-hidden overscroll-c",
+      "count": 1
+    },
+    {
+      "class": "mt-2 flex flex-col items-start text-pretty pe-0 sm:absolute sm:inset-x-0 sm:inset-y-0 sm:mx-auto sm:",
+      "count": 1
+    },
+    {
+      "class": "flex w-full flex-col items-start justify-start sm:justify-end sm:mb-8 sm:h-[100px] sm:items-center t",
+      "count": 1
+    },
+    {
+      "class": "pointer-events-none absolute bottom-0 w-full sm:bottom-1/2 sm:translate-y-1/2 sm:pt-36",
+      "count": 1
+    },
+    {
+      "class": "pointer-events-none absolute bottom-full flex w-full items-center justify-center px-3 pb-3",
+      "count": 1
+    },
+    {
+      "class": "pointer-events-auto flex w-full max-w-chat flex-col items-center justify-center px-2",
+      "count": 1
+    },
+    {
+      "class": "relative max-h-full min-h-composer min-w-16 max-w-chat rounded-5xl",
+      "count": 1
+    },
+    {
+      "class": "relative max-h-full w-expanded-composer max-w-chat bg-gradient-to-b p-1.5 from-background-400/5 to-b",
+      "count": 1
+    },
+    {
+      "class": "relative flex size-full cursor-text overflow-hidden text-black dark:text-white",
+      "count": 1
+    },
+    {
+      "class": "flex grow flex-col gap-4 py-user-input",
+      "count": 1
+    },
+    {
+      "class": "t-custom-scrollbar scrollbar-stable overflow-y-auto px-4 max-h-user-input-shallow",
+      "count": 1
+    },
+    {
+      "class": "font-ligatures-none inline-block h-user-input w-full resize-none overflow-y-hidden whitespace-pre-wr",
+      "count": 1
+    },
+    {
+      "class": "relative bottom-0 my-1.5 flex h-9 items-center w-0",
+      "count": 1
+    },
+    {
+      "class": "relative bottom-0 flex justify-between pb-0.5 pe-2.5 ps-1.5",
+      "count": 1
+    },
+    {
+      "class": "bg-current forced-color-adjust-none forced-colors:bg-[ButtonText] size-6",
+      "count": 1
+    },
+    {
+      "class": "text-sm",
+      "count": 1
+    },
+    {
+      "class": "flex h-[150px] w-expanded-composer max-w-chat flex-none items-end px-1.5 sm:flex-initial sm:items-st",
+      "count": 1
+    },
+    {
+      "class": "absolute bottom-0 start-1/2 flex max-w-chat -translate-x-1/2 flex-col items-center px-6 text-center ",
+      "count": 1
+    },
+    {
+      "class": "pb-8 text-foreground-450 text-sm dark:text-foreground-600",
+      "count": 1
+    }
+  ],
+  "sampleHTML": []
+}

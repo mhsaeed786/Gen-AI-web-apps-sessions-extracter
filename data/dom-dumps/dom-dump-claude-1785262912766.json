@@ -1,0 +1,504 @@
+{
+  "meta": {
+    "platform": "claude",
+    "url": "https://claude.ai/new",
+    "host": "claude.ai",
+    "title": "New chat - Claude",
+    "scrapedAt": "2026-07-28T18:21:52.762Z",
+    "bodyClasses": "bg-bg-100 text-text-100 font-ui min-h-screen"
+  },
+  "messages": {
+    "[class*=\"bot\"]": {
+      "count": 2,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "pointer-events-none absolute inset-0 bg-bg-100 [background-image:linear-gradient(to_right,hsl(var(--bg-200))_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--bg-200))_1px,transparent_1px)] [ba",
+          "dataAttrs": [],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 1355,
+            "h": 945
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "absolute bottom-0 left-1/2 -translate-x-1/2 z-0 pointer-events-none transition-opacity duration-500",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 1008,
+            "h": 252
+          }
+        }
+      ]
+    },
+    "[class*=\"content\"]": {
+      "count": 13,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "cds-root text-primary contents",
+          "dataAttrs": [
+            "density",
+            "mode",
+            "platform",
+            "font"
+          ],
+          "text": "New chatCtrl+⇧+OChatsProjectsArtifactsCodeUpgradeCustomizeProductsDesignRecentsHTML not",
+          "childCount": 2,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "className": "contents",
+          "dataAttrs": [],
+          "text": "Products",
+          "childCount": 1,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "tag": "h2",
+          "id": null,
+          "className": "contents",
+          "dataAttrs": [],
+          "text": "Recents",
+          "childCount": 1,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "cds-root text-primary contents",
+          "dataAttrs": [
+            "density",
+            "mode",
+            "platform",
+            "font"
+          ],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "cds-root text-primary contents",
+          "dataAttrs": [
+            "density",
+            "mode",
+            "platform",
+            "font"
+          ],
+          "text": "",
+          "childCount": 0,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        }
+      ]
+    },
+    "[class*=\"text\"]": {
+      "count": 90,
+      "samples": [
+        {
+          "tag": "body",
+          "id": null,
+          "className": "bg-bg-100 text-text-100 font-ui min-h-screen",
+          "dataAttrs": [],
+          "text": "New chatCtrl+⇧+OChatsProjectsArtifactsCodeUpgradeCustomizeProductsDesignRecentsHTML not",
+          "childCount": 10,
+          "rect": {
+            "w": 1365,
+            "h": 945
+          }
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "className": "cds-root text-primary contents",
+          "dataAttrs": [
+            "density",
+            "mode",
+            "platform",
+            "font"
+          ],
+          "text": "New chatCtrl+⇧+OChatsProjectsArtifactsCodeUpgradeCustomizeProductsDesignRecentsHTML not",
+          "childCount": 2,
+          "rect": {
+            "w": 0,
+            "h": 0
+          }
+        },
+        {
+          "tag": "svg",
+          "id": null,
+          "className": "[object SVGAnimatedString]",
+          "dataAttrs": [
+            "cds"
+          ],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 68,
+            "h": 20
+          }
+        },
+        {
+          "tag": "button",
+          "id": "_r_4_",
+          "className": "cds-reset group/btn relative isolate inline-flex shrink-0 items-center justify-center gap-1.5 whitespace-nowrap select-none cursor-[var(--cds-cursor-interactive)] aria-disabled:cursor-default data-[di",
+          "dataAttrs": [
+            "cds",
+            "size",
+            "baseUiTooltipTrigger"
+          ],
+          "text": "",
+          "childCount": 2,
+          "rect": {
+            "w": 24,
+            "h": 24
+          }
+        },
+        {
+          "tag": "button",
+          "id": "_r_7_",
+          "className": "cds-reset group/btn relative isolate inline-flex shrink-0 items-center justify-center gap-1.5 whitespace-nowrap select-none cursor-[var(--cds-cursor-interactive)] aria-disabled:cursor-default data-[di",
+          "dataAttrs": [
+            "cds",
+            "size",
+            "testid",
+            "baseUiTooltipTrigger"
+          ],
+          "text": "",
+          "childCount": 2,
+          "rect": {
+            "w": 24,
+            "h": 24
+          }
+        }
+      ]
+    },
+    "[data-testid*=\"chat\"]": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "div",
+          "id": null,
+          "className": "tiptap ProseMirror",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "",
+          "childCount": 1,
+          "rect": {
+            "w": 636,
+            "h": 22
+          }
+        }
+      ]
+    },
+    "[data-testid*=\"user\"]": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "button",
+          "id": "base-ui-_r_2e_",
+          "className": "inline-flex\n  items-center\n  justify-center\n  relative\n  isolate\n  shrink-0\n  can-focus\n  select-none\n  disabled:pointer-events-none\n  disabled:opacity-50\n  disabled:shadow-none\n  disabled:drop-shadow",
+          "dataAttrs": [
+            "testid"
+          ],
+          "text": "HSHassan SaeedFree plan",
+          "childCount": 2,
+          "rect": {
+            "w": 287,
+            "h": 64
+          }
+        }
+      ]
+    }
+  },
+  "sidebar": {
+    "nav": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "nav",
+          "className": "flex flex-col px-0 fixed left-0 border-r-0.5 h-screen lg:bg-gradient-to-t from-bg-200/5 to-bg-200/30 shadow-lg lg:shadow-none border-border-300 bg-bg-100 transition-[background-color,border-color,box-",
+          "childCount": 2,
+          "links": [
+            {
+              "href": "/new",
+              "text": ""
+            },
+            {
+              "href": "/new",
+              "text": "New chatCtrl+⇧+O"
+            },
+            {
+              "href": "/recents",
+              "text": "Chats"
+            },
+            {
+              "href": "/projects",
+              "text": "Projects"
+            },
+            {
+              "href": "/artifacts",
+              "text": "Artifacts"
+            },
+            {
+              "href": "/upgrade?returnTo=%2Fcode",
+              "text": "CodeUpgrade"
+            },
+            {
+              "href": "/customize",
+              "text": "Customize"
+            },
+            {
+              "href": "/discover/design",
+              "text": "Design"
+            },
+            {
+              "href": "/chat/e9de6bab-18de-489a-bc9d-d0c029c5a9c7",
+              "text": "HTML not rendering in ChromeHTML not rendering in Chrome"
+            },
+            {
+              "href": "/chat/64f72754-5084-4a50-b0fa-fa7def03c42c",
+              "text": "FHIR sidebar with collapsible SMART Apps launcherFHIR sideba"
+            }
+          ]
+        }
+      ]
+    },
+    "[data-testid*=\"sidebar\"]": {
+      "count": 1,
+      "samples": [
+        {
+          "tag": "button",
+          "className": "cds-reset group/btn relative isolate inline-flex shrink-0 items-center justify-center gap-1.5 whitespace-nowrap select-none cursor-[var(--cds-cursor-interactive)] aria-disabled:cursor-default data-[di",
+          "childCount": 2,
+          "links": []
+        }
+      ]
+    }
+  },
+  "scrollers": [],
+  "customElements": [
+    "dex-notifications",
+    "docs-suggestion-popover-ui",
+    "highlight-ui",
+    "sidebar-trigger-ui"
+  ],
+  "dataAttributes": [
+    "data-base-ui-tooltip-trigger",
+    "data-build-id",
+    "data-build-timestamp",
+    "data-cds",
+    "data-cds-anim",
+    "data-cds-anim-loop",
+    "data-chorus-callout",
+    "data-color-version",
+    "data-dd-action-name",
+    "data-density",
+    "data-dex-frame-id",
+    "data-dex-recorder-ready",
+    "data-env",
+    "data-find-omitted",
+    "data-font",
+    "data-git-hash",
+    "data-intended-title",
+    "data-ion-ip-country",
+    "data-legacy-toast-viewport",
+    "data-mode",
+    "data-placeholder",
+    "data-platform",
+    "data-router-head",
+    "data-size",
+    "data-skill-arg-hint-shim",
+    "data-state",
+    "data-testid",
+    "data-theme",
+    "data-tiptap-style",
+    "data-trigger-disabled",
+    "data-version",
+    "data-window-blurred",
+    "data-wxt-shadow-root"
+  ],
+  "classPatterns": [
+    {
+      "class": "cds-reset group/btn relative isolate inline-flex shrink-0 items-center justify-center gap-1.5 whites",
+      "count": 16
+    },
+    {
+      "class": "inline-flex\n  items-center\n  justify-center\n  relative\n  isolate\n  shrink-0\n  can-focus\n  select-non",
+      "count": 13
+    },
+    {
+      "class": "cds-root text-primary contents",
+      "count": 8
+    },
+    {
+      "class": "flex size-5 shrink-0 items-center justify-center text-text-100",
+      "count": 6
+    },
+    {
+      "class": "truncate text-sm whitespace-nowrap flex-1",
+      "count": 6
+    },
+    {
+      "class": "truncate text-sm whitespace-nowrap flex-1 group-hover:[mask-image:linear-gradient(to_right,black_cal",
+      "count": 6
+    },
+    {
+      "class": "contents",
+      "count": 2
+    },
+    {
+      "class": "group/header cursor-pointer flex items-center gap-1 min-w-0 hover:text-text-300 transition-colors du",
+      "count": 2
+    },
+    {
+      "class": "ml-0.5 inline-flex items-center gap-1.5 rounded-lg h-8 pl-2 pr-2.5 text-center font-small sm:font-ba",
+      "count": 2
+    },
+    {
+      "class": "bg-bg-100 text-text-100 font-ui min-h-screen",
+      "count": 1
+    },
+    {
+      "class": "pointer-events-none absolute inset-0 bg-bg-100 [background-image:linear-gradient(to_right,hsl(var(--",
+      "count": 1
+    },
+    {
+      "class": "flex items-center justify-center rounded-full size-[1.4rem] -mx-[0.2rem] bg-text-500/15 active:bg-te",
+      "count": 1
+    },
+    {
+      "class": "text-text-300 group-hover:text-text-000",
+      "count": 1
+    },
+    {
+      "class": "text-text-500 text-xs px-0.5",
+      "count": 1
+    },
+    {
+      "class": "flex size-5 shrink-0 items-center justify-center text-text-100 text-text-400/40 group-hover:!text-te",
+      "count": 1
+    },
+    {
+      "class": "truncate text-sm whitespace-nowrap flex-1 text-text-000/40",
+      "count": 1
+    },
+    {
+      "class": "border-0.5 border-border-400 text-accent-000 px-1.5 py-px rounded-3xl font-small absolute right-2 to",
+      "count": 1
+    },
+    {
+      "class": "group/nsh flex items-center gap-1 min-w-0 mt-1 pb-2 pl-2 text-xs text-text-500 select-none pr-2",
+      "count": 1
+    },
+    {
+      "class": "group/nsh flex items-center gap-1 min-w-0 mt-1 pb-2 pl-2 text-xs text-text-500 select-none",
+      "count": 1
+    },
+    {
+      "class": "flex items-center justify-center rounded-full text-text-200 border-0.5 border-transparent group-hove",
+      "count": 1
+    },
+    {
+      "class": "flex shrink-0 items-center justify-center rounded-full font-bold select-none h-9 w-9 text-[16px] bg-",
+      "count": 1
+    },
+    {
+      "class": "opacity-100 transition-opacity ease-out duration-150 flex flex-1 text-sm justify-between items-cente",
+      "count": 1
+    },
+    {
+      "class": "w-full text-start block truncate",
+      "count": 1
+    },
+    {
+      "class": "w-full truncate text-xs text-text-500 font-normal text-start",
+      "count": 1
+    },
+    {
+      "class": "downloads-link inline-flex\n  items-center\n  justify-center\n  relative\n  isolate\n  shrink-0\n  can-foc",
+      "count": 1
+    },
+    {
+      "class": "text-text-300",
+      "count": 1
+    },
+    {
+      "class": "size-[3px] bg-text-500/30 rounded-full mt-0.5",
+      "count": 1
+    },
+    {
+      "class": "text-text-200 text-balance text-center font-display",
+      "count": 1
+    },
+    {
+      "class": "w-8 w-8 text-accent-brand inline-block select-none",
+      "count": 1
+    },
+    {
+      "class": "absolute bottom-0 left-1/2 -translate-x-1/2 z-0 pointer-events-none transition-opacity duration-500",
+      "count": 1
+    },
+    {
+      "class": "!box-content flex flex-col bg-bg-000 mx-2 md:mx-0 items-stretch transition-[background-color,border-",
+      "count": 1
+    },
+    {
+      "class": "w-full overflow-y-auto break-words transition-opacity duration-200 font-large max-h-96 min-h-[calc(2",
+      "count": 1
+    },
+    {
+      "class": "block text-text-500",
+      "count": 1
+    },
+    {
+      "class": "inline-flex min-w-0 text-[14px] h-[14px] leading-none items-baseline",
+      "count": 1
+    },
+    {
+      "class": "min-w-0 overflow-x-clip text-ellipsis whitespace-nowrap select-none",
+      "count": 1
+    },
+    {
+      "class": "ml-1 text-text-500",
+      "count": 1
+    },
+    {
+      "class": "h-8 w-8 rounded-lg flex items-center justify-center opacity-0 transition-all duration-200 text-text-",
+      "count": 1
+    },
+    {
+      "class": "autoglm-main-content",
+      "count": 1
+    }
+  ],
+  "sampleHTML": []
+}
