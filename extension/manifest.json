@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "AI Session Extractor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Extract full conversations word-by-word from AI web apps (Gemini, ChatGPT, Claude, DeepSeek, Copilot, Grok, Kimi, Meta AI, MiniMax, Manus, Zai, Perplexity, Poe, Mistral, Qwen, Pi, Jules, and more).",
   "permissions": ["activeTab", "tabs", "storage", "downloads", "scripting", "contextMenus"],
   "action": {
@@ -58,6 +58,6 @@
     }
   ],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "sw.js"
   }
 }
