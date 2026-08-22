@@ -518,3 +518,15 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #52525b;
 }
+
+/* Resumable batch banner */
+.resume-banner {
+  margin: 8px 0; padding: 8px 10px;
+  background: #3b2f0b; border: 1px solid #a16207; border-radius: 6px;
+}
+.resume-banner.hidden { display: none; }
+.resume-label { font-size: 11px; color: #fde68a; margin-bottom: 6px; }
+.resume-actions { display: flex; gap: 6px; }
+
+/* Warning message variant */
+.message-box.warn { background: #422006; border: 1px solid #d97706; color: #fcd34d; }

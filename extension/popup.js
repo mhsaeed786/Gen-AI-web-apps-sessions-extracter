@@ -44,6 +44,35 @@ document.addEventListener("DOMContentLoaded", async () => {
   await detectPlatform();
   await discoverTabs();
   await checkRunningBatch();
+  setupResumeBanner();
+
+  // ============================================================
+  // RESUMABLE BATCH UI (interrupted batch found in storage)
+  // ============================================================
+  async function setupResumeBanner() {
+    try {
+      const p = await chrome.runtime.sendMessage({ action: "getBatchProgress" });
+      if (!p || !p.resumable || (p.pendingJobs === 0 && !p.running)) return;
+      let banner = $("resume-banner");
+      if (!banner) return;
+      banner.classList.remove("hidden");
+      const label = $("resume-label");
+      if (label) label.textContent = `Interrupted batch: ${p.successCount} done, ${p.pendingJobs} chat(s) pending${p.failedCount ? `, ${p.failedCount} failed` : ""}.`;
+      const btnResume = $("btn-resume");
+      const btnDiscard = $("btn-discard");
+      if (btnResume) btnResume.addEventListener("click", async () => {
+        try {
+          const r = await chrome.runtime.sendMessage({ action: "resumeBatch" });
+          if (r && r.resumed) { banner.classList.add("hidden"); showBatchUI(); startPolling(); showMsg("info", "Batch resumed."); }
+          else showMsg("error", (r && r.error) || "Could not resume.");
+        } catch (e) { showMsg("warn", "Resume failed: " + e.message); }
+      });
+      if (btnDiscard) btnDiscard.addEventListener("click", async () => {
+        try { await chrome.runtime.sendMessage({ action: "discardBatch" }); banner.classList.add("hidden"); showMsg("info", "Batch discarded."); }
+        catch (e) { showMsg("warn", "Discard failed: " + e.message); }
+      });
+    } catch (e) { console.warn("[Popup] resume check failed:", e.message); }
+  }
 
   // ============================================================
   // PLATFORM DETECTION
@@ -94,7 +123,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           `<div class="tab-item"><span class="tab-dot"></span>${esc(t.platform)} <span class="tab-url">${esc(shortenUrl(t.url))}</span></div>`
         ).join("");
       }
-    } catch (e) {}
+    } catch (e) { console.warn("[Popup] tab discovery failed:", e.message); showWarn(`Tab discovery unavailable (${e.message}).`); }
   }
 
   // ============================================================
@@ -105,7 +134,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       const p = await chrome.runtime.sendMessage({ action: "getBatchProgress" });
       if (p && p.running) { showBatchUI(); startPolling(); }
       else if (p && p.done && p.successCount > 0) { showBatchUI(); renderProgress(p); await loadResults(); }
-    } catch (e) {}
+    } catch (e) { console.warn("[Popup] batch check failed:", e.message); }
   }
 
   // ============================================================
@@ -166,8 +195,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     btnDump.innerHTML = '<span class="btn-icon">⏳</span> Dumping...';
     try {
       const resp = await chrome.runtime.sendMessage({ action: "dumpAllDOMs" });
-      if (resp && resp.downloaded && resp.downloads && resp.downloads.length > 0) {
-        showMsg("success", `Dumped ${resp.downloads.length} AI tabs! Check your Downloads folder.`);
+      if (resp && resp.error) showMsg("error", resp.error);
+      else if (resp && resp.downloaded && resp.downloads && resp.downloads.length > 0) {
+        const warnBits = [];
+        if (resp.failed) warnBits.push(`${resp.failed} tab(s) failed`);
+        showMsg(warnBits.length ? "warn" : "success", `Dumped ${resp.downloads.length} AI tabs to Downloads${warnBits.length ? ` — ⚠️ ${warnBits.join(", ")}` : ""}.`);
         results.classList.remove("hidden");
         resultsTitle.textContent = "DOM Dumps";
         msgCount.textContent = `${resp.downloads.length} files`;
@@ -218,9 +250,11 @@ document.addEventListener("DOMContentLoaded", async () => {
         stopPolling();
         btnExtractAll.disabled = false;
         btnExtractMulti.disabled = false;
+        if (p.error) showWarn(`Batch ended with error: ${p.error}`);
+        else if (p.failedCount) showWarn(`${p.failedCount} chat(s) failed during batch.`);
         await loadResults();
       }
-    } catch (e) {}
+    } catch (e) { console.warn("[Popup] progress poll failed:", e.message); }
   }
 
   function renderProgress(p) {
@@ -228,7 +262,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const current = p.currentChat || 0;
     const pct = Math.round((current / total) * 100);
     progressBar.style.width = pct + "%";
-    batchCount.textContent = `${p.successCount} extracted · ${current}/${total} processed`;
+    batchCount.textContent = `${p.successCount} extracted${p.failedCount ? ` · ${p.failedCount} failed` : ""}${p.warnedCount ? ` · ${p.warnedCount} warnings` : ""} · ${current}/${total} processed`;
 
     let status = "";
     if (p.running) {
@@ -240,6 +274,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
     } else if (p.done) {
       status = `✅ Done! ${p.successCount} chats extracted`;
+      const bits = [];
+      if (p.failedCount) bits.push(`${p.failedCount} failed`);
+      if (p.warnedCount) bits.push(`${p.warnedCount} warnings`);
+      if (bits.length) status += ` (⚠️ ${bits.join(", ")})`;
     }
     batchCurrent.textContent = status;
 
@@ -256,9 +294,13 @@ document.addEventListener("DOMContentLoaded", async () => {
         allChatsData = data; extractedData = null;
         showBatchResults(data);
         showMsg("success", `${data.conversationCount} chats · ${data.totalMessages} messages extracted!`);
+        if (data.failedCount) showWarn(`${data.failedCount} chat(s) failed and were skipped.`);
       }
-    } catch (e) {}
+    } catch (e) { console.warn("[Popup] load results failed:", e.message); }
   }
+
+  // Non-blocking warning banner (counted failures / recoverable errors)
+  function showWarn(text) { showMsg("warn", "⚠️ " + text); }
 
   // ============================================================
   // DISPLAY RESULTS
