@@ -340,7 +340,7 @@
     const allEls = [];
     for (const sel of config.userMsg) document.querySelectorAll(sel).forEach((el) => allEls.push({ el, role: "user" }));
     for (const sel of config.modelMsg) document.querySelectorAll(sel).forEach((el) => allEls.push({ el, role: "model" }));
-    allEls.sort((a, b) => getDomOrder(a.el) - getDomOrder(b.el));
+    allEls.sort((a, b) => domCompare(a.el, b.el));
     for (const { el, role } of allEls) {
       const text = extractFullText(el);
       if (text.trim().length > 0) messages.push({ role, content: text.trim(), timestamp: null, _domOrder: getDomOrder(el) });
@@ -691,12 +691,26 @@
   // ============================================================
   // UTILITIES
   // ============================================================
-  function getDomOrder(el) {
-    if (!getDomOrder._cache) getDomOrder._cache = new WeakMap();
-    if (getDomOrder._cache.has(el)) return getDomOrder._cache.get(el);
-    const all = document.querySelectorAll("*");
-    for (let i = 0; i < all.length; i++) { if (all[i] === el) { getDomOrder._cache.set(el, i); return i; } }
+  // Comparator for document order using compareDocumentPosition (no full-DOM scans)
+  function domCompare(a, b) {
+    if (a === b) return 0;
+    const pos = a.compareDocumentPosition(b);
+    if (pos & Node.DOCUMENT_POSITION_FOLLOWING) return -1;
+    if (pos & Node.DOCUMENT_POSITION_PRECEDING) return 1;
     return 0;
+  }
+
+  function getDomOrder(el) {
+    if (!getDomOrder._sorted) getDomOrder._sorted = [];
+    const sorted = getDomOrder._sorted;
+    // Binary search for el's position among already-seen elements
+    let lo = 0, hi = sorted.length;
+    while (lo < hi) {
+      const mid = (lo + hi) >> 1;
+      if (domCompare(sorted[mid], el) < 0) lo = mid + 1; else hi = mid;
+    }
+    if (sorted[lo] !== el) sorted.splice(lo, 0, el);
+    return lo;
   }
 
   function extractTitle() {
@@ -781,15 +795,21 @@
         respond({ navigating: true });
         setTimeout(() => {
           try {
-            const targetUrl = request.url;
+            let targetUrl;
+            try { targetUrl = new URL(request.url, window.location.href); } catch (e) { return; }
+            // Only navigate within the same origin, over http(s), never reload self
+            if (targetUrl.origin !== window.location.origin) return;
+            if (targetUrl.protocol !== "https:" && targetUrl.protocol !== "http:") return;
+            if (targetUrl.href === window.location.href) return;
+            const url = targetUrl.href;
             const links = document.querySelectorAll(config.chatLinks);
             for (const link of links) {
               const href = link.getAttribute("href") || link.href || "";
-              if (href === targetUrl || link.href === targetUrl || targetUrl.endsWith(href)) {
+              if (href === url || link.href === url || url.endsWith(href)) {
                 link.click(); return;
               }
             }
-            window.location.href = targetUrl;
+            window.location.href = url;
           } catch (e) {}
         }, 50);
         return false;

@@ -64,6 +64,11 @@ document.addEventListener("DOMContentLoaded", async () => {
         ["manus.im", "Manus"], ["manus.app", "Manus"], ["z.ai", "Zai"],
         ["perplexity.ai", "Perplexity"], ["poe.com", "Poe"], ["chat.mistral.ai", "Mistral"],
         ["chatglm.cn", "ChatGLM"], ["kimi.moonshot.cn", "Kimi"],
+        ["chat.qwen.ai", "Qwen"], ["qwen.ai", "Qwen"], ["tongyi.aliyun.com", "Qwen"],
+        ["pi.ai", "Pi"], ["jules.google.com", "Jules"], ["jules.ai", "Jules"],
+        ["huggingface.co/chat", "HuggingChat"], ["character.ai", "Character.AI"],
+        ["you.com", "You.com"], ["reka.ai", "Reka"], ["chat.minimax.io", "MiniMax"],
+        ["agent.minimax.io", "MiniMax"], ["minimax.chat", "MiniMax"],
       ];
       for (const [pattern, name] of platforms) {
         if (url.includes(pattern)) { setStatus("active", `${name} detected ✓`); return; }
@@ -364,9 +369,16 @@ document.addEventListener("DOMContentLoaded", async () => {
     d.messages.forEach(m => { md += `## ${m.role === "user" ? "👤 User" : "🤖 AI"}\n\n${m.content}\n\n---\n\n`; });
     return md;
   }
+  // Sanitize a CSV cell to prevent formula injection (=,+,-,@ prefixes, tabs, CR)
+  function csvSafe(value) {
+    let v = String(value ?? "").replace(/[\r\n\t]+/g, " ");
+    let first = v.charAt(0);
+    if (first === "=" || first === "+" || first === "-" || first === "@" || first === "\t" || first === "\r") v = "'" + v;
+    return v;
+  }
   function singleCsv(d) {
     let c = "Index,Role,Content\n";
-    d.messages.forEach((m, i) => { c += `${i + 1},${m.role},"${m.content.replace(/"/g, '""').replace(/\n/g, " ")}"\n`; });
+    d.messages.forEach((m, i) => { c += `${i + 1},${csvSafe(m.role)},"${csvSafe(m.content).replace(/"/g, '""')}"\n`; });
     return c;
   }
   function batchTxt(d) {
@@ -388,8 +400,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   function batchCsv(d) {
     let c = "ConvIndex,Platform,Title,MsgIndex,Role,Content\n";
     d.conversations.forEach((conv, ci) => {
-      const t = `"${(conv.sidebarTitle || conv.title || "").replace(/"/g, '""')}"`;
-      conv.messages.forEach((m, i) => { c += `${ci + 1},${conv.platform},${t},${i + 1},${m.role},"${m.content.replace(/"/g, '""').replace(/\n/g, " ")}"\n`; });
+      const t = `"${csvSafe(conv.sidebarTitle || conv.title || "").replace(/"/g, '""')}"`;
+      conv.messages.forEach((m, i) => { c += `${ci + 1},${csvSafe(conv.platform)},${t},${i + 1},${csvSafe(m.role)},"${csvSafe(m.content).replace(/"/g, '""')}"\n`; });
     });
     return c;
   }
